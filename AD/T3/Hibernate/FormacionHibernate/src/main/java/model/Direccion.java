@@ -27,6 +27,13 @@ public class Direccion {
         this.numero = numero;
     }
 
+    public void mostrarDatos(){
+        System.out.println("Calle "+calle);
+        System.out.println("Provincia "+provincia);
+        System.out.println("Poblacion "+poblacion);
+        System.out.println("Numero "+numero);
+    }
+
     public String getCalle() {
         return calle;
     }

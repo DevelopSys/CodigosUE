@@ -50,6 +50,23 @@ public class Alumno {
         this.correo = correo;
     }
 
+    public void mostrarDatos(){
+        System.out.println("Nombre "+nombre );
+        System.out.println("Apellido "+apellido );
+        System.out.println("Correo "+correo );
+
+        if (direccion_propia!=null){
+            System.out.println("Direccion propia");
+            direccion_propia.mostrarDatos();
+        }if (direccion_tutor !=null){
+            System.out.println("Direccion tutor");
+            direccion_tutor.mostrarDatos();
+        }
+
+
+
+    }
+
     public long getId() {
         return id;
     }

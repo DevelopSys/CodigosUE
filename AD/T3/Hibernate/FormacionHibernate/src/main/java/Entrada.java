@@ -8,6 +8,7 @@ import org.hibernate.query.Query;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 
 public class Entrada {
@@ -16,6 +17,31 @@ public class Entrada {
 
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         session.beginTransaction();
+
+        // Directa
+        // List<Alumno> lista = session.createNativeQuery("SELECT * FROM alumno", Alumno.class).list();
+        // Indirecta-> parametros nombre o parametros posicion
+        System.out.println("Introduce el nombre que quieres buscar");
+        String nombreBucar = new Scanner(System.in).next();
+        System.out.println("Introduce el la poblacion que quieres buscar");
+        String polacionBuscar = new Scanner(System.in).next();
+        /*List<Alumno> lista = session.createNativeQuery("SELECT nombre, edad FROM alumno " +
+                        "WHERE nombre = :pnombre AND poblacion = :ppoblacion", Alumno.class)
+                .setParameter("pnombre",nombreBucar)
+                .setParameter("ppoblacion",polacionBuscar)
+                .list();*/
+
+        List<Alumno> listaResultados = session.createQuery("SELECT a FROM Alumno a", Alumno.class).list();
+
+        for ( Alumno item : listaResultados ) {
+            item.mostrarDatos();
+        }
+
+        // List = null --> ArrayList = null
+        List<Alumno> alumnos = session.createNamedQuery("insercion",Alumno.class).list();
+
+
+
         //session.persist(new Aula("Barcelona",20));
         //Alumno alumno = session.get(Alumno.class,6)
         //System.out.println(alumno.getNombre());
@@ -27,7 +53,7 @@ public class Entrada {
                 ,new Direccion("Calle2","MAdrid2","Madrid2",123))); // db);*/
 
         // SELECT --> SELECT * FROM alumno WHERE id=13 (pk)
-        Alumno alumno =  session.get(Alumno.class,14);
+        /*Alumno alumno =  session.get(Alumno.class,14);
         session.createNamedQuery("nombreQuero",Alumno.class);
         Query query = session.createQuery("SELECT * FROM usuario WHERE telefono=123123 AND provincia='Madrid'", Alumno.class);
         // ps = INSERT INTO ALUMNOS VALUES(?,?,?)
@@ -44,7 +70,7 @@ public class Entrada {
             System.out.println(alumno.getDireccion_tutor().getCalle());
         }catch (NullPointerException e){
             System.out.println("Alguno de los datos de la bd son nulos");
-        }
+        }*/
 
 
         session.getTransaction().commit();
