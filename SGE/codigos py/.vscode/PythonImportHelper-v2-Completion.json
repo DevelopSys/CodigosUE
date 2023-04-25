@@ -1,0 +1,395 @@
+[
+    {
+        "label": "nombreFuncion",
+        "importPath": "funciones",
+        "description": "funciones",
+        "isExtraImport": true,
+        "detail": "funciones",
+        "documentation": {}
+    },
+    {
+        "label": "imprimirAdicionales",
+        "importPath": "funciones",
+        "description": "funciones",
+        "isExtraImport": true,
+        "detail": "funciones",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "primeros",
+        "importPath": "inicio",
+        "description": "inicio",
+        "isExtraImport": true,
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "conjuntoUno",
+        "kind": 5,
+        "importPath": "conjunto",
+        "description": "conjunto",
+        "peekOfCode": "conjuntoUno = {1, 2, 3, 4, 5, 6, 7, 8, 9}\nconjuntoDos = {3, 4, 7, 11, 12, 14, 15, 16}\nconjuntoFuncion = set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\n# print(type(conjuntoFuncion))\n# conjunto.add(9)\n# conjunto.remove(9)\n# for i in conjunto:\n#    print(i)\n# union\nconjuntoResultante = conjuntoUno.union(conjuntoDos)",
+        "detail": "conjunto",
+        "documentation": {}
+    },
+    {
+        "label": "conjuntoDos",
+        "kind": 5,
+        "importPath": "conjunto",
+        "description": "conjunto",
+        "peekOfCode": "conjuntoDos = {3, 4, 7, 11, 12, 14, 15, 16}\nconjuntoFuncion = set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\n# print(type(conjuntoFuncion))\n# conjunto.add(9)\n# conjunto.remove(9)\n# for i in conjunto:\n#    print(i)\n# union\nconjuntoResultante = conjuntoUno.union(conjuntoDos)\n# diferencia",
+        "detail": "conjunto",
+        "documentation": {}
+    },
+    {
+        "label": "conjuntoFuncion",
+        "kind": 5,
+        "importPath": "conjunto",
+        "description": "conjunto",
+        "peekOfCode": "conjuntoFuncion = set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\n# print(type(conjuntoFuncion))\n# conjunto.add(9)\n# conjunto.remove(9)\n# for i in conjunto:\n#    print(i)\n# union\nconjuntoResultante = conjuntoUno.union(conjuntoDos)\n# diferencia\nconjuntoResultante = conjuntoUno.difference(conjuntoDos)",
+        "detail": "conjunto",
+        "documentation": {}
+    },
+    {
+        "label": "conjuntoResultante",
+        "kind": 5,
+        "importPath": "conjunto",
+        "description": "conjunto",
+        "peekOfCode": "conjuntoResultante = conjuntoUno.union(conjuntoDos)\n# diferencia\nconjuntoResultante = conjuntoUno.difference(conjuntoDos)\n# diferencia simetrica\nconjuntoResultante = conjuntoUno.symmetric_difference(conjuntoDos)\n# interseccion\nconjuntoResultante = conjuntoUno.intersection(conjuntoDos)\nprint(conjuntoResultante)",
+        "detail": "conjunto",
+        "documentation": {}
+    },
+    {
+        "label": "conjuntoResultante",
+        "kind": 5,
+        "importPath": "conjunto",
+        "description": "conjunto",
+        "peekOfCode": "conjuntoResultante = conjuntoUno.difference(conjuntoDos)\n# diferencia simetrica\nconjuntoResultante = conjuntoUno.symmetric_difference(conjuntoDos)\n# interseccion\nconjuntoResultante = conjuntoUno.intersection(conjuntoDos)\nprint(conjuntoResultante)",
+        "detail": "conjunto",
+        "documentation": {}
+    },
+    {
+        "label": "conjuntoResultante",
+        "kind": 5,
+        "importPath": "conjunto",
+        "description": "conjunto",
+        "peekOfCode": "conjuntoResultante = conjuntoUno.symmetric_difference(conjuntoDos)\n# interseccion\nconjuntoResultante = conjuntoUno.intersection(conjuntoDos)\nprint(conjuntoResultante)",
+        "detail": "conjunto",
+        "documentation": {}
+    },
+    {
+        "label": "conjuntoResultante",
+        "kind": 5,
+        "importPath": "conjunto",
+        "description": "conjunto",
+        "peekOfCode": "conjuntoResultante = conjuntoUno.intersection(conjuntoDos)\nprint(conjuntoResultante)",
+        "detail": "conjunto",
+        "documentation": {}
+    },
+    {
+        "label": "diccionarioInforme",
+        "kind": 5,
+        "importPath": "diccionarios",
+        "description": "diccionarios",
+        "peekOfCode": "diccionarioInforme = {'titulo': \"Titulo informe\", 'prioridad': 'alta',\n                      'contenido': 'este es el contenido del informe', 'colaboradores': [\"Borja\", \"Javier\", 'Pilar']}\n# diccionarioFuncion = dict(\n#    [\"1a\", \"2a\", \"3a\", \"4a\", \"5a\", {'elemento': \"elemento\"}])\ndiccionarioFuncion = dict({'elemento': \"elemento\"})\nprint(diccionarioFuncion)\n# print(diccionarioInforme['titulo'])\n# sacar todos los colaboradores del informe\ndiccionarioInforme['titulo'] = \"Este es el titulo\"\n# del (diccionarioInforme['prioridad'])",
+        "detail": "diccionarios",
+        "documentation": {}
+    },
+    {
+        "label": "diccionarioFuncion",
+        "kind": 5,
+        "importPath": "diccionarios",
+        "description": "diccionarios",
+        "peekOfCode": "diccionarioFuncion = dict({'elemento': \"elemento\"})\nprint(diccionarioFuncion)\n# print(diccionarioInforme['titulo'])\n# sacar todos los colaboradores del informe\ndiccionarioInforme['titulo'] = \"Este es el titulo\"\n# del (diccionarioInforme['prioridad'])\n# print(f'elemento eliminado: {diccionarioInforme.pop(\"prioridad\")}')\n# print(diccionarioInforme)\nfor i in diccionarioInforme.keys():\n    print(i)",
+        "detail": "diccionarios",
+        "documentation": {}
+    },
+    {
+        "label": "diccionarioInforme['titulo']",
+        "kind": 5,
+        "importPath": "diccionarios",
+        "description": "diccionarios",
+        "peekOfCode": "diccionarioInforme['titulo'] = \"Este es el titulo\"\n# del (diccionarioInforme['prioridad'])\n# print(f'elemento eliminado: {diccionarioInforme.pop(\"prioridad\")}')\n# print(diccionarioInforme)\nfor i in diccionarioInforme.keys():\n    print(i)\nfor colaborador in diccionarioInforme['colaboradores']:\n    print(colaborador)",
+        "detail": "diccionarios",
+        "documentation": {}
+    },
+    {
+        "label": "nombreFuncion",
+        "kind": 2,
+        "importPath": "funciones",
+        "description": "funciones",
+        "peekOfCode": "def nombreFuncion(paramentro1, paramentro2):\n    print(paramentro1)\n    print(paramentro2)\n# nombreFuncion(1, 2)\ndef imprimirDatos(dato1, dato3, dato2='defecto'):\n    print(f'El dato pasado como param dato1 es {dato1}')\n    print(f'El dato pasado como param dato2 es {dato2}')\n    print(f'El dato pasado como param dato3 es {dato3}')\n# imprimirDatos(\"primer dato\", \"segundo dato\", \"tercer dato\")\n# imprimirDatos(dato3=\"tercero\", dato1=\"primero\")",
+        "detail": "funciones",
+        "documentation": {}
+    },
+    {
+        "label": "imprimirDatos",
+        "kind": 2,
+        "importPath": "funciones",
+        "description": "funciones",
+        "peekOfCode": "def imprimirDatos(dato1, dato3, dato2='defecto'):\n    print(f'El dato pasado como param dato1 es {dato1}')\n    print(f'El dato pasado como param dato2 es {dato2}')\n    print(f'El dato pasado como param dato3 es {dato3}')\n# imprimirDatos(\"primer dato\", \"segundo dato\", \"tercer dato\")\n# imprimirDatos(dato3=\"tercero\", dato1=\"primero\")\ndef imprimirAdicionales(*datos):\n    # imprimir un conjunto de datos\n    for i in datos:\n        for j in i:",
+        "detail": "funciones",
+        "documentation": {}
+    },
+    {
+        "label": "imprimirAdicionales",
+        "kind": 2,
+        "importPath": "funciones",
+        "description": "funciones",
+        "peekOfCode": "def imprimirAdicionales(*datos):\n    # imprimir un conjunto de datos\n    for i in datos:\n        for j in i:\n            print(j)\ndef funcionRetorno(param1, param2):  # None\n    suma = param1+param2\n    return [param1, param2]\n# for i in funcionRetorno(4, 7):\n#    print(i)",
+        "detail": "funciones",
+        "documentation": {}
+    },
+    {
+        "label": "funcionRetorno",
+        "kind": 2,
+        "importPath": "funciones",
+        "description": "funciones",
+        "peekOfCode": "def funcionRetorno(param1, param2):  # None\n    suma = param1+param2\n    return [param1, param2]\n# for i in funcionRetorno(4, 7):\n#    print(i)\n# numero de parametos = 9\n# numero de parametos = n de 0 a infinito\n# imprimirAdicionales(1, 2, 3, 4, 5, 6, 7, 8, 9, [10, 11, 12, 13, 14, 15, 16])\n# imprimirAdicionales([1, 2, 3, 4, 5, 6, 7, 8, 9], [\"palabra1\", \"palabra2\"], [10, 11, 12, 13, 14, 15, 16])",
+        "detail": "funciones",
+        "documentation": {}
+    },
+    {
+        "label": "Informe",
+        "kind": 6,
+        "importPath": "informe",
+        "description": "informe",
+        "peekOfCode": "class Informe:\n    # todas las variables declaradas desde self\n    def __init__(self, nombre, titulo, contenido, elementos):\n        self.__nombre = nombre\n        self.titulo = titulo\n        self.contenido = contenido\n        self.elementos = elementos\n    def funcionEjemplo(self):\n        print(self.__nombre)\n        print(self.titulo)",
+        "detail": "informe",
+        "documentation": {}
+    },
+    {
+        "label": "InformePersonalizado",
+        "kind": 6,
+        "importPath": "informe",
+        "description": "informe",
+        "peekOfCode": "class InformePersonalizado(Informe):\n    def __init__(self, nombre, titulo, contenido, elementos, personalizado):\n        super().__init__(nombre, titulo, contenido, elementos)\n        self.personalizo = personalizado\n    def funcionEjemplo(self):\n        print(self.personalizo)\n        return super().funcionEjemplo()\ninfoPerso = InformePersonalizado(\"Nombre\", \"titulo\", \"contenido\", [\n                                 1, 2, 3, 4, 5, 6], \"Personalizado\")",
+        "detail": "informe",
+        "documentation": {}
+    },
+    {
+        "label": "informe",
+        "kind": 5,
+        "importPath": "informe",
+        "description": "informe",
+        "peekOfCode": "informe = Informe(\"Nombre\", \"titulo\", \"contenido\", [1, 2, 3, 4, 5, 6])\ninforme.funcionEjemplo()\nprint(f'el titulo del informe es {informe.getNombre()}')\nclass InformePersonalizado(Informe):\n    def __init__(self, nombre, titulo, contenido, elementos, personalizado):\n        super().__init__(nombre, titulo, contenido, elementos)\n        self.personalizo = personalizado\n    def funcionEjemplo(self):\n        print(self.personalizo)\n        return super().funcionEjemplo()",
+        "detail": "informe",
+        "documentation": {}
+    },
+    {
+        "label": "infoPerso",
+        "kind": 5,
+        "importPath": "informe",
+        "description": "informe",
+        "peekOfCode": "infoPerso = InformePersonalizado(\"Nombre\", \"titulo\", \"contenido\", [\n                                 1, 2, 3, 4, 5, 6], \"Personalizado\")",
+        "detail": "informe",
+        "documentation": {}
+    },
+    {
+        "label": "nombre",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "nombre = 'Borja'  # string\nedad = 39  # number -> int\naltura = 1.78  # number -> float\nexperiencia = True  # boolean\nasignaturas = ['PMDM', 'SGE', 'AD']  # list[string] list[Any]\nnombre1, edad1, altura1 = 'Borja1', 39, 1.78\nprint(type(nombre))\nprint(type(edad1))\nprint(type(asignaturas))\nprint(type(altura))",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "edad",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "edad = 39  # number -> int\naltura = 1.78  # number -> float\nexperiencia = True  # boolean\nasignaturas = ['PMDM', 'SGE', 'AD']  # list[string] list[Any]\nnombre1, edad1, altura1 = 'Borja1', 39, 1.78\nprint(type(nombre))\nprint(type(edad1))\nprint(type(asignaturas))\nprint(type(altura))\nlenguaje = 'Python'",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "altura",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "altura = 1.78  # number -> float\nexperiencia = True  # boolean\nasignaturas = ['PMDM', 'SGE', 'AD']  # list[string] list[Any]\nnombre1, edad1, altura1 = 'Borja1', 39, 1.78\nprint(type(nombre))\nprint(type(edad1))\nprint(type(asignaturas))\nprint(type(altura))\nlenguaje = 'Python'\nasignatura = 'SGE'",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "experiencia",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "experiencia = True  # boolean\nasignaturas = ['PMDM', 'SGE', 'AD']  # list[string] list[Any]\nnombre1, edad1, altura1 = 'Borja1', 39, 1.78\nprint(type(nombre))\nprint(type(edad1))\nprint(type(asignaturas))\nprint(type(altura))\nlenguaje = 'Python'\nasignatura = 'SGE'\ncurso = 2023",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "asignaturas",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "asignaturas = ['PMDM', 'SGE', 'AD']  # list[string] list[Any]\nnombre1, edad1, altura1 = 'Borja1', 39, 1.78\nprint(type(nombre))\nprint(type(edad1))\nprint(type(asignaturas))\nprint(type(altura))\nlenguaje = 'Python'\nasignatura = 'SGE'\ncurso = 2023\nciclo = 'DAM'",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "lenguaje",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "lenguaje = 'Python'\nasignatura = 'SGE'\ncurso = 2023\nciclo = 'DAM'\nanio = 2\ncursando = True\n# print(palabra + \" \"+lenguaje)\n# Este contenido es para el curso de SGE en el ciclo de DAM 2 y en concreto para la asignatura SGE que esta cursando True\n\"\"\" print('Este contenido es para el curso de %s en %s en el ciclo de %s %d y en concreto para la asignatura %s que esta cursando' %\n      (asignatura, lenguaje, ciclo, anio, asignatura)) \"\"\"",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "asignatura",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "asignatura = 'SGE'\ncurso = 2023\nciclo = 'DAM'\nanio = 2\ncursando = True\n# print(palabra + \" \"+lenguaje)\n# Este contenido es para el curso de SGE en el ciclo de DAM 2 y en concreto para la asignatura SGE que esta cursando True\n\"\"\" print('Este contenido es para el curso de %s en %s en el ciclo de %s %d y en concreto para la asignatura %s que esta cursando' %\n      (asignatura, lenguaje, ciclo, anio, asignatura)) \"\"\"\n\"\"\" print('Este contenido es para el curso de {} en {} en el ciclo de {} {} y en concreto para la asignatura {} que esta cursando {}'.format(",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "curso",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "curso = 2023\nciclo = 'DAM'\nanio = 2\ncursando = True\n# print(palabra + \" \"+lenguaje)\n# Este contenido es para el curso de SGE en el ciclo de DAM 2 y en concreto para la asignatura SGE que esta cursando True\n\"\"\" print('Este contenido es para el curso de %s en %s en el ciclo de %s %d y en concreto para la asignatura %s que esta cursando' %\n      (asignatura, lenguaje, ciclo, anio, asignatura)) \"\"\"\n\"\"\" print('Este contenido es para el curso de {} en {} en el ciclo de {} {} y en concreto para la asignatura {} que esta cursando {}'.format(\n    asignatura, lenguaje, ciclo, anio, asignatura, cursando)) \"\"\"",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "ciclo",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "ciclo = 'DAM'\nanio = 2\ncursando = True\n# print(palabra + \" \"+lenguaje)\n# Este contenido es para el curso de SGE en el ciclo de DAM 2 y en concreto para la asignatura SGE que esta cursando True\n\"\"\" print('Este contenido es para el curso de %s en %s en el ciclo de %s %d y en concreto para la asignatura %s que esta cursando' %\n      (asignatura, lenguaje, ciclo, anio, asignatura)) \"\"\"\n\"\"\" print('Este contenido es para el curso de {} en {} en el ciclo de {} {} y en concreto para la asignatura {} que esta cursando {}'.format(\n    asignatura, lenguaje, ciclo, anio, asignatura, cursando)) \"\"\"\nprint(",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "anio",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "anio = 2\ncursando = True\n# print(palabra + \" \"+lenguaje)\n# Este contenido es para el curso de SGE en el ciclo de DAM 2 y en concreto para la asignatura SGE que esta cursando True\n\"\"\" print('Este contenido es para el curso de %s en %s en el ciclo de %s %d y en concreto para la asignatura %s que esta cursando' %\n      (asignatura, lenguaje, ciclo, anio, asignatura)) \"\"\"\n\"\"\" print('Este contenido es para el curso de {} en {} en el ciclo de {} {} y en concreto para la asignatura {} que esta cursando {}'.format(\n    asignatura, lenguaje, ciclo, anio, asignatura, cursando)) \"\"\"\nprint(\n    f'Este contenido es para el curso de {asignatura} en {lenguaje} en el ciclo de {ciclo} {anio} y en concreto para la asignatura {asignatura} que esta cursando {cursando}')",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "cursando",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "cursando = True\n# print(palabra + \" \"+lenguaje)\n# Este contenido es para el curso de SGE en el ciclo de DAM 2 y en concreto para la asignatura SGE que esta cursando True\n\"\"\" print('Este contenido es para el curso de %s en %s en el ciclo de %s %d y en concreto para la asignatura %s que esta cursando' %\n      (asignatura, lenguaje, ciclo, anio, asignatura)) \"\"\"\n\"\"\" print('Este contenido es para el curso de {} en {} en el ciclo de {} {} y en concreto para la asignatura {} que esta cursando {}'.format(\n    asignatura, lenguaje, ciclo, anio, asignatura, cursando)) \"\"\"\nprint(\n    f'Este contenido es para el curso de {asignatura} en {lenguaje} en el ciclo de {ciclo} {anio} y en concreto para la asignatura {asignatura} que esta cursando {cursando}')\npalabra = 'Esto es un ejemplo de palabra para evaluarla en'",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "palabra",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "palabra = 'Esto es un ejemplo de palabra para evaluarla en'\ncorreo = 'borja@univearsidadeuropea.es'\n# print(len(asignaturas))\n# print(palabra[0])\nprint(palabra[len(palabra)-1])\nposicion = correo.index('@')\nnombreUsuario = correo[0:posicion]\ndominio = correo[posicion+1:len(correo)]\nprint(nombreUsuario)\nprint(dominio.capitalize())",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "correo",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "correo = 'borja@univearsidadeuropea.es'\n# print(len(asignaturas))\n# print(palabra[0])\nprint(palabra[len(palabra)-1])\nposicion = correo.index('@')\nnombreUsuario = correo[0:posicion]\ndominio = correo[posicion+1:len(correo)]\nprint(nombreUsuario)\nprint(dominio.capitalize())\nprint(correo.count('ea'))",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "posicion",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "posicion = correo.index('@')\nnombreUsuario = correo[0:posicion]\ndominio = correo[posicion+1:len(correo)]\nprint(nombreUsuario)\nprint(dominio.capitalize())\nprint(correo.count('ea'))\nprint(correo.endswith('es'))\nprint(correo.find('x'))\n# borja - 0:4\n# universidadeuropea.es 5:final",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "nombreUsuario",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "nombreUsuario = correo[0:posicion]\ndominio = correo[posicion+1:len(correo)]\nprint(nombreUsuario)\nprint(dominio.capitalize())\nprint(correo.count('ea'))\nprint(correo.endswith('es'))\nprint(correo.find('x'))\n# borja - 0:4\n# universidadeuropea.es 5:final\n# Coleccion list",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "dominio",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "dominio = correo[posicion+1:len(correo)]\nprint(nombreUsuario)\nprint(dominio.capitalize())\nprint(correo.count('ea'))\nprint(correo.endswith('es'))\nprint(correo.find('x'))\n# borja - 0:4\n# universidadeuropea.es 5:final\n# Coleccion list\n# [1,2,123,123,123,123,123,123]",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "numeros",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\ndel numeros[-1]\nprint(numeros)\nnumeros.remove(8)\n# lo borra y lo retorna\nprint(f'El numero {numeros.pop(0)} ha sido borrado con exito')\n# print(numeros[-1])\nprint(numeros[len(numeros)-1])\nprimeros = numeros[0:5]\nprint(numeros)",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "primeros",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "primeros = numeros[0:5]\nprint(numeros)\nprint(primeros)\npalabras = list()\npalabras.append('primera')\npalabras.append('segunda')\npalabras.append('tercera')\npalabras.extend(['cuarta', 'quinta', 'sexta'])\npalabras.insert(0, \"Dato\")\nprint(palabras)",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "palabras",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "palabras = list()\npalabras.append('primera')\npalabras.append('segunda')\npalabras.append('tercera')\npalabras.extend(['cuarta', 'quinta', 'sexta'])\npalabras.insert(0, \"Dato\")\nprint(palabras)\nresultado = [\"4\", \"5\", \"6\"] + [\"1\", \"2\", \"3\"]\nresultado = [\"4\", \"5\", \"6\"] * 4\nprint(resultado)",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "resultado",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "resultado = [\"4\", \"5\", \"6\"] + [\"1\", \"2\", \"3\"]\nresultado = [\"4\", \"5\", \"6\"] * 4\nprint(resultado)",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "resultado",
+        "kind": 5,
+        "importPath": "inicio",
+        "description": "inicio",
+        "peekOfCode": "resultado = [\"4\", \"5\", \"6\"] * 4\nprint(resultado)",
+        "detail": "inicio",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "tuplas",
+        "description": "tuplas",
+        "peekOfCode": "tupla = (1, 2, 3, 4, 5, 6, 7, 1, 23, 2, 2, 21, 31, 231, 123, 423)\n# listaTupla = tuple([1,2,3,4,5,6,7])\nprint(type(tupla))\nprint(tupla.index(2))  # posicion del elemento indicado\nprint(tupla.count(1))  # numero de elementos",
+        "detail": "tuplas",
+        "documentation": {}
+    }
+]
