@@ -1,0 +1,11 @@
+<!-- <alimentos>
+    <legumbres>
+        <garbanzos tipo="cocidos" calorias="1090">Garbanzos</garbanzos>
+        <lentejas tipo="estofadas" calorias="546">Lentejas</lentejas>
+    </legumbres>
+</alimentos> -->
+
+<alimentos>
+    <alimento tipo="legumbre" coccion="cocidos" calorias="1023">Ganbanzo</alimento>
+    <alimento tipo="verdura" coccion="blancos" calorias="55">Esparragos</alimento>
+</alimentos>

@@ -1,0 +1,21 @@
+<!-- prologo -->
+
+<!-- contenido -->
+<concesionario>
+    <item tipo="coche" estado="nuevo">
+        <marca>Ford</marca>
+        <modelo>Mustang</modelo>
+    </item>
+    <item tipo="moto" estado="nuevo">
+        <marca>Aprilia</marca>
+        <modelo>RS400</modelo>
+    </item>
+    <item tipo="coche" estado="usado">
+        <marca>Opel</marca>
+        <modelo>Astra</modelo>
+    </item>
+    <item tipo="moto" estado="nuevo">
+        <marca>Yamaha</marca>
+        <modelo>RT542</modelo>
+    </item>
+</concesionario>
