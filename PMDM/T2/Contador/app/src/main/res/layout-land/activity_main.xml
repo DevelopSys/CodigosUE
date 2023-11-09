@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:text="0"
+        android:layout_weight="0.25"
+        android:textSize="100sp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/texto_contador"
+        />
+
+    <Button
+        android:textSize="100sp"
+        android:layout_weight="0.25"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="+"
+        android:id="@+id/boton_incremento"
+        />
+
+    <Button
+        android:textSize="100sp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:text="-"
+        android:id="@+id/boton_decremento"
+        />
+
+
+    <Button
+        android:textSize="100sp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:text="R"
+        android:id="@+id/boton_reset"
+        />
+
+
+</LinearLayout>
