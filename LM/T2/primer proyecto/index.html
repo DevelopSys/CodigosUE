@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Contenido grafico de la pagina -->
+    <!-- etiquetas <nombre attr='valores'>contenido</nombre> -->
+    <h1>Titulo</h1>
+    <p>
+      Esto es un ejemplo de como funciona un parrafo en HTML con texto en
+      <b>negrita</b> con <i>cursiva</i> y <u>subrayado</u>
+    </p>
+    <blockquote>esto es una nota que mete un margen</blockquote>
+    <hr />
+    <h2>Titulo secundario</h2>
+    <p>
+      Esto es otra linea del parrafo con un superindice<sup>4</sup> y un
+      subindice<sub>7</sub>
+    </p>
+    <p>Voy a comenzar a escribir una lista desordenada</p>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento $</li>
+    </ul>
+    <p>Voy a comenzar a escribir una lista ordenada</p>
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>Elemento 5</li>
+      <li>Elemento 6</li>
+    </ol>
+
+    <p>Voy a comenzar a escribir una lista de descripcion</p>
+    <dl>
+      <dt>Elemento1</dt>
+      <dd>Descripcion1</dd>
+      <dt>Elemento2</dt>
+      <dd>Descripcion2</dd>
+    </dl>
+
+    <h1>Tablas</h1>
+    <table border="1">
+      <colgroup span="1" style="background-color: aqua"></colgroup>
+      <colgroup span="2" style="background-color: antiquewhite"></colgroup>
+      <thead>
+        <th>Celda cabecera 1</th>
+        <th>Celda cabecera 2</th>
+        <th>Celda cabecera 3</th>
+      </thead>
+      <tbody>
+        <!-- fila -->
+        <tr style="background-color: blue">
+          <td>Celda 1.1</td>
+          <td>Celda 1.2</td>
+          <td rowspan="2">Celda 1.3</td>
+        </tr>
+        <tr>
+          <td>Celda 2.1</td>
+          <td>Celda 2.2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Resultado 2.1</td>
+          <td colspan="2">Resultado 2.2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <img
+      src="https://www.motor.mapfre.es/media/2018/05/cual_es_el_mejor_coche_del_ano_2018.jpg"
+      style="width: 50%"
+    />
+
+    <h1>Formulario</h1>
+
+    <form>
+      <input type="text" placeholder="por favor introduce dato" /><br />
+      <input type="number" placeholder="por favor selecciona numero" /><br />
+      <input type="date" placeholder="por favor selecciona fecha" /><br />
+      <input type="radio" name="grupo1" />
+      <label>Opcion 1</label>
+      <input type="radio" name="grupo1" />
+      <label>Opcion 2</label>
+      <input type="radio" name="grupo1" />
+      <label>Opcion 3</label><br />
+      <select>
+        <option>Opcion 1</option>
+        <option>Opcion 2</option>
+        <option>Opcion 3</option>
+        <option>Opcion 4</option></select
+      ><br />
+      <button>Pulsar</button>
+    </form>
+  </body>
+</html>
