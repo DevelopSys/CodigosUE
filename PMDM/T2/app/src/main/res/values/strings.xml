@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Listados</string>
+    <string name="mensaje_datos">Faltan datos</string>
+    <string-array name="perfiles">
+        <item>Administrador</item>
+        <item>Usuario</item>
+        <item>Invitado</item>
+    </string-array>
+</resources>
