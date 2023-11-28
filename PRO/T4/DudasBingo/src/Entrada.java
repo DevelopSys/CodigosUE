@@ -5,6 +5,8 @@ public class Entrada {
         // carton -> array
         int[] carton = new int[10]; // 8 5
         int[] numerosBingo = new int[99]; // 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+        // pido un numero incial = 65; -> Scanner
+
 
         // rellenar el carton
         // aleatorio -> Math.random()*99 [0-98]+1 -> 1 al 99
@@ -25,7 +27,6 @@ public class Entrada {
             } while (comprobacion);
             carton[i] = numero;
         }
-
         // comprobar si un numero esta? -> 8
 
         boolean estaNumero = false;
@@ -42,6 +43,17 @@ public class Entrada {
             System.out.println("El numero no esta en el carton");
         }
 
+
+        // genero numero bingo
+            // compruebo si no ha salido
+                // compruebo si esta en mi carton
+                    // si esta ++ aciertos
+                // vueltas ++
+
+        // cuando tenga 10 aciertos
+            // el numero de vuletas == apuesta
+                // bote
+                // has ganado
 
         // solucion decrementar
 
