@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.RadioButton
 import com.example.listados.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
+import java.util.Date
 
 class MainActivity : AppCompatActivity(), OnClickListener {
 
@@ -26,7 +27,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     override fun onClick(v: View?) {
         when(v?.id){
             binding.botonLimpiar.id->{
-
             }
             binding.botonLogin.id->{
 

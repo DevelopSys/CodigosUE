@@ -28,7 +28,6 @@
 
 
 
-
     <TextView
         android:id="@+id/texto_saludo"
         android:layout_width="wrap_content"
@@ -101,6 +100,7 @@
     </RadioGroup>
 
     <Button
+        style="@style/BotonesPersonalizados"
         android:id="@+id/boton_limpiar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -111,6 +111,8 @@
         app:layout_constraintTop_toBottomOf="@+id/grupo_perfil" />
 
     <Button
+        style="@style/BotonesPersonalizados"
+
         android:id="@+id/boton_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

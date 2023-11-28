@@ -1,0 +1,28 @@
+p{
+    color: #cf7940;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: underline;
+}
+h1{
+    text-align: end;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+li.link_uno{
+    background-color: blueviolet;
+}
+
+.link_dos{
+    background-color: brown;
+}
+
+.link_uno{
+    font-size: 20px;
+}
+
+

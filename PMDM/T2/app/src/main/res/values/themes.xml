@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.Listados" parent="Base.Theme.Listados" />
+    <style name="BotonesPersonalizados">
+        <item name="backgroundTint">@color/fondo_boton</item>
+        <item name="android:textSize">25sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
 </resources>
