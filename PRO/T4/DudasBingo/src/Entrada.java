@@ -49,11 +49,11 @@ public class Entrada {
             // ya esta en la lista? -> recorrerla y ver si esta -> true o false
             // es par? -> meter en la lista es impar-> sacar otro numero
             int numero = (int) (Math.random() * 99) + 1;
-            if (numero == posicionAnterior) {
+            /*if (numero == posicionAnterior) {
                 i--;
             } else {
 
-            }
+            }*/
             // recorrer la lista -> for -> true/false
 
             carton[i] = numero;
