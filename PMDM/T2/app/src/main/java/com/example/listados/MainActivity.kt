@@ -1,5 +1,6 @@
 package com.example.listados
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.RadioButton
 import com.example.listados.databinding.ActivityMainBinding
+import com.example.listados.model.Usuario
 import com.google.android.material.snackbar.Snackbar
 import java.util.Date
 
@@ -18,10 +20,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
-
+        binding.botonLogin.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -40,6 +39,16 @@ class MainActivity : AppCompatActivity(), OnClickListener {
                     val perfil = binding.spinnerPerfil.selectedItem.toString()
                     val visibilidad = findViewById<RadioButton>(binding.grupoPerfil.checkedRadioButtonId)
                         .text.toString()
+
+                    // cambiar de pantalla -> accion INTENT
+                    val intent: Intent = Intent(applicationContext,SecondActivity::class.java)
+                    // asociar clave valor
+                    intent.putExtra("usuario",Usuario(correo,pass, perfil, visibilidad))
+                    startActivity(intent)
+
+                    // (origen, destino)
+                    // (accion, datos(URI))
+
                 } else {
 
                     Snackbar.make(
@@ -52,4 +61,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             }
         }
     }
+
+
 }
