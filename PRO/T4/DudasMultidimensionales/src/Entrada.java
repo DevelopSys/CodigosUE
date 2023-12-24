@@ -38,7 +38,7 @@ public class Entrada {
         do {
             esMagico = true;
             rellenarCuadrado();
-            mostrarCuadrado();
+            //mostrarCuadrado();
 
             // comprobar filas
             for (int i = 1; i < cuadradoMagico.length; i++) {
@@ -53,7 +53,7 @@ public class Entrada {
                         break;
                     }
                 }
-                System.out.println("Suma auxiliar es " + sumaAuxiliar);
+                //System.out.println("Suma auxiliar es " + sumaAuxiliar);
                 if (!esMagico) {
                     break;
                 }
@@ -129,7 +129,7 @@ public class Entrada {
         for (int i = 0; i < cuadradoMagico.length; i++) {
             sumaMagica += cuadradoMagico[0][i];
         }
-        System.out.println("La suma mágica es " + sumaMagica);
+        //System.out.println("La suma mágica es " + sumaMagica);
     }
 
 }
