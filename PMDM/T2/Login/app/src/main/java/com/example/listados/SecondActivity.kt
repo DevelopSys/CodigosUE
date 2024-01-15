@@ -3,6 +3,8 @@ package com.example.listados
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
@@ -14,7 +16,8 @@ import com.example.listados.model.Contacto
 import com.example.listados.model.Usuario
 import com.google.android.material.snackbar.Snackbar
 
-class SecondActivity : AppCompatActivity() {
+// TODO. PASO 5: Implemento la interfaz en el destino de la comunicacion
+class SecondActivity : AppCompatActivity(), UsersAdapter.OnRecyclerUsuarioListener {
 
     private lateinit var binding: ActivitySecondBinding
     private lateinit var usuarioRecuperado: Usuario
@@ -26,20 +29,17 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySecondBinding.inflate(layoutInflater)
         listaUsuarios = ArrayList();
-        listaUsuarios.add(Contacto("Borja1","MArtin",1234,R.drawable.imagen1))
-        listaUsuarios.add(Contacto("Borja2","MArtin",1234,R.drawable.imagen2))
-        listaUsuarios.add(Contacto("Borja3","MArtin",1234,R.drawable.imagen3))
-        listaUsuarios.add(Contacto("Borja4","MArtin",1234,R.drawable.imagen3))
-        listaUsuarios.add(Contacto("Borja5","MArtin",1234,R.drawable.imagen3))
-        listaUsuarios.add(Contacto("Borja6","MArtin",1234,R.drawable.imagen3))
 
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+
+
         usersAdapter = UsersAdapter(listaUsuarios, this);
-        listaUsuarios.add(Contacto("Borja6","MArtin",1234,R.drawable.imagen3))
-        usersAdapter.notifyItemInserted(listaUsuarios.size-1)
 
         usuarioRecuperado = intent.extras!!.getSerializable("usuario") as Usuario
-        binding.textoUsuario.text = usuarioRecuperado.correo
+        supportActionBar!!.title = "Bienvenido ${usuarioRecuperado.correo}"
+        //binding.textoUsuario.text = usuarioRecuperado.correo
 
         binding.spinnerGenero.onItemSelectedListener = object : OnItemSelectedListener {
             override fun onItemSelected(
@@ -64,11 +64,42 @@ class SecondActivity : AppCompatActivity() {
                 applicationContext, LinearLayoutManager.VERTICAL,
                 false
             )
+
         // parte datos -> Adapter RecyclerView.Adapter<ViewHolder>
 
 
-        binding.botonLogout.setOnClickListener {
+        /*binding.botonAgregar.setOnClickListener {
+            usersAdapter.addContact(Contacto("Nombre", "Apellido", 123123, R.drawable.imagen1))
+        }*/
+        /*binding.botonLogout.setOnClickListener {
             finish()
+        }*/
+    }
+
+    override fun onContactoSelected(contacto: Contacto) {
+        Snackbar.make(
+            binding.root, "Conctacto recibido con nombre ${contacto.nombre}",
+            Snackbar.LENGTH_SHORT
+        ).show()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            R.id.menu_add->{
+                usersAdapter.addContact(Contacto("Nombre", "Apellido", 123123, R.drawable.imagen1))
+            }
+            R.id.menu_logout->{
+                finish()
+            }
+            R.id.menu_filtrar->{}
         }
+
+        return true
     }
 }

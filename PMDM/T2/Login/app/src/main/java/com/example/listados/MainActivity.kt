@@ -12,7 +12,7 @@ import com.example.listados.model.Usuario
 import com.google.android.material.snackbar.Snackbar
 import java.util.Date
 
-class borjaMainActivity : AppCompatActivity(), OnClickListener {
+class MainActivity : AppCompatActivity(), OnClickListener {
 
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
