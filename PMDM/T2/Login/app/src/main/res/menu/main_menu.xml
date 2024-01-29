@@ -19,4 +19,9 @@
         android:id="@+id/menu_filtrar"
         />
 
+    <item
+        android:title="Ayuda"
+        android:id="@+id/menu_ayuda"
+        />
+
 </menu>

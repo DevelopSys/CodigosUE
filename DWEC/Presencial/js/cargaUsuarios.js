@@ -1,12 +1,19 @@
-let boton = document.querySelector("button");
+let agregar = document.querySelector("#agregar");
+let borrar = document.querySelector("#borrar");
+let buscar = document.querySelector("#buscar");
+let modificar = document.querySelector("#modificar");
 let selectGenero = document.querySelector("#select-genero");
 let selectPais = document.querySelector("#select-pais");
 let inputResultados = document.querySelector("input");
 let resultados = document.querySelector("#resultados");
 
-boton.addEventListener("click", (e) => {
+buscar.addEventListener("click", (e) => {
   let url = `https://randomuser.me/api/?gender=${selectGenero.value}&results=${inputResultados.value}&nat=${selectPais.value}`;
   procesarPeticion(url);
+});
+
+agregar.addEventListener("click", () => {
+  agregarElemento();
 });
 
 async function procesarPeticion(url) {
@@ -18,7 +25,7 @@ async function procesarPeticion(url) {
   resultadoTotal.results.forEach((element, index) => {
     setTimeout(() => {
       resultados.innerHTML += ` <div class="col mt-3">
-        <div class="card animate__animated animate__fadeIn" style="width: 18rem">
+        <div class="card" style="width: 18rem">
           <img src='${element.picture.large}' class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">${element.name.first} ${element.name.last}</h5>

@@ -20,7 +20,7 @@ public class Entrada {
         DAOAlumno operacionesAlumnos = new DAOAlumno();
         DAOCurso operacionesCursos = new DAOCurso();
         //operacionesAlumnos.insertarAlumno(new Alumno("Nuevo", "Apellido", "correo@gmail.com", 123));
-        operacionesAlumnos.insertarAlumno(new Alumno("Nuevo",
+        /*operacionesAlumnos.insertarAlumno(new Alumno("Nuevo",
                 "Apellido",
                 "correo@gmail.com",
                 123,
@@ -35,6 +35,14 @@ public class Entrada {
                 new Direccion("Madrid", "Villaviciosa"), curso
                 ));
         operacionesCursos.insertarCurso(new Curso("dam","Desarrollo de aplicaciones multiplataforma"));
-        operacionesCursos.insertarCurso(new Curso("dam","Desarrollo de aplicaciones multiplataforma"));
+        operacionesCursos.insertarCurso(new Curso("dam","Desarrollo de aplicaciones multiplataforma"));*/
+        Curso curso = new Curso("AAAA","AAA");
+        operacionesAlumnos.insertarAlumno(new Alumno("Nuevo",
+                "Apellido",
+                "correo@gmail.com",
+                9999,
+                new Direccion("Madrid", "Getafe"),
+                new Direccion("Madrid", "Villaviciosa"), curso
+        ));
     }
 }

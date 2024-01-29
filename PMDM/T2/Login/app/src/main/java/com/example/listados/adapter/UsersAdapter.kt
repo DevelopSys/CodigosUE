@@ -1,7 +1,6 @@
 package com.example.listados.adapter
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,19 +8,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.example.listados.MainActivity
 import com.example.listados.R
 import com.example.listados.model.Contacto
-import com.example.listados.model.Usuario
-import com.google.android.material.snackbar.Snackbar
 
 class UsersAdapter(
-    val lista: ArrayList<Contacto>,
+    var lista: ArrayList<Contacto>,
     var context: Context
 ) : RecyclerView.Adapter<UsersAdapter.MyHolder>() {
 
     // TODO. PASO 4: Creo un objeto de la interfaz
     private lateinit var listener: OnRecyclerUsuarioListener
+    private lateinit var listaCompleta: ArrayList<Contacto>
+
 
     // TODO PASO 5: Inicializo la interfaz en el bloque que siempre se ejcuta
 
@@ -29,6 +27,7 @@ class UsersAdapter(
         // OnRecyclerUsuarioListener = Context --> OnRecyclerUsuarioListener
         // OnRecyclerUsuarioListener = (SecondActivity --> OnRecyclerUsuarioListener)
         listener = context as OnRecyclerUsuarioListener
+        listaCompleta = lista
     }
 
     class MyHolder(item: View) : ViewHolder(item) {
@@ -95,6 +94,24 @@ class UsersAdapter(
         this.lista.add(contact)
         notifyItemInserted(lista.size-1)
     }
+
+    fun filtrarLista(genero: String){
+        if (genero.equals("Todos")){
+            this.lista = listaCompleta
+        } else  {
+            this.lista = listaCompleta.filter {
+                it.genero.equals(genero, true)
+            } as ArrayList<Contacto>
+        }
+
+
+        // cambiada la lista
+        // notificar cambios
+        notifyDataSetChanged()
+
+    }
+
+
     // TODO: PASO 1 -> crear una interfaz en el origen de los datos
     interface OnRecyclerUsuarioListener{
         // TODO: PASO 2 -> crear un metodo con el dato a comunicar como param

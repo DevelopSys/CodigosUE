@@ -40,8 +40,8 @@ public class Alumno implements Serializable {
     })
     private Direccion direccionFacturacion;
 
-    @OneToOne
-    @JoinColumn(referencedColumnName = "id", name = "id_curso_alumno")
+    @OneToOne (cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_curso")
     private Curso curso;
 
     /*

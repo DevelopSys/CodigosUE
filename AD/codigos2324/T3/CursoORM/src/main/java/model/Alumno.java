@@ -1,9 +1,6 @@
 package model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,11 +17,11 @@ import java.io.Serializable;
 // entidad -> elemento que enBD representa una tupla de datos
 @Entity
 // tablas -> elemento que guardare en una tabla
-@Table (name = "alumnos")
+@Table(name = "alumnos")
 public class Alumno implements Serializable {
 
     @Id
-    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column
     private String nombre;
@@ -34,11 +31,31 @@ public class Alumno implements Serializable {
     private String correo;
     @Column
     private int telefono;
+    @Embedded
+    private Direccion direccion;
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "localidad", column = @Column(name = "localidad_fact")),
+            @AttributeOverride(name = "provincia", column = @Column(name = "provincia_fact"))
+    })
+    private Direccion direccionFacturacion;
 
-    // private direccion Direccion
+    @OneToOne (cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_curso")
+    private Curso curso;
 
-    // session.persiste(new Alumno("Borja","Martin","correo@gmail.com",123123))
-    // INSERT into alumnos (name, surname,mail, phone) VALUES ('Borja'.'Martin','correo@gmail',123123)
+    /*
+    * @Column
+    private String provincia;
+    @Column
+    private String localidad;
+    * */
+
+
+// private direccion Direccion
+
+// session.persiste(new Alumno("Borja","Martin","correo@gmail.com",123123))
+// INSERT into alumnos (name, surname,mail, phone) VALUES ('Borja'.'Martin','correo@gmail',123123)
 
     public Alumno(String nombre, String apellido, String correo, int telefono) {
         this.nombre = nombre;
@@ -47,4 +64,30 @@ public class Alumno implements Serializable {
         this.telefono = telefono;
     }
 
+    public Alumno(String nombre, String apellido, String correo, int telefono, Direccion direccion, Direccion direccionFacturacion, Curso curso) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.direccionFacturacion = direccionFacturacion;
+        this.curso = curso;
+    }
+
+    public Alumno(String nombre, String apellido, String correo, int telefono, Direccion direccion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.direccion = direccion;
+    }
+
+    public Alumno(String nombre, String apellido, String correo, int telefono, Direccion direccion, Direccion direccionFacturacion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.direccionFacturacion = direccionFacturacion;
+    }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".ui.activities.SecondActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -16,14 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Spinner
-        android:id="@+id/spinner_genero"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:entries="@array/generos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_usuarios"

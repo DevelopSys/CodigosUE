@@ -1,16 +1,15 @@
-package com.example.listados
+package com.example.listados.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.View.OnClickListener
-import android.widget.Button
 import android.widget.RadioButton
+import com.example.listados.R
 import com.example.listados.databinding.ActivityMainBinding
 import com.example.listados.model.Usuario
 import com.google.android.material.snackbar.Snackbar
-import java.util.Date
 
 class MainActivity : AppCompatActivity(), OnClickListener {
 
@@ -41,7 +40,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
                         .text.toString()
 
                     // cambiar de pantalla -> accion INTENT
-                    val intent: Intent = Intent(applicationContext,SecondActivity::class.java)
+                    val intent: Intent = Intent(applicationContext, SecondActivity::class.java)
                     // asociar clave valor
                     intent.putExtra("usuario",Usuario(correo,pass, perfil, visibilidad))
                     startActivity(intent)
