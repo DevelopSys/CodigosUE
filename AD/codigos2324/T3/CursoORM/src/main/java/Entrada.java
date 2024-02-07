@@ -18,7 +18,7 @@ public class Entrada {
         * */
 
         DAOAlumno operacionesAlumnos = new DAOAlumno();
-        DAOCurso operacionesCursos = new DAOCurso();
+        //DAOCurso operacionesCursos = new DAOCurso();
         //operacionesAlumnos.insertarAlumno(new Alumno("Nuevo", "Apellido", "correo@gmail.com", 123));
         /*operacionesAlumnos.insertarAlumno(new Alumno("Nuevo",
                 "Apellido",
@@ -36,13 +36,17 @@ public class Entrada {
                 ));
         operacionesCursos.insertarCurso(new Curso("dam","Desarrollo de aplicaciones multiplataforma"));
         operacionesCursos.insertarCurso(new Curso("dam","Desarrollo de aplicaciones multiplataforma"));*/
-        Curso curso = new Curso("AAAA","AAA");
-        operacionesAlumnos.insertarAlumno(new Alumno("Nuevo",
-                "Apellido",
-                "correo@gmail.com",
-                9999,
+        /*Curso curso = new Curso("AAAA","AAA");
+        operacionesAlumnos.insertarAlumno(new Alumno("Nuevo1",
+                "Apellido1",
+                "correo1@gmail.com",
+                1111,
                 new Direccion("Madrid", "Getafe"),
-                new Direccion("Madrid", "Villaviciosa"), curso
-        ));
+                new Direccion("Madrid", "Villaviciosa"), new Curso("NV","Nuevo")
+        ));*/
+        //operacionesAlumnos.getAlumnos();
+        operacionesAlumnos.getAlumno("qwe",4);
+        operacionesAlumnos.actualizarAlumno(1, "qwe");
+        operacionesAlumnos.borrarAlumno(1);
     }
 }

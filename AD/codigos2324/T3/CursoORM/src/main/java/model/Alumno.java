@@ -18,6 +18,12 @@ import java.io.Serializable;
 @Entity
 // tablas -> elemento que guardare en una tabla
 @Table(name = "alumnos")
+// QUERYS
+@org.hibernate.annotations.NamedQueries({
+        @org.hibernate.annotations.NamedQuery(name = "getAll",query = "from Alumno a"),
+        @org.hibernate.annotations.NamedQuery(name = "getById",query = "from Alumno a WHERE a.id=:id"),
+        @org.hibernate.annotations.NamedQuery(name = "removeById",query = "delete Alumno a WHERE a.id=:id")
+})
 public class Alumno implements Serializable {
 
     @Id

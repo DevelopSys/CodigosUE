@@ -14,10 +14,21 @@ import java.io.Serializable;
 @Getter
 @Setter
 
+
+
 // entidad -> elemento que enBD representa una tupla de datos
 @Entity
 // tablas -> elemento que guardare en una tabla
 @Table(name = "alumnos")
+
+@NamedQueries({
+        @NamedQuery(name = "alumno.getAll", query = "from Alumno a"),
+        @NamedQuery(name = "alumno.getByName",
+                query = "from Alumno a where a.nombre=:nombre"),
+        @NamedQuery(name="AlumnosRepetidores", query="select a from Alumno a where a.repetidor=true "),
+        @NamedQuery(name="AlumnosRangoEdad", query="select a from Alumno a where a.edad between :min and :max"),
+        @NamedQuery(name="AlumnosDescEdad", query="select a from Alumno a order by a.edad desc")
+})
 public class Alumno implements Serializable {
 
     @Id

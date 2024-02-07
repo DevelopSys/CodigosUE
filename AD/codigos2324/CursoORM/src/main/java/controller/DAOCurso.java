@@ -4,13 +4,14 @@ import database.HibernateUtil;
 import model.Curso;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.annotations.NamedQueries;
+import org.hibernate.annotations.NamedQuery;
 
 import java.util.Currency;
 
 public class DAOCurso {
 
     private SessionFactory sessionFactory;
-
     public DAOCurso(){
         sessionFactory = HibernateUtil.getSessionFactory();
     }
