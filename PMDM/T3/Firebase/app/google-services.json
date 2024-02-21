@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "250052954470",
+    "firebase_url": "https://bmh-ue2324-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "bmh-ue2324",
+    "storage_bucket": "bmh-ue2324.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250052954470:android:490ea33c9c79640ebfa0a7",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250052954470-ln6bmp7iet2r864ecrne4pmtcqivpi9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFEIjSzGPZfB5j8RB1LcWlHr18MtO0sG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250052954470-ln6bmp7iet2r864ecrne4pmtcqivpi9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

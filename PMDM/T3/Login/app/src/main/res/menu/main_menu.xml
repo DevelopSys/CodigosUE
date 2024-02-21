@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Cerrar sesion"
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/logout"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:title="Agregar usuario"
+        android:id="@+id/menu_add"
+        />
+
+    <item
+        android:title="Filtrar usuarios"
+        android:id="@+id/menu_filtrar"
+        />
+
+    <item
+        android:title="Ayuda"
+        android:id="@+id/menu_ayuda"
+        />
+
+</menu>

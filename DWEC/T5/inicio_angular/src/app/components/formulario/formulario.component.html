@@ -1,0 +1,38 @@
+<h2>Introduccion de datos</h2>
+<input
+  placeholder="introduce nombre"
+  class="form-control"
+  [(ngModel)]="nombreN"
+/>
+<input
+  placeholder="introduce apellido"
+  class="form-control"
+  [(ngModel)]="apellidoA"
+/>
+<input
+  placeholder="introduce telefono"
+  class="form-control"
+  [(ngModel)]="telefonoT"
+/>
+<input placeholder="introduce dni" class="form-control" [(ngModel)]="dniD" />
+<button class="btn btn-primary" (click)="agregarUsuario()">Agregar</button>
+
+@if (listaUsuarios.length>0) {
+<div class="alert alert-primary mt-3" role="alert">
+  El numero de usuarios es de {{ listaUsuarios.length }}
+</div>
+
+<ul class="list-group">
+  @for (item of listaUsuarios; track $index) {
+  <li class="list-group-item">
+    {{ item.nombre | uppercase }}
+    {{ item.apellido | slice : 0 : 1 | uppercase }}
+  </li>
+  }
+</ul>
+
+} @else {
+<div class="alert alert-warning mt-3" role="alert">
+  Aun no has agregado elementos
+</div>
+}

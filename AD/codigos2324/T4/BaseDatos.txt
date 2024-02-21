@@ -1,0 +1,11 @@
+alumnos
+    id (pk)
+    nombre
+    apellido
+    conocimientos {bajo,alto,medio}
+    direccion
+        calle
+        localidad
+        provincia
+        cp
+    email

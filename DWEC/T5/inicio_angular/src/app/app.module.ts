@@ -6,10 +6,14 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { FormsModule } from '@angular/forms';
+import { SeleccionComponent } from './components/seleccion/seleccion.component';
+import { InformacionComponent } from './components/informacion/informacion.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, FormularioComponent, SeleccionComponent, InformacionComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })

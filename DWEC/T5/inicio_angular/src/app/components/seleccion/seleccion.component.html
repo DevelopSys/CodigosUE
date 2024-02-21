@@ -1,0 +1,10 @@
+<h2>Selecciona que quieres ver</h2>
+<select class="form-select" [(ngModel)]="seleccionVista">
+  <option value="1">Formulario</option>
+  <option value="2">Principal</option>
+</select>
+@switch (seleccionVista) { @case ("1") {
+<app-formulario></app-formulario>
+} @case ("2") {
+<app-informacion></app-informacion>
+} }
