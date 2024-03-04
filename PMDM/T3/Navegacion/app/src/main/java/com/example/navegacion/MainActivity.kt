@@ -11,6 +11,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.example.navegacion.databinding.ActivityMainBinding
+import java.text.DateFormat
+import java.time.format.DateTimeFormatter
+import java.util.Date
 
 class MainActivity : AppCompatActivity() {
 
