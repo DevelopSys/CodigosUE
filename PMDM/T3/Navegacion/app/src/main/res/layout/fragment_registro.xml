@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="34dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu correo"
+        android:id="@+id/editCorreo"
+        />
+
+    <EditText
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu pass"
+        android:id="@+id/editPass"
+        />
+
+
+        <Button
+            android:layout_marginTop="48dp"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:id="@+id/botonRegistro"
+            />
+
+
+
+
+
+</LinearLayout>

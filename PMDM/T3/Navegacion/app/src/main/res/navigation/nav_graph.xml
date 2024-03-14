@@ -3,44 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
-
+    app:startDestination="@id/loginFragment">
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.navegacion.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
+        android:id="@+id/loginFragment"
+        android:name="com.example.navegacion.ui.fragments.LoginFragment"
+        android:label="@string/label_login"
+        tools:layout="@layout/fragment_login"
+        >
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment2"
-            app:destination="@id/SecondFragment" />
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment3"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
         <argument
-            android:name="nombre"
+            android:name="correo"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="password"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_main"
+        android:id="@+id/mainFragment"
+        android:name="com.example.navegacion.ui.fragments.MainFragment"
+        android:label="@string/label_main" >
+        <argument
+            android:name="correo"
             app:argType="string" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.navegacion.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
+        tools:layout="@layout/fragment_registro"
+        android:id="@+id/registroFragment"
+        android:name="com.example.navegacion.ui.fragments.RegistroFragment"
+        android:label="RegistroFragment" >
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment2"
-            app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment3"
-            app:destination="@id/FirstFragment" />
-        <argument
-            android:name="nombre"
-            app:argType="string" />
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
 </navigation>
