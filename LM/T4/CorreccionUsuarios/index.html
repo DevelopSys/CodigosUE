@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -20,54 +19,65 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <title>Document</title>
   </head>
   <body>
-    <div class="row">
-      <h1 style="text-align: center">Sistema gestor de trabajadores</h1>
-    </div>
-
-    <div class="row">
-      <div class="col m-3">
-        <input
-          id="input-nombre"
-          class="form-control"
-          type="text"
-          placeholder="introduce tu nombre"
-        />
-        <input
-          id="input-apellido"
-          class="form-control"
-          type="apellido"
-          placeholder="introduce tu apellido"
-        />
-        <input
-          id="input-correo"
-          class="form-control"
-          type="correo"
-          placeholder="introduce tu correo"
-        />
-        <select class="form-select" id="select-dpto">
-          <option>Administracion</option>
-          <option>Marketing</option>
-          <option>Ventas</option>
-          <option>IT</option>
-        </select>
-        <button class="btn btn-primary mt-3" id="boton-add">Agregar</button>
-      </div>
-      <div class="col">
-        <ul class="list-group" id="lista-trabajadores"></ul>
-      </div>
-    </div>
-    <div class="row">
-      <h1 style="text-align: center">Resultados de búsqueda</h1>
+    <main class="container">
       <div class="row">
-        <div class="col">Usuarios admin <span id="span-admin">0</span></div>
-        <div class="col">Usuarios mkt <span id="span-mkt">0</span></div>
-        <div class="col">Usuarios it <span id="span-it"></span>0</div>
-        <div class="col">Usuarios ventas <span id="span-ventas">0</span></div>
+        <h1 style="text-align: center">Sistema gestor de trabajadores</h1>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="col m-3">
+          <input
+            id="input-nombre"
+            class="form-control"
+            type="text"
+            placeholder="introduce tu nombre"
+          />
+          <input
+            id="input-apellido"
+            class="form-control"
+            type="apellido"
+            placeholder="introduce tu apellido"
+          />
+          <input
+            id="input-correo"
+            class="form-control"
+            type="correo"
+            placeholder="introduce tu correo"
+          />
+          <select class="form-select" id="select-dpto">
+            <option>Administracion</option>
+            <option>Marketing</option>
+            <option>Ventas</option>
+            <option>IT</option>
+          </select>
+          <button class="btn btn-primary mt-3" id="boton-add">Agregar</button>
+        </div>
+        <div class="col">
+          <ul class="list-group" id="lista-trabajadores"></ul>
+        </div>
+      </div>
+      <div class="row">
+        <h1 style="text-align: center">Resultados de búsqueda</h1>
+        <div class="row">
+          <div class="col">Usuarios admin <span id="span-admin">0</span></div>
+          <div class="col">Usuarios mkt <span id="span-mkt">0</span></div>
+          <div class="col">Usuarios it <span id="span-it"></span>0</div>
+          <div class="col">Usuarios ventas <span id="span-ventas">0</span></div>
+        </div>
+      </div>
+      <select class="form-select" id="select-dpto-busqueda">
+        <option>Administracion</option>
+        <option>Marketing</option>
+        <option>Ventas</option>
+        <option>IT</option>
+      </select>
+      <ul id="lista-filtro" class="list-group"></ul>
+    </main>
+
     <script src="./js/index.js"></script>
   </body>
 </html>

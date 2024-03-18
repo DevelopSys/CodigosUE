@@ -3,13 +3,39 @@ let inputNombre = document.querySelector("#input-nombre");
 let inputApellido = document.querySelector("#input-apellido");
 let inputCorreo = document.querySelector("#input-correo");
 let selectDpto = document.querySelector("#select-dpto");
+let selectDptoBusqueda = document.querySelector("#select-dpto-busqueda");
 let lista = document.querySelector("#lista-trabajadores");
+let listaFiltro = document.querySelector("#lista-filtro");
 let usuariosIT = [];
 let usuariosAdmin = [];
 let usuariosMkt = [];
 let usuariosVentas = [];
 boton.addEventListener("click", (e) => {
   agregarTrabajadaror();
+});
+
+selectDptoBusqueda.addEventListener("change", () => {
+  listaFiltro.innerHTML = "";
+  let dpt = [];
+
+  switch (selectDptoBusqueda.value) {
+    case "Administracion":
+      dpt = usuariosAdmin;
+      break;
+    case "Marketing":
+      dpt = usuariosMkt;
+      break;
+    case "Ventas":
+      dpt = usuariosVentas;
+      break;
+    case "IT":
+      dpt = usuariosIT;
+      break;
+  }
+
+  dpt.forEach((element) => {
+    listaFiltro.innerHTML += `<li>${element}</li>`;
+  });
 });
 
 function agregarTrabajadaror() {
@@ -38,11 +64,26 @@ function agregarTrabajadaror() {
         break;
     }
 
-    Swal.fire({
+    /* Swal.fire({
       title: "Usuario agregado",
       text: "Usuario agregado correctmente a la lista",
       icon: "success",
       timer: 2000,
+    }); */
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Datos del usuarios",
+      html: `
+      <ul class="list-group">
+        <li class="list-group-item">${inputNombre.value}</li>
+        <li class="list-group-item">${inputApellido.value}</li>
+        <li class="list-group-item">${inputCorreo.value}</li>
+      </ul>
+  `,
+      showConfirmButton: true,
+      timer: 5000,
     });
 
     resetearCampos();
@@ -67,7 +108,7 @@ function resetearCampos() {
 
 function actualizarContadores() {
   document.querySelector("#span-admin").textContent = usuariosAdmin.length;
-  document.querySelector("#span-it").textContent = usuariosAdmin.length;
-  document.querySelector("#span-mkt").textContent = usuariosAdmin.length;
-  document.querySelector("#span-ventas").textContent = usuariosAdmin.length;
+  document.querySelector("#span-it").textContent = usuariosIT.length;
+  document.querySelector("#span-mkt").textContent = usuariosMkt.length;
+  document.querySelector("#span-ventas").textContent = usuariosVentas.length;
 }
