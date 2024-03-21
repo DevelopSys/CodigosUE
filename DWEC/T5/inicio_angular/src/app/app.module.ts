@@ -12,11 +12,22 @@ import { SeleccionComponent } from './components/seleccion/seleccion.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { ImagenesPipe } from './pipes/imagenes.pipe';
+import { ProductosapiComponent } from './components/productosapi/productosapi.component';
+import { DatosapiService } from './service/datosapi.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, FormularioComponent, SeleccionComponent, InformacionComponent, ProductosComponent, ImagenesPipe],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [provideClientHydration()],
+  declarations: [
+    AppComponent,
+    FormularioComponent,
+    SeleccionComponent,
+    InformacionComponent,
+    ProductosComponent,
+    ImagenesPipe,
+    ProductosapiComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  providers: [provideClientHydration(), DatosapiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

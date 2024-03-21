@@ -1,0 +1,36 @@
+<select
+  class="form-select"
+  [(ngModel)]="categoriaSeleccionada"
+  (change)="cambioSeleccion()"
+>
+  @for (item of categorias; track $index) {
+  <option>{{ item }}</option>
+  }
+</select>
+
+<!-- <p>{{ mostrarDatos() | async }}</p> -->
+
+<div class="row">
+  @for (item of productos; track $index) {
+  <div class="col">
+    <div class="card m-3" style="width: 18rem">
+      <img
+        [src]="
+          item.thumbnail
+            | imagenes
+              : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqR6Ap_L-a5EsSeDCIPggUn1Tz-j0jI2tBvKITwqMfRv5tZuzCs3tT-QXnwgzz4h6Iq_k&usqp=CAU'
+        "
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text">
+          {{ item.description }}
+        </p>
+        <a href="#" class="btn btn-primary">Ver detalle</a>
+      </div>
+    </div>
+  </div>
+  }
+</div>
