@@ -1,0 +1,10 @@
+[
+    {"nombre": "Programacion", "horas":280, "conocimientos": ["poo","java","mysql","listas"], "curso": 1  },
+    {"nombre": "Lenguaj de marcas", "horas":170, "conocimientos": ["html","css","xml","js"], "curso": 1  }
+]
+
+{"nombre": "Introduccion a XML",
+  "contenido": ["Intoduccion","Deficion XML","Espacio de nombres, estructura","Validacion"],
+  "puntos" : 2,
+  "horas": 5,
+  "trocanl": true}

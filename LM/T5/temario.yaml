@@ -1,0 +1,16 @@
+temario: 
+- nombre: "Introduccion a XML"
+  contenido: ["Intoduccion","Deficion XML","Espacio de nombres, estructura","Validacion"]
+  puntos: 2
+  horas: 5
+  trocanl: true
+  
+- nombre: "HTML]"
+  contenido: ["HTML","CSS","Nodos"]
+  puntos: 4
+  horas: 10
+  trocanl: true
+  definicion: >
+    esto es un comentario que forma parte
+    de una segunda linea
+    pero al ser procesado lo trato como una sola linea

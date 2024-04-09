@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT asignatura (titulo+, tema+)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT tema (clases+)>
+<!ATTLIST tema titulo CDATA #REQUIRED>
+<!ELEMENT clases (clase+)>
+<!ELEMENT clase (#PCDATA)>
+<!ATTLIST clase titulo CDATA #REQUIRED>
