@@ -1,0 +1,2 @@
+Esto es un ejemplo de lectura de fichero de texto plano
+Esto es la segunda linea del fichero

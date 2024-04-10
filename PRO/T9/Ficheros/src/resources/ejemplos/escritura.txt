@@ -1,0 +1,2 @@
+Esto es una frase con printw
+Esto es la segunda frase
