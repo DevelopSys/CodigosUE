@@ -1,0 +1,1 @@
+Esto es un ejemplo de lectura de fichero para el simulacro de examen del 20 de abril

@@ -1,0 +1,19 @@
+<main class="container">
+  <h1>Primero proyecto de angular</h1>
+  <p>
+    Este proyecto ha sido realizado por {{ nombre }} para la asignatura
+    {{ asignatura }} en la clase presencial a las {{ hora }} horas
+  </p>
+
+  <input type="text" class="form-control" #inputNombre />
+  <button class="btn btn-primary" (click)="enviarDatos(inputNombre.value)">
+    Enviar datos
+  </button>
+
+  <app-uno></app-uno>
+  <app-uno></app-uno>
+  <app-uno></app-uno>
+  <app-uno></app-uno>
+  <app-uno></app-uno>
+  <app-dos></app-dos>
+</main>

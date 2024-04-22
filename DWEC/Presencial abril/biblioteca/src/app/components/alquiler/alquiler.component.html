@@ -1,0 +1,18 @@
+<h2>Alquiler de libros</h2>
+<div class="row">
+  <div class="col-5">
+    <select class="form-select">
+      <!-- pintar tantos options como elementos tenga en el servicio -->
+      @for (item of usuarios; track $index) {
+
+      <option>{{ item.nombre }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-5">
+    <select class="form-select"></select>
+  </div>
+  <div class="col-2">
+    <button class="btn btn-primary">Alquilar</button>
+  </div>
+</div>

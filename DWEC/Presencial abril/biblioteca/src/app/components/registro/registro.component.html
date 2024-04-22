@@ -1,0 +1,26 @@
+<h2>Registro de lector</h2>
+<input
+  [(ngModel)]="nombre"
+  class="form-control mb-2"
+  type="text"
+  placeholder="Introduce nombre de usuario"
+/>
+<input
+  [(ngModel)]="apellido"
+  class="form-control mb-2"
+  type="text"
+  placeholder="Introduce apellido de usuario"
+/>
+<input
+  [(ngModel)]="telefono"
+  class="form-control mb-2"
+  type="number"
+  placeholder="Introduce telefono de usuario"
+/>
+<input
+  class="form-control mb-2"
+  type="text"
+  placeholder="Introduce password"
+  [(ngModel)]="password"
+/>
+<button class="btn btn-primary" (click)="registrarUsuario()">Registrar</button>
