@@ -16,8 +16,17 @@ public class Entrada {
 
 
         AlumnoRepository alumnoRepository = new AlumnoRepository();
-        alumnoRepository.insertarAlumno(new Alumno("Borja ps", "Martin ps",
-                "correo ps", 123123));
+        //alumnoRepository.obtenerAlumnos();
+        // U -> 134 -> 356 -> ¢
+        // u -> 106 -> 312 -> (
+        // BorjaA1_
+        if (alumnoRepository.realizarLogin("borja@ue.com","UE2324")){
+            System.out.println("Login correcto");
+        } else {
+            System.out.println("fallo en credenciales");
+        }
+        //alumnoRepository.insertarAlumno(new Alumno("Borja ps", "Martin ps",
+                //"correo ps", 123123));
         /*alumnoRepository.insertarAlumno(new Alumno("Borja parametro", "Martin parametro",
                 "correo parametro", 123123));
         alumnoRepository.insertarAlumno(new Alumno("Borja parametro", "Martin parametro",

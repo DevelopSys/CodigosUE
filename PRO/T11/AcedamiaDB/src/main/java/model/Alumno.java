@@ -23,6 +23,20 @@ public class Alumno {
         this.telefono = telefono;
     }
 
+    public Alumno(String nombre, String apellido, int telefono) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.telefono = telefono;
+    }
+
+    public void mostrarDatos(){
+        System.out.println("id = " + id);
+        System.out.println("nombre = " + nombre);
+        System.out.println("apellido = " + apellido);
+        System.out.println("correo = " + correo);
+        System.out.println("telefono = " + telefono);
+    }
+
     public void agregarAlumno(){} //?????
     public void agregarProfesor(){} // ??????
 }
