@@ -1,0 +1,41 @@
+
+
+INTPUT 		->		 PROGRAMA	 ->		OUTPUT
+
+
+TECLADO
+
+Scanner(System.in) -> lectura teclado next() nextLine() nextInt() 
+BufferReader(System.in) -> lectura teclado -> String -> Intager.partseInt(lectura)
+
+FICHERO 
+
+
+FILE
+	- logico: ruta que yo le doy (puede o no existir, si no existe, no tengo un nullpointer)
+	- fisico: el fichero real, donde esta guardada la informacion en almacenamiento externo
+
+
+Texto plano: txt -> ASCII 123 243
+entradas - lecturas
+FileReader -> caracter a caracter
+BufferReader -> linea a linea
+
+salidas - escritura
+FilwWriter -> 123 -> {
+PrintWriter -> esto es un ejemplo
+
+Binarios .bin
+entradas - lecturas
+DataInput -> 6 int true -> boolean
+
+salidas - escritura
+DataOutput -> int boolean
+
+Objetos - Serializable - serialVersionUID = 123123123L
+entadas - lecturas
+ObjectInput - 6 ->int Persona@1234F -> Object
+
+salidas - escrituras
+ObjectOutput
+Persona("Borja","Martin",1234,true) -> Object
