@@ -1,0 +1,28 @@
+ACTIVITY -> PANTALLA
+	LOGICA -> .KT -> CLASS
+	GRAFICA -> .XML -> LAYOUT
+
+ACTIVITY -> PANTALLA
+	LOGICA -> .KT -> CLASS
+	GRAFICA -> .XML -> LAYOUT
+
+
+ACTIVITY -> PANTALLA
+	LOGICA -> .KT -> CLASS
+	GRAFICA -> .XML -> LAYOUT
+
+ACCESO A RECURSOS
+
+	.KT ->  R.string.pulsar
+			R.layount.activity_main
+			R.color.blue_primary
+			todos los elementos de la clase R son NUMERO
+			resources.getString(R.string.pulsar) -> el string
+			resources.getColor(R.color.blue) -> el string
+
+	.XML -> @string/pulsar -> "Pulsar"
+			@color/blue -> #21323FA
+
+
+
+

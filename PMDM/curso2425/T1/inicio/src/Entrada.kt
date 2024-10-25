@@ -1,6 +1,16 @@
 // class Entrada{ psvm(){// cuerpo}}
 // fun nombre( nombreArgs: Tipo, nombreArgs: Tipo, nombreArgs: Tipo ): Retorno  { CUERPO }
 fun main() {
+
+    var especializado = UsuarioEspecializado("Borja","Martin",123)
+    especializado.mostrarDatos()
+    var usuario = Usuario("Borja","Martin")
+    var usuario2 = Usuario("Borja","Martin", correo = "asd") // null
+    var usuario3 = Usuario("Borja","Martin",1234)
+    usuario.nombre = "Juan"
+    usuario.correo; // null
+    usuario2.correo // correo@gmail.com
+
     println("Primera app kotlin")
     println("Introduce tu nombre")
 
