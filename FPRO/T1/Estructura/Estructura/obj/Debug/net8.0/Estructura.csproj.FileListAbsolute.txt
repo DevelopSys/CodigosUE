@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/bin/Debug/net8.0/Estructura
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/bin/Debug/net8.0/Estructura.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/bin/Debug/net8.0/Estructura.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/bin/Debug/net8.0/Estructura.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/bin/Debug/net8.0/Estructura.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/Estructura.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/Estructura.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/Estructura.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/Estructura.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/Estructura.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/Estructura.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/refint/Estructura.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/Estructura.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/Estructura.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T1/Estructura/Estructura/obj/Debug/net8.0/ref/Estructura.dll
