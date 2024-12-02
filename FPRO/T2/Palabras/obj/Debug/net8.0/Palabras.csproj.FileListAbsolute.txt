@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/Palabras.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/Palabras.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/Palabras.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/Palabras.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/Palabras.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/bin/Debug/net8.0/Palabras
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/bin/Debug/net8.0/Palabras.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/bin/Debug/net8.0/Palabras.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/bin/Debug/net8.0/Palabras.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/bin/Debug/net8.0/Palabras.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/Palabras.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/refint/Palabras.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/Palabras.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/Palabras.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Palabras/obj/Debug/net8.0/ref/Palabras.dll
