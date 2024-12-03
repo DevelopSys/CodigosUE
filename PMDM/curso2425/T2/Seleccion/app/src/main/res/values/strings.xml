@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Seleccion</string>
+    <string-array name="marcas">
+        <item>Mercedes</item>
+        <item>Audi</item>
+        <item>VW</item>
+        <item>Ford</item>
+        <item>Fiat</item>
+    </string-array>
+
 </resources>

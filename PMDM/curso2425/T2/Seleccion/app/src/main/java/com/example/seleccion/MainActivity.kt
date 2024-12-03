@@ -41,14 +41,14 @@ class MainActivity : AppCompatActivity(), OnClickListener,
                     "El estado del toggle es ${binding.toggleSeleccion.isChecked}",
                     Snackbar.LENGTH_SHORT
                 ).show()*/
-                binding.toggleSeleccion.isChecked = !binding.toggleSeleccion.isChecked
+                /*binding.toggleSeleccion.isChecked = !binding.toggleSeleccion.isChecked
                 val seleccionado: RadioButton =
                     findViewById(binding.grupoRadios.checkedRadioButtonId)
                 Snackbar.make(
                     binding.root,
                     "El seleccionado es ${seleccionado.text}",
                     Snackbar.LENGTH_SHORT
-                ).show()
+                ).show()*/
                 /*val seleccionado: Int = binding.grupoRadios.checkedRadioButtonId
                 when(seleccionado){
                     binding.radio1.id->{}

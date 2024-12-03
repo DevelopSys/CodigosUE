@@ -21,6 +21,12 @@
         }
 
         Console.WriteLine(palabraGenerada);
+        palabraGenerada = "Esto es un ejemplo";
+        // correo@gmail.com // gmail
+        // palabraGenerada.Split("@")[1].Split(".")[0]; // [E,sto e,s un ejemplo]
+        string[] corte = palabraGenerada.Split("@");
+        
+        
 
     }
 
