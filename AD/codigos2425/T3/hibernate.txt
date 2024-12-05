@@ -1,0 +1,42 @@
+CLIENTE - trabaja con objetos							BASE DATOS - trabaja con tblas, filas columnas 
+					ORM		jdbc:mysql://localhost/database
+
+El modo de trabajar es: 
+	1. el cliente le dá un objeto al orm,
+	2. el orm lo traduce y se lo dá al jdbc
+	3. el jdbc lo transacciona a la base de datos
+
+ORM -> Hibernate -> OQL -> HQL Lenguaje de consulta de hibernate
+
+SessionFactory
+Session
+	currentSession
+	beginTransaction
+	accion
+		persist
+		get
+		delete
+		update
+	commit
+	close
+
+Estructura del proyecto
+
+	src
+		MODEL -> clases que representan todos los datos que quiero manejar en el proyecto
+		DAO -> las clases (una por modelo) que permiten trabajar con las acciones de database del modelo correspondiente
+		DATABASE -> conexion con la database o fichero que permite arrancar la conexión con el dao -> Singleton
+
+MODEL - requisitos
+
+implements serializable
+variables privadas
+constructor con todo
+constructor sin nada
+getter y setter
+
+MODEL - anotaciones de hibernate
+@Entity -> indica que la clase será asociada a la tabla con ese nombre. Si cambia, poner @Entity(name="nombre_tabla")
+@Column -> indica que ese atributo irá a la columna con ese nombre. poner @Column(name="nombre_columna")
+@Id
+@GeneratedValue -> indica que ese atributo se asocia a un PK y es autoincremental
