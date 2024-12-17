@@ -1,0 +1,29 @@
+Array elementos[]
+
+	- tipado -> int[] Object[]
+	- Listas fijas -> [8] {"elemento","elemento","elemente"}
+	- Colocados segun posiciones
+	[posicion0, posicion1, posicion2] [0 - 2]
+	
+	Añadir un dato -> NO SE PUEDE, SOLO SE PUEDE MODIFICAR
+		elementos[2] = null
+
+
+List -> C#
+
+	- dato complejo: List lista = new List() -> [ ] -> cuenta = 2
+	- tipado List<string>
+	- Listas dinámicas -> pueden cambiar su tamaño [elemento,otromas] -> 2. Guarda la capacidad e 4 en 4
+	- Colocados segun posiciones
+	- puedo utilizar metodos: add, remove, removeAt, find, findAll, clear
+	- estos metodos son "metodos normales" o tambien indicados con funciones de flecha
+
+	Añadir un dato -> Add(elemento)
+	Cuantos elementos hay en la lista -> listaPalabras.Count
+	Cantidad de "huecos" reservados -> Capacity
+	Añadir datos multiples -> AddRange(coleccion)
+	
+
+
+
+

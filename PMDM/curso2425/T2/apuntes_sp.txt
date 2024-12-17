@@ -1,0 +1,18 @@
+spinner
+	basico -> string -> @entries
+	dinamico -> cualquier, no personalizado -> ArrayAdapter<Tipos>
+	dinamico pero personalizado -> con cambio de XML -> clase: BaseAdapter
+		logo nombre
+		1 - creo el xml que tendran todas las filas
+		2 - creo el modelo del dato que voy a representar dentro del spinner
+		3 - creo el adaptador -> los datos y como se representarn
+		4 - junto el adapter con el spinner
+
+
+Android 
+	jdk sdk -> funcionalidad base
+	librerias: conjunto de clases con metodos y atributos que me dan objetos adicionales para poder hacer funcionalidad extra
+	
+	
+
+

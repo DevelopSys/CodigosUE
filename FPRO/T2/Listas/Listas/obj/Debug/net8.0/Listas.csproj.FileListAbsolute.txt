@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/bin/Debug/net8.0/Listas
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/bin/Debug/net8.0/Listas.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/bin/Debug/net8.0/Listas.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/bin/Debug/net8.0/Listas.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/bin/Debug/net8.0/Listas.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/Listas.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/Listas.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/Listas.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/Listas.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/Listas.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/Listas.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/refint/Listas.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/Listas.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/Listas.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/Debug/net8.0/ref/Listas.dll
