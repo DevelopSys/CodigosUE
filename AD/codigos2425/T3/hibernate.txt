@@ -13,10 +13,10 @@ Session
 	currentSession
 	beginTransaction
 	accion
-		persist
-		get
-		delete
-		update
+		persist,merge
+		get -> solo por id, si quiero un filtro avanzado -> HQL
+		delete -> solo por id, si quiero un filtro avanzado -> HQL
+ 		update,merge  -> solo por id, si quiero un filtro avanzado -> HQL
 	commit
 	close
 
@@ -36,7 +36,36 @@ constructor sin nada
 getter y setter
 
 MODEL - anotaciones de hibernate
-@Entity -> indica que la clase será asociada a la tabla con ese nombre. Si cambia, poner @Entity(name="nombre_tabla")
+@Entity -> indica que la clase sera parte de una clase u objeto que se llevara a bd
+@Table ->indica que la clase será asociada a la tabla con ese nombre. Si cambia, poner @Table(name="nombre_tabla")
 @Column -> indica que ese atributo irá a la columna con ese nombre. poner @Column(name="nombre_columna")
 @Id
 @GeneratedValue -> indica que ese atributo se asocia a un PK y es autoincremental
+@Embedded -> cuando un atributo de la clase tiene que ser leido desde otra clase, la cual será @Embeddable
+@NamedQueries -> junta todas las querys nombradas
+@NamedQuery -> crea una query con nombre y query
+
+@onetoone
+@onetomany
+@mayntomany
+
+
+QUERY SENCILLA
+
+SELECT * FROM trabajadores WHERE id = id
+UPDATE FROM TRABAJADORES SET correo = nuevo WHERE id = id
+DELETE FROM TRABAJADORES WHERE id = id
+
+
+QUERY AVANZADAS -> HQL -> Query
+
+SELECT -> SELECT * FROM TRABAJADORES
+SELECT -> SELECT * FROM TRABAJADORES WHERE localidad = parametro
+
+UPDATE 
+DELETE
+
+
+
+
+

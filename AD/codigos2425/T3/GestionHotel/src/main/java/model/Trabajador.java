@@ -1,15 +1,26 @@
 package model;
 
-
-
-
-
-
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.io.Serializable;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@NamedQueries(
+        {
+                @NamedQuery(name = "Trabajador.findAll", query = "FROM Trabajador"),
+                @NamedQuery(name = "Trabajador.findByLocalidad", query = "FROM Trabajador WHERE direccion.localidad = :localidad")
+        }
+)
 
-@Entity(name = "trabajadores")
+@Entity
+@Table(name = "trabajadores")
 public class Trabajador implements Serializable {
 
     // private static long serialVersionUID = 1L;
@@ -25,61 +36,29 @@ public class Trabajador implements Serializable {
     private String correo;
     @Column
     private int telefono;
-    public Trabajador(String nombre, String apellido, String correo, int telefono) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.correo = correo;
-        this.telefono = telefono;
-    }
+    @Embedded
+    private Direccion direccion;
 
-    public Trabajador() {
-    }
-
-    public Trabajador(int id, String nombre, String apellido, String correo, int telefono) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.correo = correo;
-        this.telefono = telefono;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
+    public Trabajador(int id) {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
+    public Trabajador(String nombre, String apellido, String correo, int telefono, Direccion direccion) {
         this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
         this.apellido = apellido;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
         this.correo = correo;
-    }
-
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(int telefono) {
         this.telefono = telefono;
+        this.direccion = direccion;
+    }
+
+    @Override
+    public String toString() {
+        return "Trabajador{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", correo='" + correo + '\'' +
+                ", telefono=" + telefono +
+                '}';
     }
 }
