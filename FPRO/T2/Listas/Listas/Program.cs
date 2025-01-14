@@ -3,7 +3,9 @@ public class MyClass
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Bienvenido al programa de listas");
+
+
+        /* Console.WriteLine("Bienvenido al programa de listas");
         Funcionalidad funcionalidad = new Funcionalidad();
         // donde tengo el attr listaPalabras
 
@@ -30,9 +32,26 @@ public class MyClass
         // "Hola","Adios", "Que", "tal", "nuevo","estas"
 
         funcionalidad.ObtenerElemento(0);
-        funcionalidad.ObtenerTodos();
+        funcionalidad.ObtenerTodos(); */
 
+        Agenda agenda = new Agenda();
+        // [{B},{C},{J}]
+        agenda.AgregarPersona("001D", "Marcos");
+        // [{B},{C},{J},{M}]
+        agenda.AgregarPersona("001E", "Beatriz");
+        // [{B},{C},{J},{M},{B}]
+        // agenda.ObtenerPersona("001D");
+        // agenda.MostrarPrimerDato();
+        if (agenda.BorrarDatos("001u"))
+        {
+            Console.WriteLine("Borrado correctamente");
+        }
+        else
+        {
+            Console.WriteLine("Fallo en el borrado");
+        }
 
-
+        agenda.ListarTodos();
+        // [{C},{J},{M},{B}]
     }
 }

@@ -1,0 +1,24 @@
+EditText
+Button
+Spinner
+
+
+ListView / RecyclerView -> Listados de datos 
+	parte grafica - parte logica + JSON -> volley (org.json)
+
+0- XML con el aspecto de las filas -> patron
+1- Creo el adaptador que extiende de RecyclerView.Adapter, junto con una inner clase de ViewHolder
+2- En el activity, creo un objeto de tipo adapter (definido en el punto 1)
+3- asocio adaptador con recycler
+4- indicar cual es el layout que utiliza el recycler
+
+
+elemento1
+
+elemento2
+
+elemento3
+
+elemento4
+
+elemento5
