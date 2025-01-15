@@ -45,11 +45,6 @@ MODEL - anotaciones de hibernate
 @NamedQueries -> junta todas las querys nombradas
 @NamedQuery -> crea una query con nombre y query
 
-@onetoone
-@onetomany
-@mayntomany
-
-
 QUERY SENCILLA
 
 SELECT * FROM trabajadores WHERE id = id
@@ -64,6 +59,65 @@ SELECT -> SELECT * FROM TRABAJADORES WHERE localidad = parametro
 
 UPDATE 
 DELETE
+
+RELACIONES
+
+@onetoone -> una entidad se relaciona con otra entidad
+un trabajador tiene asignada una habitacion
+
+	- unidireccional
+	- bidireccional
+
+CLASE A -> donde tenemos la fk
+
+@OnetoOne(cascade)
+@JoinColumn(name="nombre_col_guarda_fk")
+private ClaseB claseb
+
+
+CLASE B
+@OnetoOne(mappedBy="nombre_atributo_clase a que guarda fk")
+private ClaseA clasea
+
+
+@onetomany
+una entidad se relaciona con otra entidad y a su vez esta entidad se relaciona con muchas de la entridad anterior
+
+un cliente tiene asociada una habitacion, pero en una habitacion a lo largo del tiempo se pueden quedar alojados muchos clientes
+
+	- unidireccional
+	- bidireccional
+
+CLASE A
+@ManytoOne(cascade)
+@JoinColumn(name="nombre_col_guarda_fk")
+private ClaseB claseb
+
+
+CLASE B
+@OnetoMany(mappedBy="nombre_atributo_clase a que guarda fk")
+private List<ClaseA> clasea
+
+@mayntomany -> tengo que hacer una tabla adicional
+
+una entidadA se relaciona con muchos elementos de la entidadB y una entidadB se 
+relaciona con muchos elementos de la entidadA
+
+un cliente realiza una reservaa que la hace un trabajador, este cliente puede realizar n reservas donde cada una de ellas puede ser gestionada por un trabajador diferente
+
+
+	- unidireccional
+	- bidireccional
+
+CLASE A
+@ManytoMany(cascade, fetch=eager o lazy?)
+@JoinTable(name="nombre_tabla_con_fks", joinColumns = @JoinColumn(name="nombre_columna_fk1"),inverseJoinColumns=@JoinColumn(name="nombre_columna_fk2"))
+private List<Trabajadores>
+
+
+
+CLASE A
+
 
 
 
