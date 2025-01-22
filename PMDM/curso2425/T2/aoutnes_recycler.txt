@@ -13,6 +13,20 @@ ListView / RecyclerView -> Listados de datos
 4- indicar cual es el layout que utiliza el recycler
 
 
+COMUNICAR
+
+1 - utilizar función vacia -> para el final
+2 - utilizar funcion de callback -> una funcion que se ejecuta despues de llamar a otra funcion
+
+
+PASOS:
+
+1- En el origen de la comunicacion creo una interfaz con tantos metodos como yo quiera utilizar en el proceso de comunicacion. Como parametro en estos metodos pongo lo que quiero comunicar
+2- Creo un objeto de tipo interfaz y lo utilizo cuando quiera comunicar
+3- inicializar el listener en el bloque init igualandolo al context as OnLigaListener
+4- En el destino de la comunicacion, implemento la interfaz obteniendo el método de comunicacion (junto con los parametros que me van a comunicar)
+
+
 elemento1
 
 elemento2

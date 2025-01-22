@@ -17,6 +17,7 @@ public class ProductServiceImp implements ProductService {
 
     @Override
     public Set<Producto> getAllProductos() {
+
         return productoRepository.findAll();
     }
 

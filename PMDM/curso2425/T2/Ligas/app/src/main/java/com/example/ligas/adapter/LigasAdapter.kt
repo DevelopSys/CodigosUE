@@ -1,7 +1,9 @@
 package com.example.ligas.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
+import android.view.OnReceiveContentListener
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -13,6 +15,13 @@ import com.google.android.material.snackbar.Snackbar
 
 class LigasAdapter(var lista: ArrayList<Liga>, var context: Context) :
     RecyclerView.Adapter<LigasAdapter.MyHolder>() {
+
+    private lateinit var listener: OnLigaListener
+
+    init {
+        // OnLigaListener = MainActivity as OnLigaListener
+        listener = context as OnLigaListener
+    }
 
     // itemView -> el XML pasado a vista con todos los elementos comunes a la fila
     inner class MyHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -38,17 +47,24 @@ class LigasAdapter(var lista: ArrayList<Liga>, var context: Context) :
         holder.imagen.setImageResource(liga.imagen)
         holder.nombre.text = liga.nombre
         holder.imagen.setOnClickListener {
-            Snackbar.make(
-                holder.imagen,
-                "La cantidad de interes que suscita la lista ${liga.nombre} es ${liga.calificacion}",
-                Snackbar.LENGTH_SHORT
-            ).show()
+            listener.onLigaSelected(liga)
         }
-        holder.imagen.setOnLongClickListener {
+        /*holder.imagen.setOnLongClickListener {
             lista.removeAt(position);
             notifyItemRemoved(position)
             return@setOnLongClickListener true
-        }
+        }*/
+
+        /*holder.imagen.setOnLongClickListener {
+            val intent: Intent = Intent(context, xxxx)
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context.startActivity(intent)
+            return@setOnLongClickListener true*/
+    }
+
+
+    interface OnLigaListener {
+        fun onLigaSelected(liga: Liga)
     }
 
 }
