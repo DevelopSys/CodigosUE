@@ -1,4 +1,8 @@
 import model.Coche;
+import model.CocheLombok;
+
+import java.util.Calendar;
+import java.util.Scanner;
 
 public class Entrada {
 
@@ -8,6 +12,18 @@ public class Entrada {
         // vista -> interaccion con el usuario
         // creo un coche
         // Tipo nombre = valor
+
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextInt();
+        Calendar calendar = Calendar.getInstance();
+
+        calendar.get(Calendar.MINUTE);
+        calendar.get(Calendar.HOUR);
+        calendar.get(Calendar.SECOND);
+        calendar.get(Calendar.DAY_OF_MONTH);
+
+        CocheLombok cocheLombok = new CocheLombok();
+
         Coche coche1 = new Coche();
         // atributos => marca=Ford, modelo=null, matricula=null,color=Amarillo, cv=150, precio=0.0
         coche1.setMarca("Ford");
