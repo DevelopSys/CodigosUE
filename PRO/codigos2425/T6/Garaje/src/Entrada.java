@@ -10,6 +10,8 @@ import java.util.Scanner;
 
 public class Entrada {
 
+    // cambio publicado en la rama pruebas
+
     // main con poo simple
     /*
     // crear una aplicacion que permita gestionar coches
