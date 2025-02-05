@@ -12,13 +12,15 @@ import com.android.volley.toolbox.Volley
 import com.example.ligas.adapter.LigasAdapter
 import com.example.ligas.databinding.ActivityMainBinding
 import com.example.ligas.model.Liga
+import com.example.ligas.model.LigaJSON
 import com.google.android.material.snackbar.Snackbar
+import com.google.gson.Gson
 import org.json.JSONArray
 
 class MainActivity : AppCompatActivity(), LigasAdapter.OnLigaListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapter: LigasAdapter;
-    private lateinit var listaLigas: ArrayList<Liga>
+    private lateinit var listaLigas: ArrayList<LigaJSON>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -29,11 +31,16 @@ class MainActivity : AppCompatActivity(), LigasAdapter.OnLigaListener {
             JsonObjectRequest("https://www.thesportsdb.com/api/v1/json/3/all_leagues.php", {
 
                 val array: JSONArray = it.getJSONArray("leagues")
-                for (i in 0..array.length()-1){
-                    val league = array.getJSONObject(i)
+                val gson = Gson()
+                for (i in 0..array.length() - 1) {
+                    val leagueJSON = array.getJSONObject(i)
+                    val league = gson.fromJson(leagueJSON.toString(), LigaJSON::class.java)
+                    if (league.strSport.equals("Soccer")) {
+                        adapter.addLeague(league)
+                    }
                     // objeto json -> objeto kotlin GSON
                     // cargar en el recyclerview todas las ligas de soccer
-                    Log.v("datos", league.getString("strLeague"))
+                    // Log.v("datos", league.getString("strLeague"))
                 }
             }, { Log.v("datos", it.toString()) })
         Volley.newRequestQueue(applicationContext).add(peticion)
@@ -41,7 +48,7 @@ class MainActivity : AppCompatActivity(), LigasAdapter.OnLigaListener {
     }
 
     private fun instancias() {
-        listaLigas = arrayListOf(
+        /*listaLigas = arrayListOf(
             Liga("BBVA", R.drawable.liga, 90),
             Liga("Bundesliga", R.drawable.icono, 85),
             Liga("Calcio", R.drawable.icono, 70),
@@ -50,7 +57,8 @@ class MainActivity : AppCompatActivity(), LigasAdapter.OnLigaListener {
             Liga("Eridivise", R.drawable.icono, 50),
             Liga("SerieB", R.drawable.icono, 40),
             Liga("Liga Santander", R.drawable.icono, 87),
-        )
+        )*/
+        listaLigas = ArrayList()
         adapter = LigasAdapter(listaLigas, this)
 
         binding.recyclerLigas.adapter = adapter;

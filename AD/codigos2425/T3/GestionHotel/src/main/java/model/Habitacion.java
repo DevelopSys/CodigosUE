@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -26,11 +27,11 @@ public class Habitacion implements Serializable {
     private int planta;
     @Column
     private int capacidad;
-    @OneToOne(mappedBy = "habitacion")
+    @OneToOne(mappedBy = "habitacion",cascade = CascadeType.ALL)
     private Trabajador trabajador;
 
     @OneToMany(mappedBy = "habitacion")
-    private List<Cliente> clientes;
+    private Set<Cliente> clientes;
 
     public Habitacion(int numero, int planta, int capacidad) {
         this.numero = numero;

@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/bin/Debug/net8.0/Juego
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/bin/Debug/net8.0/Juego.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/bin/Debug/net8.0/Juego.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/bin/Debug/net8.0/Juego.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/bin/Debug/net8.0/Juego.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/Juego.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/Juego.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/Juego.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/Juego.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/refint/Juego.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/Juego.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/Juego.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/obj/Debug/net8.0/ref/Juego.dll

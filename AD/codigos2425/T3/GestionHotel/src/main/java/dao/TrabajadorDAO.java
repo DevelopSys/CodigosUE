@@ -31,20 +31,17 @@ public class TrabajadorDAO {
     }
 
     // SELECT
-    public void obtenerUsuario(int id) {
+    public Trabajador obtenerUsuario(int id) {
         // prepareSt -> executeQuery -> resultSet -> while -> rs.getString("nombre") -> Objeto
 
         session = new HibernateUtils().getSessionFactory().getCurrentSession();
-        session.beginTransaction();
+        //session.beginTransaction();
         Trabajador trabajador = session.get(Trabajador.class, id);
-        if (trabajador != null) {
-
-            System.out.println(trabajador);
-        } else {
-            System.out.println("El trabajado es nulo, no se encutra en plantilla");
-        }
         session.getTransaction().commit();
         session.close();
+        if (trabajador != null) {
+            return trabajador;
+        } return null;
     }
 
     // UPDATE
@@ -67,16 +64,26 @@ public class TrabajadorDAO {
         session.close();
     }
 
+    public void actualizarUsuario(Trabajador trabajador) {
+        // UPDATE usuarios SET correo = nuevo@ue.com AND apellido = apellidoNuevo WHERE id = id
+        session = new HibernateUtils().getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        session.merge(trabajador);
+
+        session.getTransaction().commit();
+        session.close();
+    }
+
     // DELETE
     public void borrarUsuario(int id) {
         // DELETE FROM trabajadores WHERE id = 6
         session = new HibernateUtils().getSessionFactory().getCurrentSession();
-        session.beginTransaction();
+        // session.beginTransaction();
         // 1- busco el trabajador
         Trabajador trabajador = session.get(Trabajador.class, id);
         if (trabajador != null) {
             // 2- borro el trabajador
-            session.delete(trabajador);
+            session.remove(trabajador);
         }
         session.getTransaction().commit();
         session.close();
@@ -130,5 +137,22 @@ public class TrabajadorDAO {
         session.getTransaction().commit();
         session.close();
     }
+
+    public void modificarTrabajador(String correoOld, String correoNew){
+        session = new HibernateUtils().getSessionFactory().openSession();
+        session.beginTransaction();
+        String query = "FROM Trabajador t WHERE t.correo = :correo";
+        Query<Trabajador> trabajadorBusqueda = session.createQuery(query, Trabajador.class);
+        trabajadorBusqueda.setParameter("correo",correoOld);
+        List<Trabajador> trabajadores  = trabajadorBusqueda.list();
+        Trabajador trabajador = trabajadores.get(0);
+        trabajador.setCorreo(correoNew);
+        session.merge(trabajador);
+        // trabajador.get(0);
+        session.getTransaction().commit();
+        session.close();
+    }
+
+
 
 }

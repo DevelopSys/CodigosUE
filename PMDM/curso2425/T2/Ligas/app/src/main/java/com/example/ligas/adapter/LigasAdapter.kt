@@ -2,6 +2,7 @@ package com.example.ligas.adapter
 
 import android.content.Context
 import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.OnReceiveContentListener
 import android.view.View
@@ -9,11 +10,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ligas.MainActivity
 import com.example.ligas.R
+import com.example.ligas.SeassonActivity
 import com.example.ligas.model.Liga
+import com.example.ligas.model.LigaJSON
 import com.google.android.material.snackbar.Snackbar
 
-class LigasAdapter(var lista: ArrayList<Liga>, var context: Context) :
+class LigasAdapter(var lista: ArrayList<LigaJSON>, var context: Context) :
     RecyclerView.Adapter<LigasAdapter.MyHolder>() {
 
     private lateinit var listener: OnLigaListener
@@ -43,11 +47,17 @@ class LigasAdapter(var lista: ArrayList<Liga>, var context: Context) :
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
         // pintará individialmente cada fila con su dato correspondiente
-        val liga: Liga = lista[position]
-        holder.imagen.setImageResource(liga.imagen)
-        holder.nombre.text = liga.nombre
+        val liga: LigaJSON = lista[position]
+        // holder.imagen.setImageResource(liga.imagen)
+        holder.nombre.text = liga.strLeague
         holder.imagen.setOnClickListener {
-            listener.onLigaSelected(liga)
+            // listener.onLigaSelected(liga)
+            val intent = Intent(context, SeassonActivity::class.java)
+            val bundle = Bundle()
+            bundle.putSerializable("liga",liga)
+            intent.putExtra("datos",bundle)
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context.startActivity(intent)
         }
         /*holder.imagen.setOnLongClickListener {
             lista.removeAt(position);
@@ -60,6 +70,12 @@ class LigasAdapter(var lista: ArrayList<Liga>, var context: Context) :
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
             return@setOnLongClickListener true*/
+    }
+
+    fun addLeague(liga: LigaJSON){
+        this.lista.add(liga)
+        notifyItemInserted(lista.size-1)
+        // notifyDataSetChanged()
     }
 
 

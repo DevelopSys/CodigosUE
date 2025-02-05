@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -59,6 +60,9 @@ public class Trabajador implements Serializable {
         this.direccion = direccion;
     }
 
+    public void del(int id){
+        listaClientes.remove(id);
+    }
     @Override
     public String toString() {
         return "Trabajador{" +

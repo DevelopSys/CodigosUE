@@ -1,14 +1,5 @@
 package model;
 
-import lombok.*;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-
-@Data
-
 public class CocheLombok {
 
     private String marca, modelo, color, matricula;

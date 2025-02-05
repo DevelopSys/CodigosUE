@@ -1,3 +1,4 @@
+import controller.HotelController;
 import dao.TrabajadorDAO;
 import model.Cliente;
 import model.Direccion;
@@ -16,7 +17,7 @@ public class Entrada {
     public static void main(String[] args) {
 
         // pedir datos al usuario y guardar el usuario en bd, pero si hay un fallo de correo, volver a intentarlo con otros datos
-        TrabajadorDAO trabajadorDAO = new TrabajadorDAO();
+        // TrabajadorDAO trabajadorDAO = new TrabajadorDAO();
         /*Scanner scanner = new Scanner(System.in);
         String correo;
         boolean fallo = false;
@@ -68,7 +69,7 @@ public class Entrada {
         for (Trabajador trabajador: cliente.getListaTrabajadores()) {
             System.out.println(trabajador.getNombre());
         }*/
-        Cliente cliente = session.get(Cliente.class,1);
+        /*Cliente cliente = session.get(Cliente.class,1);
         Trabajador trabajador = session.get(Trabajador.class,11);
 
         cliente.getListaTrabajadores().add(trabajador);
@@ -78,9 +79,17 @@ public class Entrada {
         // session.merge(trabajador);
 
         session.getTransaction().commit();
-        session.close();
-
-
-
+        session.close();*/
+        // TrabajadorDAO trabajadorDAO = new TrabajadorDAO();
+        // trabajadorDAO.modificarTrabajador("correoNew@ue.es","correo@ue.es");
+        HotelController hotelController = new HotelController();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("De que capacidad buscas la habitacion");
+        int capacidad = scanner.nextInt();
+        System.out.println("De que trabajador quieres asignar");
+        int id = scanner.nextInt();
+        System.out.println("De que trabajador quieres despedir");
+        int idBorrar = scanner.nextInt();
+        hotelController.despedirTrabajador(idBorrar);
     }
 }

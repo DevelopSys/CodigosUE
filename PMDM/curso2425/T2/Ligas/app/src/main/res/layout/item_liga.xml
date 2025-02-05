@@ -18,7 +18,7 @@
 
         <ImageView
             android:id="@+id/imagenLiga"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/icono"
             android:layout_width="200dp"
             android:layout_height="200dp"/>
 

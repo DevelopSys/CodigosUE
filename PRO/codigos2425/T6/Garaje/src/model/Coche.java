@@ -6,8 +6,9 @@ public class Coche {
     // variables: aquello que cualifica al objeto
     // cuantos pongo? -> los que necesite
     private String marca, modelo, color, matricula;
-    private int cv;
+    private Motor motor;
     private double precio;
+
 
     // metodos: aquellas funcionalidades que tendrá el objeto
     /* SOBRECARGA
@@ -29,16 +30,20 @@ public class Coche {
         // si escribo un constructor -> vacio desaparece -> lo tienes que escribir explicitamente
         // siempre!!!!!! escribo el vacio
 
-    public Coche(){}
-    public Coche(String marca, String modelo, int cv){
+    public Coche(){
+        this.motor = new Motor();
+        // cv = 0
+        // cc = 0
+    }
+    public Coche(String marca, String modelo, Motor motor){
         this.marca = marca;
         this.modelo = modelo;
-        this.cv = cv;
+        this.motor = motor;
     }
-    public Coche(String marca, String modelo, int cv, double precio){
+    public Coche(String marca, String modelo, Motor motor, double precio){
         this.modelo = modelo;
         this.precio = precio;
-        this.cv = cv;
+        this.motor = motor;
         this.marca = marca;
     }
     /*
@@ -59,7 +64,8 @@ public class Coche {
         System.out.println("modelo = " + modelo);
         System.out.println("color = " + color);
         System.out.println("matricula = " + matricula);
-        System.out.println("cv = " + cv);
+        System.out.println("CV = " + motor.getCv());
+        System.out.println("CC = " + motor.getCc());
         System.out.println("precio = " + precio);
     }
     // metodos "especiales"
@@ -97,12 +103,12 @@ public class Coche {
         this.matricula = matricula;
     }
 
-    public int getCv() {
-        return cv;
+    public Motor getMotor() {
+        return motor;
     }
 
-    public void setCv(int cv) {
-        this.cv = cv;
+    public void setMotor(Motor motor) {
+        this.motor = motor;
     }
 
     public double getPrecio() {
