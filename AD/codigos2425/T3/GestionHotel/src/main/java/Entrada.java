@@ -82,7 +82,7 @@ public class Entrada {
         session.close();*/
         // TrabajadorDAO trabajadorDAO = new TrabajadorDAO();
         // trabajadorDAO.modificarTrabajador("correoNew@ue.es","correo@ue.es");
-        HotelController hotelController = new HotelController();
+        /*HotelController hotelController = new HotelController();
         Scanner scanner = new Scanner(System.in);
         System.out.println("De que capacidad buscas la habitacion");
         int capacidad = scanner.nextInt();
@@ -90,6 +90,9 @@ public class Entrada {
         int id = scanner.nextInt();
         System.out.println("De que trabajador quieres despedir");
         int idBorrar = scanner.nextInt();
-        hotelController.despedirTrabajador(idBorrar);
+        hotelController.despedirTrabajador(idBorrar);*/
+        HotelController hotelController = new HotelController();
+        hotelController.despedirTrabajador(12);
+
     }
 }

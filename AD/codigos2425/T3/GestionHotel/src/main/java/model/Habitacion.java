@@ -30,7 +30,7 @@ public class Habitacion implements Serializable {
     @OneToOne(mappedBy = "habitacion",cascade = CascadeType.ALL)
     private Trabajador trabajador;
 
-    @OneToMany(mappedBy = "habitacion")
+    @OneToMany(mappedBy = "habitacion", cascade = CascadeType.ALL)
     private Set<Cliente> clientes;
 
     public Habitacion(int numero, int planta, int capacidad) {

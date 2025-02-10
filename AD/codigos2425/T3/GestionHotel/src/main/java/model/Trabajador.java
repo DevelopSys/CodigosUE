@@ -45,7 +45,7 @@ public class Trabajador implements Serializable {
     @JoinColumn(name = "id_habitacion")
     private Habitacion habitacion;
 
-    @ManyToMany(mappedBy = "listaTrabajadores")
+    @ManyToMany(mappedBy = "listaTrabajadores", cascade = CascadeType.ALL)
     private List<Cliente> listaClientes;
 
     public Trabajador(int id) {
