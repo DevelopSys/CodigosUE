@@ -10,11 +10,18 @@
     android:gravity="center">
 
     <LinearLayout
-        android:padding="20dp"
+
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarCard"
+            android:background="@android:color/holo_orange_light"
+            />
 
         <ImageView
             android:id="@+id/imagenLiga"

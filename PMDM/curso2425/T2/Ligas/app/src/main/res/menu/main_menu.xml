@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Salir"
+        android:id="@+id/menuSalir"
+        />
+    <item
+        android:title="Info"
+        android:id="@+id/menuInfo"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:title="Acciones">
+
+        <menu>
+            <item android:title="SubAccion1"/>
+            <item android:title="SubAccion2"/>
+            <item android:title="SubAccion3"/>
+        </menu>
+
+    </item>
+
+</menu>

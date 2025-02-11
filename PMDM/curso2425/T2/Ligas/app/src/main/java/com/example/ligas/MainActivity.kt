@@ -1,7 +1,11 @@
 package com.example.ligas
 
+import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.helper.widget.Grid
 import androidx.recyclerview.widget.GridLayoutManager
@@ -48,6 +52,8 @@ class MainActivity : AppCompatActivity(), LigasAdapter.OnLigaListener {
     }
 
     private fun instancias() {
+
+        setSupportActionBar(binding.toolbar)
         /*listaLigas = arrayListOf(
             Liga("BBVA", R.drawable.liga, 90),
             Liga("Bundesliga", R.drawable.icono, 85),
@@ -80,5 +86,49 @@ class MainActivity : AppCompatActivity(), LigasAdapter.OnLigaListener {
         Snackbar.make(
             binding.root, "Liga comunicada con existo ${liga.nombre}", Snackbar.LENGTH_SHORT
         ).show()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // que item se ha pulsado
+        when (item.itemId) {
+            R.id.menuInfo -> {
+                val listaSeleccion: ArrayList<CharSequence> = ArrayList()
+                val lista = arrayOf("Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4")
+                val builder: AlertDialog.Builder = AlertDialog.Builder(this)
+                builder.setTitle("Dialogo info")
+                // builder.setMessage("Esta app ha sido realizada por Borja Martin")
+                // builder.setItems(lista, DialogInterface.OnClickListener { dialogInterface, i ->  })
+                // builder.setSingleChoiceItems(lista,-1, DialogInterface.OnClickListener { dialogInterface, i ->  })
+                builder.setMultiChoiceItems(lista, null,
+                    DialogInterface.OnMultiChoiceClickListener { dialogInterface, i, b ->
+                        if (b) {
+                            listaSeleccion.add(lista[i])
+                        } else {
+                            listaSeleccion.remove(lista[i])
+                        }
+                    })
+                builder.setPositiveButton("OK") { _, _ ->
+                    Log.v(
+                        "lista",
+                        listaSeleccion.toString()
+                    )
+                }
+                builder.setNegativeButton("NO") { _, _ -> }
+                builder.setNeutralButton("Quizá") { _, _ -> }
+                val dialogo: AlertDialog = builder.create()
+                dialogo.show();
+
+            }
+
+            R.id.menuSalir -> {
+                finish()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
