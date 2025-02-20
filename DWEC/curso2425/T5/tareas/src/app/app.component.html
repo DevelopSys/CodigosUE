@@ -2,9 +2,20 @@
   <h1>App angular</h1>
   <p>
     Esta es la primera app angular realizada por {{ autor }} para la asigntura
-    {{ asignatura }}
+    {{ asignatura }}. Por favor selecciona que componente quieres ver
   </p>
+  <select class="form-select" [(ngModel)]="seleccion">
+    <option value="1">Conocimientos</option>
+    <option value="2">Asignaturas</option>
+    <option value="3">Tecnologias</option>
+  </select>
 
   <!-- tener otro componente que renderice una lista de conocimientos de la asignatura -->
-  <app-listado></app-listado>
+
+  <div [ngSwitch]="seleccion">
+    <app-listado *ngSwitchCase="'1'"></app-listado>
+    <app-asignaturas *ngSwitchCase="'2'"></app-asignaturas>
+    <app-tecnologias *ngSwitchCase="'3'"></app-tecnologias>
+    <p *ngSwitchDefault>Por favor selecciona una opcion</p>
+  </div>
 </div>

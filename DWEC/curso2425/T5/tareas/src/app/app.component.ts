@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   autor = 'Borja Martin';
   asignatura = 'Desarrollo cliente';
+  seleccion = 4;
+  /* fecha = new Date() */
 }

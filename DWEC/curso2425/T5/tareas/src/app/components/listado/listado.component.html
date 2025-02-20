@@ -1,4 +1,99 @@
-<h1>Conocimientos</h1>
-<ul class="list-group">
-  <li *ngFor="let item of elementos">{{ item }}</li>
-</ul>
+<h1>Conocimientos de {{ nombre }}</h1>
+<img [src]="url" />
+
+<button class="btn btn-primary" (click)="mostrar = !mostrar">
+  Mostrar conocimientos
+</button>
+
+<div class="row mt-4">
+  <div class="col">
+    <h2>Formulario</h2>
+    <input
+      [(ngModel)]="nombreConocimineto"
+      class="form-control mb-3"
+      placeholder="introduce conocimiento"
+      #inputNombre
+    />
+    <select
+      class="form-select mb-3"
+      #selectNivel
+      [(ngModel)]="nivelConocimiento"
+    >
+      <option value="1">Bajo</option>
+      <option value="2">Medio</option>
+      <option value="3">Alto</option>
+    </select>
+    <button class="btn btn-primary" (click)="guardarElemento()">Guardar</button>
+  </div>
+  <div class="col">
+    <h2>Listado de conocimientos</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let item of conocimientos">
+        <div class="card h-100">
+          <img
+            src="../../../../public/assets/imagenweb.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.nombre }}</h5>
+            <p class="card-text">{{ item.nivel }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-primary" role="alert" *ngIf="conocimientos.length == 0">
+  No hay conocimientos en el sistema
+</div>
+
+<!-- <ng-container *ngIf="mostrar; else elseTemplate">
+  <div class="row mt-4">
+    <div class="col">
+      <h2>Formulario</h2>
+      <input
+        [(ngModel)]="nombreConocimineto"
+        class="form-control mb-3"
+        placeholder="introduce conocimiento"
+        #inputNombre
+      />
+      <select
+        class="form-select mb-3"
+        #selectNivel
+        [(ngModel)]="nivelConocimiento"
+      >
+        <option value="1">Bajo</option>
+        <option value="2">Medio</option>
+        <option value="3">Alto</option>
+      </select>
+      <button class="btn btn-primary" (click)="guardarElemento()">
+        Guardar
+      </button>
+    </div>
+    <div class="col">
+      <h2>Listado de conocimientos</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let item of conocimientos">
+          <div class="card h-100">
+            <img
+              src="../../../../public/assets/imagenweb.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ item.nombre }}</h5>
+              <p class="card-text">{{ item.nivel }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<ng-template #elseTemplate>
+  <div class="alert alert-primary" role="alert">No se muestra nada</div>
+</ng-template> -->
