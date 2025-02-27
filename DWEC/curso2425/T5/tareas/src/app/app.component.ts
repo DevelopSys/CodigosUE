@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,11 @@ export class AppComponent {
   asignatura = 'Desarrollo cliente';
   seleccion = 4;
   /* fecha = new Date() */
+
+  constructor(private router: Router) {}
+
+  navegar() {
+    console.log('Proceso a navegar');
+    this.router.navigate(['listado', this.seleccion]);
+  }
 }

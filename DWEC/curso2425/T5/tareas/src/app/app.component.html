@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <h1>App angular</h1>
   <p>
     Esta es la primera app angular realizada por {{ autor }} para la asigntura
@@ -10,12 +10,54 @@
     <option value="3">Tecnologias</option>
   </select>
 
-  <!-- tener otro componente que renderice una lista de conocimientos de la asignatura -->
 
+  
   <div [ngSwitch]="seleccion">
     <app-listado *ngSwitchCase="'1'"></app-listado>
     <app-asignaturas *ngSwitchCase="'2'"></app-asignaturas>
     <app-tecnologias *ngSwitchCase="'3'"></app-tecnologias>
     <p *ngSwitchDefault>Por favor selecciona una opcion</p>
   </div>
+</div>
+ -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/asignaturas', seleccion]"
+            >Asignaturas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tecnologias">Tecnologias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="navegar()">Listado</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<select [(ngModel)]="seleccion">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+<div class="container">
+  <router-outlet></router-outlet>
 </div>
