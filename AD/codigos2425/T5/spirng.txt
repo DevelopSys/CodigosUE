@@ -1,0 +1,87 @@
+T1
+	File
+	Fichero JSON
+T2
+	Drive->BD
+T3
+	JPA (Hibernate) -> objetos -> Driver -> BD
+T4
+	postgresql (JDBC) - OOBD (JPA)
+
+
+Cliente -> 			XXXXXX				->  BD
+			T2: statement
+				pstatement		
+				resultset
+Cliente -> 			HB -> XXXXXXXX		->  BD
+			T3: save
+				persiste
+				merge
+				delete
+				Query -> HQL // SQL
+Cliente -> 			HB -> XXXXXXXX		->  BD
+			T4 (solo con JPA ObjectDB o completo si uso Postgresq):
+				save
+				persiste
+				merge
+				delete
+				Query -> HQL // SQL
+
+
+					Arquitectura de 3 capas
+
+Cliente ->			SRVWEB(TOMCAT)					-> BD
+Cliente ->			SRVWEB(TOMCAT)					<- BD
+					JDBC, HIBERNATE, SPRINGBOOT
+
+Backend: java(springboot), php, python, nodejs
+
+Android, JavaFX, JavaConsola, Web, AppEscritorio
+
+1. Simplemente lanza una direccion al servidor (HTTP//HTTPS)
+https://localhost:8080/usuarios/info
+https://localhost:8080/habitaciones
+2. el servidoweb analiza la peticion, la procesa, la ejecuta contra base de datos
+3. la base de datos ejecuta la peticion
+4. la base de datos le contesta al servidor web con el resultado de la ejecucion
+5. el servidor analiza la respuesta, la codifica y se la pasa al cliente
+6. el cliente analiza la peticion, como un JSON
+
+REST 
+
+Create Read Update Delete 
+
+Metodos: 
+
+GET -> obtener datos
+POST -> guardar datos
+DELETE -> borrar datos
+PUT -> modificad datos
+
+https://dummyjson.com/posts/1
+https://dummyjson.com/api/v333/products/1
+------dominio----- -carpeta- -endpoint- -params-
+https://dummyjson.com/api/v333/products?id=1 -> filtros
+------dominio----- -carpeta- -endpoint- -request params-
+https://dummyjson.com/api/v333/products -> inserciones, modificaciones
+------dominio----- -carpeta- -endpoint- -body params-
+
+controller -> n
+model -> n mapeadas contra bd (JPA)
+repositorios -> metodos contra bd por defecto y propios
+servicios -> logica de la app junto con la bd (repositorios)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
