@@ -1,6 +1,6 @@
 package model;
 
-public class Trabajador {
+abstract public class Trabajador {
 
     private String nombre, apellido, correo, dni;
     private int telefono;
@@ -15,6 +15,8 @@ public class Trabajador {
         this.dni = dni;
         this.telefono = telefono;
     }
+
+    abstract public void calcularSalario();
 
     public void mostrarDatos(){
         System.out.println("nombre = " + nombre);
