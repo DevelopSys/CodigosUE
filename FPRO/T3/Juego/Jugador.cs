@@ -1,6 +1,6 @@
 using System.Collections;
 
-public class Jugador
+abstract public class Jugador
 {
     // atributos
     private string? nombre; // si no le pongo la ?, obligando a tener valor

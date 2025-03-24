@@ -1,4 +1,4 @@
-class EnemigoAgua : Enemigo
+class EnemigoAgua : Enemigo, Mortal
 {
     // no hay nada -> el vacio
     // un elemento hereda todos los attributos y metodos de su padre (excepto los privados
@@ -26,8 +26,23 @@ class EnemigoAgua : Enemigo
         base.mostrarDatos();
     }
 
+    public void rellenarAgua()
+    {
+        Console.WriteLine("Se procede a curar todas las heridas");
+    }
+
     public override void realizarAtaque()
     {
         Console.WriteLine("El enemigo ataca con un " + poderAgua);
+    }
+
+    public void realizarAtaqueMortal1()
+    {
+        Console.WriteLine("Ataque mortal 1 de agua en proceso");
+    }
+
+    public void realizarAtaqueMortal2()
+    {
+        Console.WriteLine("Ataque mortal 2 de agua en proceso");
     }
 }

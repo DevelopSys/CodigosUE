@@ -1,0 +1,12 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@empleados.add.headline">Add Empleados</h1>
+    <div>
+        <a routerLink="/empleadoss" class="btn btn-secondary" i18n="@@empleados.add.back">Back to list</a>
+    </div>
+</div>
+<form [formGroup]="addForm" (ngSubmit)="handleSubmit()">
+    <app-input-row [group]="addForm" field="nombre" i18n-label="@@empleados.nombre.label" label="Nombre" />
+    <app-input-row [group]="addForm" field="sueldo" rowType="number" i18n-label="@@empleados.sueldo.label" label="Sueldo" />
+    <app-input-row [group]="addForm" field="idPerfil" rowType="select" [options]="idPerfilValues" i18n-label="@@empleados.idPerfil.label" label="Id Perfil" />
+    <input type="submit" i18n-value="@@empleados.add.headline" value="Add Empleados" class="btn btn-primary mt-4" />
+</form>

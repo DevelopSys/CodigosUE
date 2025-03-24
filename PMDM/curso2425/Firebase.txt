@@ -1,0 +1,39 @@
+Base de datos
+	SQLite3 -> interna, no esta distribuida, soporta tamaño pequeño de datos
+			Room -> ORM -> facilitar las consultas
+
+	API Cliente <-> Web (springbot, php, py, js) <-> BD (sql, mongo). Auth -> JWT. Back -> complido
+
+	PaaS -> Funcionalidad del backend. Firebase. AWS / Azure / GoogleCloud
+
+		- Auth: registro y logeo de usuario: correo y pass / SSO (google, apple, facebook, playstore), Intelig.. 2FA. Plantillas de reseteo de pass -> crea un usuario con UID
+
+		- Database: NOSQL (Mongo). Documentos/Nodos -> JSON. Cantidad de datos es muy grande. Son en tiempo real
+
+			- RealTime: nodos -> medianos pequeños
+			- Firecloud: colecciones
+
+		- Storage: almacenamiento por usuario
+		- App Hosting
+
+	EL SERVICIO DE AUTH ES INDEPENDIENTE DEL SERVICIO DE BD!!
+
+	usuarios
+		0XKOnJnYvUdsHrv1DyEWcZybtJ52
+			nombre:borja
+			apellido: martin
+			correo: correo@gmail.com
+		dfghjklkjhg456789ojhgfre
+			nombre:borja
+			apellido: martin
+			correo: correo@gmail.com
+
+	5 proyectos gratuitos
+
+	Proyecto Firebase (web)
+		- app android: asociando al proyecto de AS
+		- app web
+
+	
+	Proyecto Android 
+

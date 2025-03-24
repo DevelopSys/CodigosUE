@@ -1,0 +1,37 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@usuarios.list.headline">Usuarioses</h1>
+    <div>
+        <a routerLink="/usuarioss/add" class="btn btn-primary ms-2" i18n="@@usuarios.list.createNew">Create new Usuarios</a>
+    </div>
+</div>
+@if (!usuarioses || usuarioses.length === 0) {
+<div i18n="@@usuarios.list.empty">No Usuarioses could be found.</div>
+} @else {
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th scope="col" i18n="@@usuarios.id.label">Id</th>
+                <th scope="col" i18n="@@usuarios.correo.label">Correo</th>
+                <th scope="col" i18n="@@usuarios.pass.label">Pass</th>
+                <th><!-- --></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (usuarios of usuarioses; track usuarios.id) {
+            <tr>
+                <td>{{ usuarios.id }}</td>
+                <td>{{ usuarios.correo }}</td>
+                <td>{{ usuarios.pass }}</td>
+                <td>
+                    <div class="float-end text-nowrap">
+                        <a [routerLink]="['/usuarioss/edit', usuarios.id]" class="btn btn-sm btn-secondary" i18n="@@usuarios.list.edit">Edit</a>
+                        <button type="button" (click)="confirmDelete(usuarios.id!)" class="btn btn-sm btn-secondary" i18n="@@usuarios.list.delete">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+}

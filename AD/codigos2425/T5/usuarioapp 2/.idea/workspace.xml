@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b262005c-e670-4c64-9cf2-e6402b4e34ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../hotelapi/src/main/java/com/example/hotelapi/controller/TrabajadoresController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotelapi/src/main/java/com/example/hotelapi/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotelapi/src/main/java/com/example/hotelapi/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotelapi/src/main/java/com/example/hotelapi/services/UsuariosService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotelapi/src/main/java/com/example/hotelapi/services/implementation/UsuarioServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/app/src/main/java/com/example/presencialmarzo/model/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/app/src/main/java/com/example/presencialmarzo/ui/fragments/MainFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/PresencialMarzo/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotelapi/src/main/java/com/example/hotelapi/controller/UsuariosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hotelapi/src/main/java/com/example/hotelapi/controller/UsuariosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spirng.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../spirng.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/EnemigoAgua.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/EnemigoAgua.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/Jugador.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/Jugador.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/bin/Debug/net8.0/Juego.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/bin/Debug/net8.0/Juego.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/bin/Debug/net8.0/Juego.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/bin/Debug/net8.0/Juego.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/Juego.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/ref/Juego.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/ref/Juego.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/refint/Juego.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/T3/Juego/obj/Debug/net8.0/refint/Juego.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/app/src/main/java/com/example/navegacion/ui/fragment/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/app/src/main/java/com/example/navegacion/ui/fragment/LoginFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/app/src/main/java/com/example/navegacion/ui/fragment/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/app/src/main/java/com/example/navegacion/ui/fragment/MainFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/app/src/main/java/com/example/navegacion/ui/fragment/RegistroFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/app/src/main/java/com/example/navegacion/ui/fragment/RegistroFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PMDM/curso2425/T3/gradle/libs.versions.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ufr3wLTNAb1bbuUkGdh9aYVqzw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.UsuarioappApplication.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="usuarioapp 2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="usuarioapp 2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b262005c-e670-4c64-9cf2-e6402b4e34ce" name="Changes" comment="" />
+      <created>1742650273324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742650273324</updated>
+    </task>
+    <servers />
+  </component>
+</project>

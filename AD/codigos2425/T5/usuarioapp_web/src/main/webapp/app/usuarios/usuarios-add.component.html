@@ -1,0 +1,11 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@usuarios.add.headline">Add Usuarios</h1>
+    <div>
+        <a routerLink="/usuarioss" class="btn btn-secondary" i18n="@@usuarios.add.back">Back to list</a>
+    </div>
+</div>
+<form [formGroup]="addForm" (ngSubmit)="handleSubmit()">
+    <app-input-row [group]="addForm" field="correo" i18n-label="@@usuarios.correo.label" label="Correo" />
+    <app-input-row [group]="addForm" field="pass" i18n-label="@@usuarios.pass.label" label="Pass" />
+    <input type="submit" i18n-value="@@usuarios.add.headline" value="Add Usuarios" class="btn btn-primary mt-4" />
+</form>

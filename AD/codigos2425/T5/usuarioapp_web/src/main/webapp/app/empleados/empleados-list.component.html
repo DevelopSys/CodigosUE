@@ -1,0 +1,39 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@empleados.list.headline">Empleadoses</h1>
+    <div>
+        <a routerLink="/empleadoss/add" class="btn btn-primary ms-2" i18n="@@empleados.list.createNew">Create new Empleados</a>
+    </div>
+</div>
+@if (!empleadoses || empleadoses.length === 0) {
+<div i18n="@@empleados.list.empty">No Empleadoses could be found.</div>
+} @else {
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th scope="col" i18n="@@empleados.id.label">Id</th>
+                <th scope="col" i18n="@@empleados.nombre.label">Nombre</th>
+                <th scope="col" i18n="@@empleados.sueldo.label">Sueldo</th>
+                <th scope="col" i18n="@@empleados.idPerfil.label">Id Perfil</th>
+                <th><!-- --></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (empleados of empleadoses; track empleados.id) {
+            <tr>
+                <td>{{ empleados.id }}</td>
+                <td>{{ empleados.nombre }}</td>
+                <td>{{ empleados.sueldo }}</td>
+                <td>{{ empleados.idPerfil }}</td>
+                <td>
+                    <div class="float-end text-nowrap">
+                        <a [routerLink]="['/empleadoss/edit', empleados.id]" class="btn btn-sm btn-secondary" i18n="@@empleados.list.edit">Edit</a>
+                        <button type="button" (click)="confirmDelete(empleados.id!)" class="btn btn-sm btn-secondary" i18n="@@empleados.list.delete">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+}

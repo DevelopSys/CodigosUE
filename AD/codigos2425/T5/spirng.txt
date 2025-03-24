@@ -66,10 +66,19 @@ https://dummyjson.com/api/v333/products?id=1 -> filtros
 https://dummyjson.com/api/v333/products -> inserciones, modificaciones
 ------dominio----- -carpeta- -endpoint- -body params-
 
-controller -> n
-model -> n mapeadas contra bd (JPA)
-repositorios -> metodos contra bd por defecto y propios
-servicios -> logica de la app junto con la bd (repositorios)
+
+
+https://miapi/add
+	
+	nombre="borja"&pass=1234&ciudad="Madrid"&correo="borja1@ue.com" ->
+
+controller -> n. Todos los ficheros que gestionan las peticiones
+model -> n mapeadas contra bd (JPA) Clases que son mapeadas mediante @
+repositorios -> metodos contra bd por defecto y propios (aquellos que hacen algo mas especial). Interfaz con metodos abs, los escribo yo y ademas los obtendo de JPARepository
+servicios -> 
+		- Servicio: logica de la app junto con los metodos que transaccionan contra bd (repositorios). Son interfaces donde SOLO se define la firma del método. 
+		- Implementacion: la parte logica, pero ya con todos los elemento escritos;
+
 
 
 

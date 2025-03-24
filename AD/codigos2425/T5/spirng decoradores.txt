@@ -1,0 +1,50 @@
+controller -> el que ejecuta y configura los endpoint -> metodos finales del API. Los decoradores asociados son:
+@GetMapping, @PostMapping, @DeleteMapping, @PutMapping
+@RequestParam, @RequestMapping, @RequestBody,@RestController
+@Autowired
+
+model -> mapeo del objeto contra la base de datos. Los decoradores asociados son:
+@Data(lombok), @Id, @Column, @OnetoOne, @OneToMany, @ManytoMany, @GeneratedValue, @Entity, @Table
+
+
+repositorio extends JPARepository<Integer, Object>-> Son los metodos directos contra la base de datos. Decoradores asociados:
+@Query, @Param
+
+Interfaz service -> Todos los metodos que ejecutan la parte de la base de datos. Los metodos que seran accedidos desde repositorio
+
+implementService -> escribo toda la logica del servicio (la implementacion de los metodos declarados arriba). Decoradores asociados: 
+@Service
+
+
+usuarios
+	id
+	correo
+	pass
+
+trabajadores
+	id
+	nombre
+	sueldo
+	id_periles (fk)
+
+perfiles
+	id
+	descripcion
+
+
+
+
+A admin
+U user
+G guest
+
+us1 A
+us2 A
+us3 U
+us4 G
+us5 G
+
+
+
+
+

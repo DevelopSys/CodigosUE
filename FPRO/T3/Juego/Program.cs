@@ -28,10 +28,38 @@ public class main
         jugadorBase.ListarActividades(); */
         // habilidades 4
         // Console.WriteLine("El poder especial del jugador es " + jugador1.getPoder()?.Equals("cosa"));
-        Enemigo enemigo = new Enemigo("Enemigo1", 100, 150);
+        // Enemigo enemigo = new Enemigo("Enemigo1", 100, 150);
 
+        // Enemigo, EnemigoAgua
         EnemigoAgua enemigoAgua = new EnemigoAgua("Enemigo1", 100, "tornado");
-        enemigoAgua.mostrarDatos();
-        
+        // Enemigo, EnemigoFuego
+        EnemigoFuego enemigoFuego = new EnemigoFuego("Enemigo2", 100, 40, 10, "Quemadura");
+        // Enemigo, EnemigoViento
+        EnemigoViento enemigoViento = new EnemigoViento("Enemigo3", 100, 90, 1000, 2);
+        // ((Mortal)enemigoViento).realizarAtaqueMortal1();
+
+
+        List<Enemigo> listaEnemigos = new List<Enemigo>();
+        listaEnemigos.Add(enemigoAgua);
+        listaEnemigos.Add(enemigoFuego);
+        listaEnemigos.Add(enemigoViento);
+
+        foreach (var item in listaEnemigos)
+        {
+            // si es enemigo fuego -> instanceOf
+            if (item.GetType() == typeof(EnemigoFuego))
+            {
+                ((EnemigoFuego)item).realizarSanacion();
+            }
+            else if (item.GetType() == typeof(EnemigoAgua))
+            {
+                ((EnemigoAgua)item).rellenarAgua();
+            }
+
+            item.mostrarDatos();
+
+        }
+
+
     }
 }

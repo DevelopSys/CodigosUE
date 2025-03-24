@@ -2,6 +2,7 @@ package com.example.navegacion.ui.fragment
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,15 +13,17 @@ import com.example.navegacion.databinding.FragmentLoginBinding
 import com.example.navegacion.databinding.FragmentMainBinding
 import com.example.navegacion.databinding.FragmentRegistroBinding
 import com.example.navegacion.ui.model.User
+import com.google.firebase.auth.FirebaseAuth
 
 class MainFragment : Fragment() {
 
     private lateinit var binding: FragmentMainBinding
+    private lateinit var auth: FirebaseAuth
     private var usuario: User? = null;
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-
+        auth = FirebaseAuth.getInstance()
         if (arguments?.getSerializable("usuario") != null) {
             this.usuario = arguments?.getSerializable("usuario") as User
         }
@@ -33,6 +36,7 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentMainBinding.inflate(inflater, container, false)
+        Log.v("usuario", auth.currentUser!!.uid)
         return binding.root
     }
 
