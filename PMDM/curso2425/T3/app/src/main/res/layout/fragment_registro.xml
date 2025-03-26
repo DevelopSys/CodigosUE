@@ -33,6 +33,25 @@
         android:gravity="center"
         />
 
+    <EditText
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNombre"
+        android:hint="Introduce nombre"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTelefono"
+        android:inputType="number"
+        android:hint="Introduce telefono"
+        android:gravity="center"
+        />
+
     <Button
         android:id="@+id/btnLogin"
         android:layout_marginTop="24dp"

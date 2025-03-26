@@ -37,3 +37,23 @@ Base de datos
 	
 	Proyecto Android 
 
+
+Database
+
+RealTimeDB -> nodos
+
+	database -> https://agendaapp-f2321-default-rtdb.europe-west1.firebasedatabase.app/
+	reference -> root
+	nodos hoja -> value
+	nodos rama -> tienen nodos por debajo
+	listener -> escuchadores -> asocian cambios -> datasnapshot
+
+
+	Consultas -> preguntar por el dato concreto 1 vez
+				 preguntar por el dato y suscrbirme a sus cambios
+
+
+FireCloud -> collections
+
+
+

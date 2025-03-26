@@ -1,6 +1,7 @@
 // clase base del resto de los elementos -> SUPERCLASE
-abstract class Enemigo
+abstract public class Enemigo
 {
+    public Perfil perfil { get; set; }
     public string nombre { get; set; }
     public int vida { get; set; } // los int, double, float, boolean -> basico
     public int poder { get; set; }
@@ -9,11 +10,12 @@ abstract class Enemigo
     {
 
     }
-    public Enemigo(string nombre, int vida, int poder)
+    public Enemigo(string nombre, int vida, int poder, Perfil perfil)
     {
         this.nombre = nombre;
         this.vida = vida;
         this.poder = poder;
+        this.perfil = perfil;
     }
 
 
@@ -29,6 +31,9 @@ abstract class Enemigo
         Console.WriteLine("El nombre del enemigo es " + nombre);
         Console.WriteLine("El nivel de vida del enemigo es " + vida);
         Console.WriteLine("El nivel de poder del enemigo es " + poder);
+        Console.WriteLine("El perfil del enemigo es " + perfil.nombre);
+        Console.WriteLine("El perfil del enemigo ha otorgado un multiplicador de daño de  " + perfil.nivelDanio);
+        Console.WriteLine("El perfil del enemigo ha otorgado un multiplicador de defensa de  " + perfil.nivelDefensa);
 
     }
 

@@ -11,7 +11,7 @@ class EnemigoFuego : Enemigo, Mortal
     {
 
     }
-    public EnemigoFuego(string nombre, int vida, int nivel, int nivelFuego, string poderEspecial) : base(nombre, vida, nivel)
+    public EnemigoFuego(string nombre, int vida, int nivel, Perfil perfil, int nivelFuego, string poderEspecial) : base(nombre, vida, nivel, perfil)
     {
         this.nivelFuego = nivelFuego;
         this.poderEspecial = poderEspecial;
