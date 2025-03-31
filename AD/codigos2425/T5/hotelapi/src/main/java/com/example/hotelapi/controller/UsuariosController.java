@@ -61,6 +61,21 @@ public class UsuariosController {
         } else {
             return new ResponseEntity<>(usuariosService.getByEmail(correo), HttpStatus.NO_CONTENT);
         }
-
     }
+
+
+    // http://localohost:8080/usuarios/detail/1
+    @GetMapping("/detail/{id}")
+    public ResponseEntity<Usuario> getUsuarioDetail(@PathVariable int id){
+        Usuario usuario = usuariosService.getUsuarioDetail(id);
+        if (usuario !=null){
+            return new ResponseEntity<>(usuariosService.getUsuarioDetail(id), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
+        }
+    }
+
+
+
+
 }

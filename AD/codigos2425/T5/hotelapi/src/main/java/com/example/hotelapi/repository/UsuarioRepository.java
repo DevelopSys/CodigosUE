@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 
     // creamos los metodos que nosotros pensamos utilizar contra la base de datos
+    Usuario getById(int id);
     Usuario getByCorreo(String mail);
     @Query("FROM Usuario u WHERE u.correo = :correo AND u.pass = :pass")
     Usuario getByCorreoAndPass(@Param("correo") String mail, @Param("pass") String pass);

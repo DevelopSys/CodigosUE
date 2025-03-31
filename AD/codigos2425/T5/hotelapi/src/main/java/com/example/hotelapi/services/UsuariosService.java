@@ -15,4 +15,6 @@ public interface UsuariosService {
     Usuario getByEmail(String email);
 
     Usuario getLogin(String email, String pass);
+
+    Usuario getUsuarioDetail(int id);
 }

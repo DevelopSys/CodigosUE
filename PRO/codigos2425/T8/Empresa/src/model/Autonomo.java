@@ -1,6 +1,6 @@
 package model;
 
-public final  class Autonomo extends Trabajador{
+public final  class Autonomo extends Trabajador implements Clasificable{
     private int cuotaSS;
 
     public Autonomo() {
@@ -29,5 +29,10 @@ public final  class Autonomo extends Trabajador{
 
     public void setCuotaSS(int cuotaSS) {
         this.cuotaSS = cuotaSS;
+    }
+
+    @Override
+    public void clasificarElemento() {
+
     }
 }

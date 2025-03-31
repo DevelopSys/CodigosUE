@@ -1,0 +1,12 @@
+<div class="card">
+  <!-- ng if si es french, sino si es history -->
+  <img [src]="post?.tags | imagenes : 1" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ post?.title }}</h5>
+    <p class="card-text">Las tematicas de este post son:</p>
+
+    <button class="btn btn-primary mt-4" [routerLink]="['/detail', post?.id]">
+      DETALLE
+    </button>
+  </div>
+</div>
