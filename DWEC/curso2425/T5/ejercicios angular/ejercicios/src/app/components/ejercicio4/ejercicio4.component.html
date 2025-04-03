@@ -1,0 +1,16 @@
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col" *ngFor="let item of productos; let i = index">
+    <div class="card" [ngClass]="{ 'border-primary': i % 2 == 0 }">
+      <img src="..." class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ i }} {{ item.nombre }}</h5>
+        <p class="card-text">
+          {{ item.precio }}
+        </p>
+        <button class="btn btn-primary" (click)="eliminarElemento(item)">
+          Eliminar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

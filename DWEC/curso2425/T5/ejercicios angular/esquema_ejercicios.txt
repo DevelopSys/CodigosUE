@@ -1,0 +1,33 @@
+1. Crear el proyecto -> ng new nombre --no-standalone --skip-tests
+2. En el index.html incorporo la cdn de bootstrap
+3. El componente app.component es el principal, desde aqui llamo al resto (no modifico el index)
+4. El componente app.component lo modifico en html como yo quiera (barra de navegacion)
+5. Ademas de la barra de navegacion, pongo un <router-outlet> (el cual indica donde se produce dicha navegacion)
+6. Genero el primer componente con el comando ng g c components/ejercicio1
+7. Configurar la ruta para que sea un elemento navegable, configurando una ruta dentro del app.routing.module indicando { path: '/ejercicio1', component: Ejercicio1Component },
+8. Hago que el elemento sea navegable desde la barra, ubicada en el app.component. Para ello agrego un router-link en el sitio donde al pulsar se navegara al componente [routerLink]="['/ejercicio1']"
+
+EJERCICIO1
+
+1. Importa el FormsModule dentro del modulo de la app
+2. Creo el html y defino en el ts las variables que asociare a los inputs
+3. Para poder mostrar los datos en tiempo real, es necesario utilizar el binding con las variables {{nombre_var}}
+
+EJERCICIO2
+
+1. Creo un boton y le asocio un metodo para su pulsacion  (click)="validarDatos()"
+2. Creo variable booleana para el cambio de esta tras la pulsacion del boton
+3. utilizo ngif para mostrar un parrafo u otro dependiendo del valor logico de la variable
+4. PAra validar los datos, genero lo mismo que antes, pero lo que hago es evaluar la variable ngModel
+* Mucho cuidado que si quieres capturar los datos de un select, es un string y para evaluarlo dentro de un caso en un ngswitch, hay que meter el caso entre ''
+
+EJERCICIO4
+
+1. Creo un modelo para representar los objetos
+2. Creo el array de productos dentro del componentes (esto mas adelante se saca a un servicio)
+3. Creo la estructura base del html, pengando todo completo
+4. Me quedo solo con el elemento (HTML) que quiero repetir
+5. Aplico un ngfor para repetir el elemento, usando el array creado en el punto 2
+6. Si quiero utilizar un index, pongo a este dentro de los elementos de ngfor
+7. Si quiero mostrar de forma diferente las filas pares, utilizo un ngClass con la evaluacion del index%2
+8. Para eliminar un elemento, crea un metodo con dicho elemento por parametros y llama al metodo tras la pulsacion del boton. Filtra la lista, obteniendo todos los elementos que no son el pasado por parametros,

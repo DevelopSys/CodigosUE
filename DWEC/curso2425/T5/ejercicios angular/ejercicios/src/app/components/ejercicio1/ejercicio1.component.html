@@ -1,0 +1,28 @@
+<input
+  class="form-control"
+  type="text"
+  [(ngModel)]="nombre"
+  placeholder="introduce tu nombre"
+/>
+
+<input
+  class="form-control"
+  type="number"
+  [(ngModel)]="edad"
+  placeholder="introduce tu edad"
+/>
+
+<select class="form-select" [(ngModel)]="opcion">
+  <option value="0">Selecciona una opción</option>
+  <option value="1">Opción 1</option>
+  <option value="2">Opción 2</option>
+</select>
+
+<label>Aceptas los terminos de uso</label>
+<input type="checkbox" [(ngModel)]="aceptar" />
+
+<button class="btn btn-primary" (click)="mostrarDatos()">Mostrar</button>
+
+<p>
+  Los datos introducidos son: {{ nombre }} {{ edad }} {{ aceptar }} {{ opcion }}
+</p>

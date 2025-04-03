@@ -1,0 +1,28 @@
+<input
+  type="number"
+  [(ngModel)]="edad"
+  placeholder="Por favor introduce la edad"
+/>
+
+<select class="form-select" [(ngModel)]="rol">
+  <option value="0">Admin</option>
+  <option value="1">Editor</option>
+  <option value="2">Invidado</option>
+</select>
+
+<span [ngSwitch]="rol">
+  <p *ngSwitchCase="'0'">Soy admin</p>
+  <p *ngSwitchCase="'1'">Soy editor</p>
+  <p *ngSwitchCase="'2'">Soy invitado</p>
+  <p *ngSwitchDefault>Selecciona una opcion</p>
+</span>
+
+<button class="btn btn-primary" (click)="validarDatos()">Validar</button>
+
+<p>{{ mensaje }}</p>
+<ng-container *ngIf="mostrar; else elseTemplate">
+  <p>Menor de 18</p>
+</ng-container>
+<ng-template #elseTemplate>
+  <p>Mayor de 18</p>
+</ng-template>
