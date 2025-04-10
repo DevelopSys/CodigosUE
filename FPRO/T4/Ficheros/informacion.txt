@@ -1,0 +1,1 @@
+Este es un ejemplo de fichero para su lectura desde C#

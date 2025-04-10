@@ -1,0 +1,84 @@
+Android
+
+	APP -> Manifest
+	Activity // Fragments 
+		XML
+			View -> Button, Edit, Recycler, TextView
+		KT
+	Activity // Fragments 
+		XML
+		KT
+	Activity // Fragments 
+		XML
+		KT
+	Activity // Fragments 
+		XML
+		KT
+	Activity // Fragments 
+		KT - logica y grafica -> Compose
+
+Flutter -> web / ios / android / desktop win / macos / linux
+	
+	cross -> proyecto nativo
+	Widgets -> App,
+				 Pantalla, pantalla1.dart
+				 	Column
+				 		Button,
+				 			Text
+				 		TextField,
+				 			Theme 
+				 		Form -> form.dart
+				 Pantalla, pantalla2.dart
+				 	Column
+				 		Button,
+				 			Text
+				 		TextField,
+				 			Theme 
+				 		Form -> form.dart
+	
+	Stateless -> renderiza elementos, sin cambiar el valor de las variables
+		@ build -> Widget
+
+	Statefull -> capturar los datos y guardarlos en unas variables
+		@ createState -> State -> setState()
+			@ build -> Widget
+
+DART
+IDE -> Intellij // AndroidStudio // VSC
+Android tool chains
+Chrome
+XCODE - COCOA
+AVD
+
+
+Proyecto
+
+Tipo de app -> Material("Android") / Cupertino("IOS")
+
+Primario MaterialApp -> w¡dget statless
+		* tema
+		* nombre de la app
+		* home la pagina que se muestra de primeras
+		* indicame las rutas
+
+	LoginPage -> widget stateless
+		Scaffold
+			parteSuperior(appBar)
+			parteCentral(body)
+				Container
+					Column
+						Text
+						TextField
+						TextField
+						Button
+			parteInferior(fab)
+					onPressed
+
+
+
+
+
+
+
+
+

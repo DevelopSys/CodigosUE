@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/bin/Debug/net9.0/Ficheros
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/bin/Debug/net9.0/Ficheros.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/bin/Debug/net9.0/Ficheros.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/bin/Debug/net9.0/Ficheros.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/bin/Debug/net9.0/Ficheros.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/Ficheros.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/Ficheros.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/Ficheros.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/Ficheros.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/Ficheros.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/Ficheros.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/refint/Ficheros.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/Ficheros.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/Ficheros.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/T4/Ficheros/obj/Debug/net9.0/ref/Ficheros.dll

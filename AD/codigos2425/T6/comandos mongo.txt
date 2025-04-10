@@ -1,0 +1,73 @@
+1. mostrar cuales son todas las bases de datos del cluster
+show dbs
+
+2. conectarme a la base de datos que seleccione use nombre_baseDatos
+
+3. mostrar todas las colecciones de la base de datos: show collections
+
+4. Trabjo con la coleccion correspondiente: db.nombreColeccion
+
+
+Read -> Select
+
+find() -> busca todos los elementos que cumplen la condicion de busqueda
+findOne() -> busca el primer elemento que cumple la condicion de busqueda
+
+
+// filtro de busqueda
+find({filtro de busqueda})
+
+db.movies.find({year:2015}).sort({runtime:-1})
+obtener todas las peliculas del año 2015 ordenadas ascendente por runtime
+db.movies.find({year:2015,num_mflix_comments:0})
+obtener todas las peliculas del año 2015 y que tenga un nunm_mflix_comment de 0
+db.movies.find({year:2010},{title:1, year:1,poster:1})
+obtener todas las pelicuals del año 2010 pero solo mostrando el title el year y el poster
+
+comparadores
+> $gt
+>= $gte
+< $lt
+<= $lte
+== $eq
+!= $ne
+
+
+db.movies.find({year:{$gte:2010,$lte:2014}},{title:1, year:1}).sort({year:-1})
+obtenemos todas las peliculas con un año entre el 2010 y el año 2014
+
+find({filtro_busqueda}{elementos_representacion}).metodosadiciones()
+
+Create -> insert
+db.nombreColeccion.insert({})
+db.nombreColeccion.insertMany([{},{}])
+
+ db.asignaturas.insert({nombre:"Programacion Multimedia", curso:2, profesor: "Borja Martin Herrera", dificultad: "media"})
+inserta un documento dentro de la coleccion con los datos identificados. Se crea un objectId por cada insercion
+
+db.asignaturas.insertMany([{nombre:"Desarrollo de interfaces", curso:2, profesor: "Javier Navazo", dificultad: "media"},{nombre:"Programacion de procesos", curso:2, profesor: "Javier Navazo", dificultad: "alta"},{nombre:"Sistema de Gestion", curso:2, profesor: "Cesar Garcia", dificultad: "alta"},{nombre:"Programacion", curso:1, profesor: "Borja Martin Herrera", dificultad: "media"},{nombre:"Lenguaje de Marcas", curso:1, profesor: "Borja Martin Herrera", dificultad: "baja"}])
+
+inserta todos los documentos indicados en el [] de JSON
+
+{} -> JSON
+
+UPDATE ->
+
+updateOne -> actualiza el primer elemento que cumple condicion de WHERE
+updateMany -> actualiza todos los elementos que cumple condicion de WHERE
+
+updateOne({condicion_where},{valores_actualizar})
+db.asignaturas.updateOne({nombre:"Programacion Sistemas"},{$set:{dificultad:"alta"}})
+actualiza una asignatura con el nombre Programacion Sistemas y ponle la dificultad alta
+
+DELETE ->
+
+deleteOne -> borra el primer elemento que cumple condicion de WHERE
+deleteMany -> borra todos los elementos que cumple condicion de WHERE
+
+db.asignaturas.deleteOne({curso:1})
+borra aquella asignatura que cumple que su curso es 1
+
+
+
+Create  Update Delete
