@@ -1,0 +1,21 @@
+<h2>Listado de usuarios</h2>
+<div class="row">
+  <div class="col">
+    <h3>Servicio local</h3>
+    <ul class="list-group">
+      <li *ngFor="let item of usuarios">
+        {{ item?.nombre }} {{ item?.apellido }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="col">
+    <h3>Servicio API</h3>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of usuariosURL">
+        {{ item.firstName }} {{ item.lastName }}
+        {{ item.company.address.state }}
+      </li>
+    </ul>
+  </div>
+</div>

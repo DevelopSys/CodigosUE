@@ -1,0 +1,30 @@
+<h2>Formulario de usuariuos</h2>
+<input
+  type="text"
+  placeholder="Nombre"
+  [(ngModel)]="nombre"
+  class="form-control mb-4"
+/>
+<input
+  type="text"
+  placeholder="Apellido"
+  [(ngModel)]="apellido"
+  class="form-control mb-4"
+/>
+<input
+  type="number"
+  placeholder="Edad"
+  [(ngModel)]="edad"
+  class="form-control mb-4"
+/>
+
+<input
+  type="date"
+  placeholder="fecha"
+  [(ngModel)]="fechaNacimiento"
+  class="form-control mb-4"
+/>
+
+<button class="btn btn-primary" (click)="anadirUsuario()">
+  Añadir usuario
+</button>
