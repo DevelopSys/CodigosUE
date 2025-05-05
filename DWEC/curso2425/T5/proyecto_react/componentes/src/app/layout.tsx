@@ -45,6 +45,11 @@ export default function RootLayout({
                     Formulario
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link" href="/consultas">
+                    Consultas
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
