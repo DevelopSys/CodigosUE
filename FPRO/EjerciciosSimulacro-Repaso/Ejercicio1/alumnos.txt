@@ -1,0 +1,6 @@
+borja,4
+maria,8
+pedro,10
+lucia,7
+juan,6
+marta,8

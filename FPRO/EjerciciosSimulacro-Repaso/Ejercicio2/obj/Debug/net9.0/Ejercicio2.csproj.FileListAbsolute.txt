@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/bin/Debug/net9.0/Ejercicio2
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/bin/Debug/net9.0/Ejercicio2.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/bin/Debug/net9.0/Ejercicio2.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/bin/Debug/net9.0/Ejercicio2.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/bin/Debug/net9.0/Ejercicio2.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/Ejercicio2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/Ejercicio2.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/Ejercicio2.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/Ejercicio2.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/Ejercicio2.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/Ejercicio2.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/refint/Ejercicio2.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/Ejercicio2.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/Ejercicio2.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/EjerciciosSimulacro-Repaso/Ejercicio2/obj/Debug/net9.0/ref/Ejercicio2.dll

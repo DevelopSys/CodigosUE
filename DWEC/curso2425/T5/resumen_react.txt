@@ -1,0 +1,25 @@
+Componente
+	<componenteHijo [nombre]="asdasd" >
+	Componente
+		@Input nombre
+
+
+
+Componente
+	<componenteHijo [nombre]="asdasd" >
+	Componente Props
+
+
+Estructura -> como crear un proyecto y su estructura
+	Diferenciar ficheros
+	Crear un componente -> fichero que tiene una funcion con un retorno (HTML a pintar)
+Rutas -> Link
+	Si se ha creado una carpeta con el nombre del componente, dento tengo un fichero llamado page.tsx y en el link el atributo href apunta a el nombre de la carpeta
+Guardar estado (variable) de un componente -> useState
+	si quiero guardar una variable que va a modificar su valor se utiliza useState const [varible, setVariable] = useState(valorInicial)
+Peticion api -> useEffect
+	useEffect = { laFuncionqueejecuta nada mas montar el componente,[el elemento que al modificarse hace que se ejecute la funcion del primer parametro -> si no hay ejecucion recurrerente, no poner nada] }
+Props -> paso de parametros entre componente padre e hijo 
+	el hijo deficher dentro de la funcion lo que recibe
+	en el padre cuando se llame al hijo, se pasa el dato en el selector <Hijo dato = 4>
+

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Pais } from "../models/usuario";
+import Carta from "../shared/carta";
 
 const Consultas = () => {
   // useEffect -> primer parametro que es una funcion (realizar la peticion al API) y segundo parametro un array de dependencias
@@ -32,21 +33,7 @@ const Consultas = () => {
       {/* mostrar todos los paises con sus cartas */}
       <div className="row row-cols-1 row-cols-md-2 g-4">
         {paises.map((pais: Pais) => {
-          return (
-            <div className="col" key={pais.ccn3}>
-              <div className="card">
-                <img
-                  src={pais.flags.png}
-                  className="card-img-top"
-                  alt="..."
-                ></img>
-                <div className="card-body">
-                  <h5 className="card-title">{pais.name.official}</h5>
-                  <p className="card-text">{pais.continents}</p>
-                </div>
-              </div>
-            </div>
-          );
+          return <Carta key={pais.cca3} pais={pais} />;
         })}
       </div>
     </div>

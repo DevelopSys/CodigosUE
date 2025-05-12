@@ -4,6 +4,10 @@ export type Usuario = {
   correo: string;
 };
 
+export type PropsPais = {
+  pais: Pais;
+};
+
 export interface Pais {
   name: Name;
   tld: string[];
