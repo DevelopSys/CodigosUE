@@ -1,0 +1,21 @@
+TEMA 1: kotlin -> sintaxis, clases, objetos, herencia, etc...
+		instalacion y uso de AD
+
+TEMA 2: android -> view (EditText -> binding.idEdit.text.toString, TextView, Button, Spinner + Adaptadore (sencillos (asociados a un string-array) o complejos (personalizados, clase que extendia de BaseAdapter)), RadioButton, ToggleButton sus eventos (o con la implementacion en la clase o con el boton.setOnClickListener {}) y su manejo. ciclo vida, recuperacion de los estados, la comunicacion entre pantallas y la gestion de los datos
+
+TEMA 3: android -> menus -> dialogo -> recycler (utiliza un patron viewholder + crear una clase ext RecyclerView.Adapter + interfaces de callback) -> fragments y su navegacion mediante navgraph -> base de datos (SQLITE o Firebase (auth / realtime - firecloudstore))
+
+TEMA 4 FLUTTER: Dart - web android ios win linux macos -> widget stateles (@build) stateful (@createState @build)https://docs.flutter.dev/ui/widgets/material?gclid=Cj0KCQjwpPKiBhDvARIsACn-gzAn8r2pjhRCK9lIB0JMKytrCxZwRNd1e6sLD9cLcluL3cWnmKWKcTgaAklBEALw_wcB&gclsrc=aw.ds
+
+TEMA 5 y 6: Unity
+Saber crear un proyecto unity, saber asociar un script a un gamobject, saber asociar componentes a un gameobject y hacer mecanicas de movimiento y colisiones
+
+
+
+
+Preguntas Examen
+
+1. android 
+	yo os doy el proyecto y ficheros base
+2. flutter -> si seleccionais este ejercicio, tan solo tendréis que subir la carpeta lib
+3. unity -> si seleccionais este ejercicio, tan solo tendráis que subir la carpeta assets

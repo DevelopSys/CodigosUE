@@ -1,0 +1,71 @@
+15 test -> 3 -> 15 minutos
+3 preguntas 2 -> 7 -> 1 hora
+
+1h15 -> 15 (leer enunciados / entregar examen)
+16 -> PMDM 1730 ->  1725
+20 -> AD -> 2130 -> 2125
+
+organizado
+
+.zip
+
+
+
+Tema 1 -> Trabajo con fichero
+	
+	- lectura / escritura texto plano
+		File -> FileWriter -> PrintWriter / BufferWriter
+		File -> FileReader -> BufferReader
+	
+	- lectura de JSON via URL -> maven -> org.json
+		URL -> HTTPConnection -> BufferReader -> String -> JSON
+		{} -> JSONObject
+		[] -> JSONArray
+		getJSONObject("")
+		getJSONArray("")
+		getString("")
+
+Tema 2 -> Base de datos MySQL -> XAMP -> Docker + XAMP + DBeaver o phpmyadmin 
+
+		- Mysql -> maven -> jdbc:mysql//localhost/basedatos
+		- Singlenton 
+		- Insert (C) Update (U) Delete (D) -> statement / prepareStatement -> execute / executeUpdate
+		- Select (R) -> resultset -> statement / prepareStatement -> executeQuery -> while
+
+Tema 3 -> ORM -> Mongoose / Hibernate + jdbc-> Mapeo Java -> SQL -> HQL
+		@Table @Entity @Columns @One2One @One2Many @Many2Many-> class -> tabla -> columns -> PK FK
+
+		-> si hay un ejercicio de estos -> os doy un fichero.zip con el proyecto
+
+Tema 4 -> BD OO
+		Postgresql -> estructura de la base de datos y la creacion de tipos y herencia en la base de datos 
+		ObjectDB -> java -> ORM .obj
+
+Tema 5 -> String -> Framework -> conexion con una base de datos mediante un servidor 	Tomcat. JAVA-cliente		SRV-WEB (hibernate+jdbc)			BaseDatos
+		Controller -> endpoint -> llaman a los metodos del servicio
+			@GET @POST @PUT @DELETE
+			public Entity<Alumnos> agregarAlumno(@body @param) 
+			https://lolcalhost/add?PARAMETRO=6
+		Model -> class
+		Repositorio -> conjunto de metodos contra bbdd -> JPARepository
+		Servicio -> implementacion de todos los elementos del repositorio
+
+Tema 6 -> BBDD NOSQL -> Mongo -> no relacional -> sin tablas -> 
+		colecciones -> documentos -> json
+		comandos -> find() / insert() / update() / delete()
+		java -> maven conector -> mongo atlas
+
+		ejercicio3.txt
+
+EJERCICIOS EXAMEN
+
+1. JDBC -> Base de datos "plana"
+2. Ficheros -> lectura / escritura .txt y JSON
+3. ORM Hibernate
+4. SpringBot
+5. Comandos Mongo
+
+
+
+
+

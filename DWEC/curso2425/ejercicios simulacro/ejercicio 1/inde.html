@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Calculadora APP</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <input class="form-control mb-3" id="texto-calculadora" />
+          <div class="row">
+            <button class="btn btn-primary col-3" id="btn1">1</button>
+            <button class="btn btn-primary col-3" id="btn2">2</button>
+            <button class="btn btn-primary col-3" onclick="ponerNumero('3')">
+              3
+            </button>
+            <button class="btn btn-primary col-3" onclick="asignarOperando(0)">
+              +
+            </button>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary col-3" onclick="ponerNumero('4')">
+              4
+            </button>
+            <button class="btn btn-primary col-3" onclick="ponerNumero('5')">
+              5
+            </button>
+            <button class="btn btn-primary col-3" onclick="ponerNumero('6')">
+              6
+            </button>
+            <button class="btn btn-primary col-3" onclick="asignarOperando(1)">
+              -
+            </button>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary col-3" onclick="ponerNumero('7')">
+              7
+            </button>
+            <button class="btn btn-primary col-3" onclick="ponerNumero('8')">
+              8
+            </button>
+            <button class="btn btn-primary col-3" onclick="ponerNumero('9')">
+              9
+            </button>
+            <button class="btn btn-primary col-3" onclick="asignarOperando(2)">
+              *
+            </button>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary col-3" onclick="ponerNumero('0')">
+              0
+            </button>
+            <button class="btn btn-primary col-3" id="btnC">C</button>
+            <button class="btn btn-primary col-3" id="btnIgual">=</button>
+            <button class="btn btn-primary col-3" onclick="asignarOperando(3)">
+              /
+            </button>
+          </div>
+        </div>
+        <div class="col-4">
+          <h2>Resultados</h2>
+          <ul class="list-group" id="lista"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
