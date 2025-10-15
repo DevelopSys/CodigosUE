@@ -1,0 +1,40 @@
+java->java+jdk+ide (intellij Idea)
+Conjunto de clases
+	donde escribo el codigo que quiero ejecutar
+		metodos
+			ejecuciones
+
+Proyecto -> Clase  (funcionadlidad de java)
+				   (conectar con instagram) -> Libreria de instagram
+				   (mandar un correo electronico) -> Libreria de correo
+
+				   Las librerias las descargo manualmente y las meto como dependencia
+
+maven o gradle
+Proyecto -> Clase  (funcionadlidad de java)
+				   (conectar con instagram) -> Libreria de instagram
+				   (mandar un correo electronico) -> Libreria de correo
+
+				   Las depencias solo tengo que apuntarlas en un fichero pom.xml, conectandose con un servidor-> repositorio, las descarga
+
+Clase -> un conjuto de metodos donde escribimos las lineas de codigo que queremos ejecutar
+		 el molde de lo que nosotros queremos hacer realizar -> POrientadaObjetos
+		 Los nombre de las clases tienen que cumplir:
+		 	- Identificativos
+		 	- En singular sin espacios
+		 	- Con la primera letra en mayusculas
+		 	- Si tengo que poner dos palabras: PrimeraSegunda
+		 	Ejemplos: Coche, Personaje, Usuario, Informe, Entrada, Main
+		 	Se crea un fichero .java con el mismo nombre de la clase escrita dentro
+
+Metodos -> las funcionalidades que se ejecutan desde las clases.
+	Para poder ejecutar necesito un metodo especial llamado main, que actua como la puerta de entrada del programa. Cuando yo le doy al play se ejecuta lo que dice el metodo main
+
+	modificador_acceso tipo_retorno nombre (argumentos) { proceso }
+	public void main (String[] args) {}
+
+		Los nombre de los metodos deben cumplir: 
+			- Identificativos
+			- Asociados a verbos
+			- la primera en minuscula. En caso de tener dos palabras la premire letra en minuscula y la primera de la sigueiten palabra en mayuscula realizarAnalisis()
+			- Dentro de una clase no pueden existir dos metodos con el mismo nombre (con la misma firma)
