@@ -1,0 +1,67 @@
+Tema 1: Streams
+	txt -> fichero.txt
+	obj -> objecto.dat Serializados
+	json -> [{ clave: valor },{  }]
+	xml -> <nodo ATRIBUTOS>valor</nodo>
+	csv -> asd,asd,asd,asd
+
+Tema 2: JDBC -> MySQL
+	SQL (MySQL - SQLite - Postgresql - Oracle)
+	.jar -> maven -> lombok
+	Connection -> Singleton
+	Statameten/PreapareStatement -> INSERT DELETE UPDATE
+	ResultSet -> SELECT
+	INSERT INTO Tabla (col,col,col,col) VALUES ('"+variable+"','asdasd',1234,'asd') -> String.format (banderas)
+
+Tema 3: ORM - JPA -> Hibernate
+	SQLite + Room -> ORM
+	Tablas de la base de datos -> valores guardados en tupla [1,asd,asd,asd@asd,123]
+	Programacion -> valores guardados en OBJETO
+	Desfase objeto relacional
+	sesion.insert(new Persona("Nombre","Apellido",123,"asd@gmail.com"))
+	sesion.find(1)
+	sesion.update()
+	sesion.delete(1)
+	Tb1 -> Tb2
+	1 	a 	1 -> @OnetoOne
+	1 	a   N -> @OnetoMany
+	N   a   N -> @ManytoMany
+	HQL -> SELECT * FROM Usuario where nombre = "asdasdasd"
+		   SELECT  u Usuario where u.nombre = "asdasdasd"
+	NamedQuery -> selectAll
+Tema 4: BDOO -> fichero.obj
+		Postgresql -> SQL / OO
+
+Tema 5: SpringBot
+	Cliente -> SRW (Tomcat) + ORM -> BD.  Android <-> SPB <-> BD
+	@Controller @APIRest @Application @Repository @JPA
+
+Tema 6: NoSQL
+	SQL -> Tabla1 -> Tuplas (Registro PK (AI))
+	SQL -> Tabla2 -> Tuplas (Registro PK (AI), Campo(FK))
+	Cuando mi servicio son totalmente dependientes
+
+	NoSQL -> Colecciones -> Documentos -> JSON
+						 -> Documentos -> JSON
+
+			 Colecciones -> Documentos -> JSON
+			 			 -> Documentos -> JSON
+
+	find({})
+	update({},{})
+	delete({})
+	insert({})
+
+	XAMP(MySQL) local (Docker) + DBeaver
+	MongoAtlas 
+	Intellij Community Edition 
+	VSC -> Peticiones REST API
+
+
+	Examen 
+
+		Ficheros
+		JDBC
+		ORM -> ProyectoBase
+		Spring -> ProyectoBase
+		Mongo -> ProyectoBase

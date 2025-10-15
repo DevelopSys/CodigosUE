@@ -1,0 +1,36 @@
+JavaScript 2-4 -> TypeScript 5-6
+2-3 -> HTML + CSS + Bt + Tw
+nodejs -> npm
+IDE -> Visual Studio Code -> extensiones
+
+TEMA 1
+
+Front: navegador (HTML + CSS + JS) -> (TS) -> FW -> Angular/React/VUE -> SPA - PWA
+		(local storage)
+
+index.html -> a -> href="./web1.html"
+web1.html
+web2.html
+web3.html
+
+index.html
+	componentes 1(html + css + ts)
+				2(html + css + ts)
+
+
+Back: servidor (PHP + NODEJS + PY -> Django + Flask  +  JAVA - SpringBoot+Angular/React) -> Base de datos (SQL-MySQL / NoSQL-Mongo)
+
+Devops - Full Stack (se de todo (front back))
+
+GitHub
+	Ramas -> main
+
+	Desp ->    rama1 + rama2 + rama3
+	General -> rama1 + rama2 + rama3
+	Integrante 1 ->  OK
+	Integrante 2 ->  OK
+	Integrante 3 ->  OK
+
+
+
+Cliente <-----json-------> Servidor ----------Base Datos
