@@ -1,0 +1,21 @@
+INPUT ->  PROGRAMA ->  OUTPUT
+
+Texto plano -> .txt "asdasdasdasdasd" 'A' -> 123 (ASCII)
+Datos objetos -> Usuario -> Data .obj
+JSON -> [{clave:valor}] -> URL -> .json
+XML -> root -> contenido o att -> .xml
+CSV
+
+
+Texto plano -> IO -> NIO
+Lecturas -> File -> FileReader -> BufferedReader
+Escrituras -> File -> FileWriter -> BufferedWriter/PritWriter
+
+Data
+"asdasd"
+9
+true
+Object
+Usuario
+Lectura -> ObjectInput -> FileInput -> Usuario 1L
+Escritura -> ObjectOutput -> FileOutput
