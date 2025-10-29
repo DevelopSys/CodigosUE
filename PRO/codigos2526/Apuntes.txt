@@ -60,7 +60,29 @@ Operadores: aquellas acciones que me permiten actuar contra una/varias variable/
 		suma (cuidado), resta, multiplicacion, division, modulo
 	asignacion: aquellos que ponen un valor a una variable
 	comparacion o relacionales: aquellos que me permiten relacionar 2 o más variables entre si -> resultado siempre es un booleano
-	logicos: aquellos que me permiten relacionar 2 o mas condiciones logicas
+	logicos: aquellos que me permiten relacionar 2 o mas condiciones logicas (boolean)
+		AND(&&) | OR(||) | NOT (!)
+
+		AND && (y)
+		C1.    C2.     R
+		T.     T.      T.
+		T.     F.      F. 
+		F.     T.      F. 
+		F.     F.      F. 
+
+
+		OR || (o)
+		C1.    C2.     R
+		T.     T.      T.
+		T.     F.      T. 
+		F.     T.      T. 
+		F.     F.      F. 
+
+		NOT ! (contrario)
+		C1.    R.     
+		T.     F.      
+		F.     T.      
+
 
 
 

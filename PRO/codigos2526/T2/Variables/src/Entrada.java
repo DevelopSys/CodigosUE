@@ -34,14 +34,40 @@ public class Entrada {
         // System.out.println("El modulo de los dos operadores es "+modulo); // -> 98765 -> h m s
         operandoUno = 10;
         // operandoUno = operandoUno +5; //  15
-        operandoUno +=5; // 15
-        operandoUno +=20; // 35
-        operandoUno -=10; // 25
-        operandoUno *=2; // 50
-        operandoUno /=2; // 25
-        operandoUno %=2; // 1
+        operandoUno += 5; // 15
+        operandoUno += 20; // 35
+        operandoUno -= 10; // 25
+        operandoUno *= 2; // 50
+        operandoUno /= 2; // 25
+        operandoUno %= 2; // 1
         System.out.println(operandoUno);
 
+        operandoUno = 10;
+        operandoDos = 10;
+        boolean resultado = operandoUno > operandoDos; // false
+        resultado = operandoUno >= operandoDos; // false
+        resultado = operandoUno < operandoDos; // true
+        resultado = operandoUno <= operandoDos; // true
+        resultado = operandoUno == operandoDos; // false
+        resultado = operandoUno != operandoDos; // true
+        System.out.println("El resultado de la ultima comparacion es " + resultado);
+
+        operandoUno = 10;
+        operandoDos = 30;
+        int operandoTres = 2;
+
+        resultado = operandoUno==0 && operandoDos!=operandoTres && operandoDos<100;
+                    // F && T && T -> F
+        System.out.println("El resultado de la primera comparacion logica es "+resultado);
+
+        resultado = operandoUno!=10 || operandoDos > operandoTres*2 || operandoTres>operandoUno || operandoUno > 3*30;
+                    // F || T || F || F -> T
+
+        resultado = !true && (operandoDos >= 10 || operandoTres!= 7);
+                //  F && (T || T)
+                // F && T -> F
+
+        System.out.println(resultado);
 
 
     }
