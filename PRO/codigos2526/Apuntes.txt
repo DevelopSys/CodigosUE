@@ -1,3 +1,5 @@
+APUNTES 15 - 10
+
 java->java+jdk+ide (intellij Idea)
 Conjunto de clases
 	donde escribo el codigo que quiero ejecutar
@@ -38,3 +40,34 @@ Metodos -> las funcionalidades que se ejecutan desde las clases.
 			- Asociados a verbos
 			- la primera en minuscula. En caso de tener dos palabras la premire letra en minuscula y la primera de la sigueiten palabra en mayuscula realizarAnalisis()
 			- Dentro de una clase no pueden existir dos metodos con el mismo nombre (con la misma firma)
+
+APUNTES 29 - 10
+
+Variables -> "sitios" donde podemos guardar datos para poder llamarlos en cualquier momento
+	Para poder definirla tipo nombre=valor;
+	Los nombres de las variables:
+		- empiezan en minusculas. nombreCompleto
+		- nombre descriptivo. edad, experiencia
+		- nombres sin espacios nombre_completo
+		- clasificacion:
+			- segun el dato que guarde -> boolean, String, int, double, etc........
+			- segun su forma de crearse -> primitivas / complejas
+			- segun su forma de modificarse -> "modificables" / "constantes"
+			- segun su ambito: locales y bloque 
+
+Operadores: aquellas acciones que me permiten actuar contra una/varias variable/s
+	aritmeticos: aquellos que aplican operaciones de aritmetica basica
+		suma (cuidado), resta, multiplicacion, division, modulo
+	asignacion: aquellos que ponen un valor a una variable
+	comparacion o relacionales: aquellos que me permiten relacionar 2 o más variables entre si -> resultado siempre es un booleano
+	logicos: aquellos que me permiten relacionar 2 o mas condiciones logicas
+
+
+
+
+
+
+
+
+
+
