@@ -3,6 +3,7 @@ package controller;
 import model.Usuario;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class OperacionesFicheros {
     public void lecturaFicheros(String path) {
@@ -136,6 +137,99 @@ public class OperacionesFicheros {
                 dos.close();
             } catch (IOException | NullPointerException e) {
                 System.out.println("El fichero no se puede cerrar");
+            }
+        }
+
+    }
+
+    public void escrituraObjetosMultiple(String path){
+        Usuario usuario1 = new Usuario(1,"Borja1","Martin","correo","123A",123);
+        Usuario usuario2 = new Usuario(2,"Borja2","Martin","correo","123A",123);
+        Usuario usuario3 = new Usuario(3,"Borja3","Martin","correo","123A",123);
+        Usuario usuario4 = new Usuario(4,"Borja4","Martin","correo","123A",123);
+        ArrayList<Usuario> listaUsuarios = new ArrayList<>();
+        listaUsuarios.add(usuario1);
+        listaUsuarios.add(usuario2);
+        listaUsuarios.add(usuario3);
+        listaUsuarios.add(usuario4);
+        File file = new File(path);
+
+        if (!file.exists()){
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                System.out.println("No tienes permisos de creacion");
+            }
+        }
+
+        ObjectOutputStream dos = null;
+
+        try {
+            dos = new ObjectOutputStream(new FileOutputStream(file));
+            dos.writeObject(listaUsuarios);
+        } catch (FileNotFoundException e) {
+            System.out.println("Fichero indicado incorrecto");
+        } catch (IOException e) {
+            System.out.println("No puedes escribir");
+        } finally {
+            try {
+                dos.close();
+            } catch (IOException | NullPointerException e) {
+                System.out.println("El fichero no se puede cerrar");
+            }
+        }
+
+    }
+
+    public  void lecturaObjeto(){
+        // file -> ObjectInputStream -> read (Usuario)
+        File file = new File("src/main/java/ficheros/escrituraObjetos.obj");
+
+
+        ObjectInputStream ois = null;
+
+        try {
+            ois = new ObjectInputStream(new FileInputStream(file));
+            Usuario usuario = (Usuario) ois.readObject();
+            System.out.println(usuario.getCorreo());
+        } catch (IOException e) {
+            System.out.println("Error lectura / escritura");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Clase no encontrada");
+        } finally {
+            try {
+                ois.close();
+            } catch (IOException e) {
+                System.out.println("Error en el cerrado del objeto");
+            }
+        }
+
+    }
+
+    public  void lecturaObjetoMultiple(){
+        // file -> ObjectInputStream -> read (Usuario)
+        File file = new File("src/main/java/ficheros/escrituraObjetos.obj");
+
+
+        ObjectInputStream ois = null;
+
+        try {
+            ois = new ObjectInputStream(new FileInputStream(file));
+            ArrayList<Usuario> lista = (ArrayList<Usuario>) ois.readObject();
+
+            for (Usuario item: lista) {
+                System.out.println(item);
+            }
+
+        } catch (IOException e) {
+            System.out.println("Error lectura / escritura");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Clase no encontrada");
+        } finally {
+            try {
+                ois.close();
+            } catch (IOException e) {
+                System.out.println("Error en el cerrado del objeto");
             }
         }
 

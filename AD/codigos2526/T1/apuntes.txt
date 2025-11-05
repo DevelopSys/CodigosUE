@@ -19,3 +19,12 @@ Object
 Usuario
 Lectura -> ObjectInput -> FileInput -> Usuario 1L
 Escritura -> ObjectOutput -> FileOutput
+
+Cliente -> BD
+
+Instalaciones -> XAMP (Servidor -> Apache / PHP / do) -> JDBC
+
+Cliente (ORM) -> BD 
+Cliente ->      SRV      -> BD
+
+Instalar DOCKER y crear un contenedor XAMPP -> conectarlo con un DBeaver

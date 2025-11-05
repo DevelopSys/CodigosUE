@@ -8,6 +8,7 @@ public class Main {
         // operaciones.lecturaFicherosBuffer("src/main/java/ficheros/ejemplo.txt");
         // operaciones.escrituraSimple("src/main/java/ficheros/escritura.txt");
         //operaciones.escrituraCompleja("src/main/java/ficheros/escrituraBuffer.txt");
-        operaciones.escrituraObjetos("src/main/java/ficheros/escrituraObjetos.obj");
+        //operaciones.escrituraObjetosMultiple("src/main/java/ficheros/escrituraObjetos.obj");
+        operaciones.lecturaObjetoMultiple();
     }
 }
