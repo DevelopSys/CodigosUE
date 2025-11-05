@@ -1,3 +1,6 @@
+import model.Alumno
+import model.AlumnoMaster
+
 // public static void main (String[] args){}
 // fun nombre(argumentos):retorno{cuerpo}
 
@@ -22,11 +25,17 @@ fun main() {
     // parametros nominales
     // saludar()
     // sumar(5, 8)
-    alumnos()
+    // alumnos()
+    var alumno1: Alumno = Alumno(nombre = "Borja", apellido = "Martin")
+    var alumno2: Alumno = Alumno(id = 1, nombre = "Borja", apellido = "Martin", correo = "borja@ue.com")
+    var alumnoMaster: AlumnoMaster =
+        AlumnoMaster(id = 1, nombre = "Juan", apellido = "Lopez", correo = "juan@ue.com", numeroCreditos = 30)
+    alumnoMaster.mostrarDatos()
+
 }
 
 fun alumnos() {
-    val listaAlumnos: ArrayList<String  > =
+    val listaAlumnos: ArrayList<String> =
         arrayListOf("Juan", "Mariaa", "Marta", "Carlos", "Borjaa")
     // alumno in 0..4
     /*for (alumno in listaAlumnos ){
@@ -45,10 +54,10 @@ fun alumnos() {
     // elemento cuyo nombre es Borja
     // println("${listaAlumnos.find { it.equals("Mateo", true) } ?: "No encontrado"}")
 
-    val listaFiltrada = listaAlumnos.filter {it.length>8 }
-    if (listaFiltrada.size==0){
+    val listaFiltrada = listaAlumnos.filter { it.length > 8 }
+    if (listaFiltrada.size == 0) {
         println("Nadie cummple la condicion de busqueda ")
-    }else {
+    } else {
         listaFiltrada.forEach { println(it) }
     }
 

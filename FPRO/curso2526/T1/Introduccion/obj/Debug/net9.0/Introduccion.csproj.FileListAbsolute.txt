@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/bin/Debug/net9.0/Introduccion
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/bin/Debug/net9.0/Introduccion.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/bin/Debug/net9.0/Introduccion.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/bin/Debug/net9.0/Introduccion.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/bin/Debug/net9.0/Introduccion.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/Introduccion.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/Introduccion.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/Introduccion.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/Introduccion.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/Introduccion.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/Introduccion.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/refint/Introduccion.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/Introduccion.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/Introduccion.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/Introduccion/obj/Debug/net9.0/ref/Introduccion.dll
