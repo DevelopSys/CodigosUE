@@ -83,7 +83,20 @@ Operadores: aquellas acciones que me permiten actuar contra una/varias variable/
 		T.     F.      
 		F.     T.      
 
+CLASE 12-11 Estructuras de control
 
+Gestionar partes del codigo que se van a ejecutar dependiendo de X elementos
+
+SELECCION -> Seleccionan una parte del codigo dependiendo de una condicion o valor
+	
+	IF -> se ejecutara una parte del codigo dependiendeo de una condicion logica (se evaluan boolean)
+		if / if - else / if - else if - else
+	SWITCH  -> Selecciona una parte del codigo u otra dependiendo de un valor (String / char / int)
+
+REPETICION -> Repiten un bloque de codigo dependiendo de una condicion o rango
+	FOR -> repite un numero determinado de veces. Rango
+	while -> repite un numero determinado de veces segun una condicion logica -> Minimo se ejecuta: 0 Maxima se ejecuta: indefinido
+	do while -> repite un numero determinado de veces segun una condicion logica ->  Minimo se ejecuta: 1 Maxima se ejecuta: indefinido
 
 
 

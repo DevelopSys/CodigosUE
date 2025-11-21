@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppInicial</string>
+    <string name="app_title">Primera app ANDROID</string>
+    <string name="hint_name">introduce tu nombre</string>
+    <string name="btn_saludar">Saludar</string>
+    <string name="btn_clean">Limpiar</string>
+    <string name="btn_close">Cerrar</string>
+    <string name="btn_change">Cambiar pantalla</string>
+
+</resources>

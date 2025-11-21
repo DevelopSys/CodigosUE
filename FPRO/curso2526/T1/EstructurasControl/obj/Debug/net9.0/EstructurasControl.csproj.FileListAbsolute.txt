@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/bin/Debug/net9.0/EstructurasControl
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/bin/Debug/net9.0/EstructurasControl.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/bin/Debug/net9.0/EstructurasControl.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/bin/Debug/net9.0/EstructurasControl.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/bin/Debug/net9.0/EstructurasControl.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/EstructurasControl.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/EstructurasControl.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/EstructurasControl.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/EstructurasControl.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/EstructurasControl.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/EstructurasControl.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/refint/EstructurasControl.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/EstructurasControl.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/EstructurasControl.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T1/EstructurasControl/obj/Debug/net9.0/ref/EstructurasControl.dll

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Inicial" >
         <activity
-            android:name=".SecondActivity"
+            android:name=".PrincipalActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

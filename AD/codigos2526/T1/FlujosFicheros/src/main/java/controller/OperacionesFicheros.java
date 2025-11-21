@@ -234,4 +234,28 @@ public class OperacionesFicheros {
         }
 
     }
+
+    public void lecturaObjeto2(String path){
+        File file = new File(path);
+        ObjectInputStream ois = null;
+
+        try {
+            ois = new ObjectInputStream(new FileInputStream(file));
+            Usuario usuario = (Usuario) ois.readObject();
+            System.out.println(usuario);
+        } catch (IOException e) {
+            System.out.println("Error en la IO");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Error a la hora de encontrar la clase");
+        } finally {
+            try {
+                ois.close();
+            } catch (IOException e) {
+                System.out.println("Error en el cerrado del flujo");
+            }
+        }
+
+    }
 }
+
+

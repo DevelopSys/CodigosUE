@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppInicial</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="app_title">First app ANDROID</string>
+    <string name="btn_saludar">Say hello!</string>
+    <string name="btn_clean">Clean</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_change">Change activity</string>
+
+</resources>
