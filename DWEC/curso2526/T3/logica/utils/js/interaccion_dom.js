@@ -3,8 +3,14 @@
 let botonAgregar = document.querySelector("#botonAgregar");
 let botonEliminar = document.querySelector("#botonEliminar");
 let botonVaciar = document.querySelector("#botonVaciar");
+let botonUsuarios = document.querySelector("#botonUsuarios");
 let lista = document.querySelector("#lista");
+let listaUsuarios = document.querySelector("#listaUsuarios");
 let inputNombre = document.querySelector("#inputNombre");
+let inputApellido = document.querySelector("#inputApellido");
+let inputCorreo = document.querySelector("#inputCorreo");
+let inputFecha = document.querySelector("#inputFecha");
+let usuarios = [];
 
 // let boton = document.querySelector("button");
 // LISTA con un solo boton
@@ -13,12 +19,35 @@ items.forEach((item, index) => {
   // console.log("Elemento " + item.textContent);
   item.textContent = `Elemento ${index}`;
 }); */
+botonUsuarios.addEventListener("click", () => {
+  /* let usuario = new Usuario();
+  usuario.setNombre = "asdasd"
+  // limpiarDatos[0].setCorreo("prueba@hotmail.com");
+
+  console.log(
+    `Los datos del primer usuarios con ${listaUsarios[0].getDominio()}`
+  ); */
+  this.usuarios = _.shuffle(this.usuarios);
+  console.log(this.usuarios);
+
+  let ejecucionRecurrente = setInterval(() => {
+    agregarNodoUsuario(usuarios.pop());
+    if (usuarios.length == 0) {
+      clearInterval(ejecucionRecurrente);
+    }
+  }, 3000);
+
+  botonUsuarios.enable = false;
+  // ejecucionRecurrente();
+});
+
 botonAgregar.addEventListener("click", () => {
+  /* 
   // lo que pasará cuando el boton se pulse
   // forma facil
   let contenido = inputNombre.value;
-  /* lista.innerHTML += `<li class='animate__animated animate__backInRight list-group-item'>${contenido}</li>`;
-  inputNombre.value = ""; */
+  lista.innerHTML += `<li class='animate__animated animate__backInRight list-group-item'>${contenido}</li>`;
+  inputNombre.value = "";
   // crea un nodo
   if (contenido.length == 0) {
     Swal.fire({
@@ -48,7 +77,15 @@ botonAgregar.addEventListener("click", () => {
     li.appendChild(botonLi);
     lista.append(li);
     inputNombre.value = "";
-  }
+  } */
+  // crearme un objeto de tipo usuario
+  let usuario = new Usuario(
+    inputNombre.value,
+    inputApellido.value,
+    inputCorreo.value,
+    inputFecha.value
+  );
+  agregarUsuario(usuario);
 });
 
 botonEliminar.addEventListener("click", () => {
@@ -64,3 +101,32 @@ botonVaciar.addEventListener("click", () => {
     lista.innerHTML = "";
   }, 700);
 });
+
+function agregarUsuario(usuario, posicion = 1) {
+  // no quiero agregar el usuario si ya existe ese correo
+  let usuarioEncontrado = usuarios.find((item) => {
+    return item.getCorreo() == usuario.getCorreo();
+  });
+  if (usuarioEncontrado != undefined) {
+    Swal.fire({
+      title: "Usuario?",
+      text: "El usuario ya existe",
+      icon: "error",
+    });
+  } else {
+    usuarios.push(usuario);
+    limpiarDatos();
+  }
+}
+
+function agregarNodoUsuario(usuario) {
+  // no quiero agregar el usuario si ya existe ese correo
+  listaUsarios.innerHTML += `<li class='list-group-item'>${usuario.mostrarDatos()}</li>`;
+}
+
+function limpiarDatos() {
+  inputApellido.value = "";
+  inputNombre.value = "";
+  inputCorreo.value = "";
+  inputFecha.value = "";
+}

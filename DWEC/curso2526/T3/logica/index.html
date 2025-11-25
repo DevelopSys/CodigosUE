@@ -20,6 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
     <title>Document</title>
     <!-- incrustar codigo JS -->
   </head>
@@ -37,12 +38,37 @@
         <button class="col btn btn-primary" id="botonAgregar">Agregar</button>
         <button class="col btn btn-success" id="botonEliminar">Eliminar</button>
         <button class="col btn btn-danger" id="botonVaciar">Vaciar</button>
+        <button class="col btn btn-waning" id="botonUsuarios">Usuarios</button>
       </div>
-      <input
-        class="form-control"
-        placeholder="introduce el nombre del li"
-        id="inputNombre"
-      />
+      <div class="row">
+        <div class="col">
+          <input
+            class="form-control"
+            placeholder="introduce el nombre"
+            id="inputNombre"
+          />
+          <input
+            class="form-control"
+            placeholder="introduce el apellido"
+            id="inputApellido"
+          />
+          <input
+            class="form-control"
+            placeholder="introduce el correo"
+            id="inputCorreo"
+          />
+          <input
+            class="form-control"
+            placeholder="introduce la fecha"
+            id="inputFecha"
+            type="date"
+          />
+        </div>
+        <div class="col">
+          <ul class="list-group" id="listaUsarios"></ul>
+        </div>
+      </div>
+
       <div class="mt-4">
         <ul class="list-group" id="lista"></ul>
       </div>
@@ -54,7 +80,8 @@
     </script> -->
     <!-- <script src="./utils/js/index.js"></script> -->
     <!-- <script src="./utils/js/interaccion.js"></script> -->
-    <script src="./utils/js/listas.js"></script>
-    <!-- <script src="./utils/js/interaccion_dom.js"></script> -->
+    <!-- <script src="./utils/js/listas.js"></script> -->
+    <script src="./utils/js/usuario.js"></script>
+    <script src="./utils/js/interaccion_dom.js"></script>
   </body>
 </html>
