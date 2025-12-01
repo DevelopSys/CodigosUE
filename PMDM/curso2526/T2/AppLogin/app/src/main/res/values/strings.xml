@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppLogin</string>
+    <string-array name="perfiles">
+        <item>Administador</item>
+        <item>Usuario</item>
+        <item>Invitado</item>
+    </string-array>
+</resources>
