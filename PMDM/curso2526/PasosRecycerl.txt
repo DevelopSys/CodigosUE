@@ -1,0 +1,9 @@
+1. Creo en el XML de la activity la lista que quiero representar
+2. Crea el XML donde vas a representar el aspecto de cada fila
+3. Crea el Adapter para poder manejar los datos de forma correcta, mediante un patron ViewHolder
+	3.1 Crear la clase extendiendo de RecyclerView.Adapter
+	3.2 Crea una inner clase extiendiendo de RecyclerView.ViewHolder
+	3.3 Implementado los metodos
+	3.4 ¿Personalizar acciones y realizar callback?
+4. Inicializa los elementos adapter y list
+5. Asocia el adaptar al recycler y pon el layout manager

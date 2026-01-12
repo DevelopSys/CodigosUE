@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/Listas.csproj": {}
+    "/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2425/T2/Listas/Listas/Listas.csproj": {}
   },
   "projects": {
-    "/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/Listas.csproj": {
+    "/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2425/T2/Listas/Listas/Listas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/Listas.csproj",
+        "projectUniqueName": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2425/T2/Listas/Listas/Listas.csproj",
         "projectName": "Listas",
-        "projectPath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/Listas.csproj",
+        "projectPath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2425/T2/Listas/Listas/Listas.csproj",
         "packagesPath": "/Users/borja/.nuget/packages/",
-        "outputPath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/obj/",
+        "outputPath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2425/T2/Listas/Listas/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/borja/.nuget/NuGet/NuGet.Config"
@@ -37,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -53,12 +54,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.14, 8.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[8.0.14, 8.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.14, 8.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

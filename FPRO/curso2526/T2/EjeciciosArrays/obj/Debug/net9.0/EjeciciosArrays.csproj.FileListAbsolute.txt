@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/bin/Debug/net9.0/EjeciciosArrays
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/bin/Debug/net9.0/EjeciciosArrays.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/bin/Debug/net9.0/EjeciciosArrays.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/bin/Debug/net9.0/EjeciciosArrays.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/bin/Debug/net9.0/EjeciciosArrays.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/EjeciciosArrays.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/EjeciciosArrays.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/EjeciciosArrays.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/EjeciciosArrays.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/EjeciciosArrays.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/EjeciciosArrays.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/refint/EjeciciosArrays.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/EjeciciosArrays.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/EjeciciosArrays.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/EjeciciosArrays/obj/Debug/net9.0/ref/EjeciciosArrays.dll

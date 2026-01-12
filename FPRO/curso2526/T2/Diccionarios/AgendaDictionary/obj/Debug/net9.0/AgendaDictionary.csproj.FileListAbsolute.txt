@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/refint/AgendaDictionary.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/ref/AgendaDictionary.dll

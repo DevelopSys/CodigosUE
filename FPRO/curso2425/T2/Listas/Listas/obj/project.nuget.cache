@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5M0WDv4JSMd3iJy6O3stGVeZCQYQOvH19dYR18ph6r1/SxiaEtwC9AfBPSc+shR43kVqhRJSIImeOHVJyV3ZGA==",
+  "dgSpecHash": "PuAat+BBknM=",
   "success": true,
-  "projectFilePath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/T2/Listas/Listas/Listas.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2425/T2/Listas/Listas/Listas.csproj",
+  "expectedPackageFiles": [
+    "/Users/borja/.nuget/packages/microsoft.netcore.app.ref/8.0.14/microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.14/microsoft.netcore.app.host.osx-arm64.8.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
