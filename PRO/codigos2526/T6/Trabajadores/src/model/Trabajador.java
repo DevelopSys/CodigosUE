@@ -27,6 +27,8 @@ public class Trabajador {
         this.dni = dni;
         this.salario = salario;
         this.numeroPagas = numeroPagas;
+        // irpf = 0
+        // experiencia = false
     }
 
     public Trabajador(String nombre, String apellido, String dni, int irpf, int numeroPagas, double salario) {
@@ -42,6 +44,15 @@ public class Trabajador {
 
     // metodos "especiales" -> getter public int getSueldo() -> permite acceder al valor de una variable / setter -> alterar el valor de la variable
 
+    public void mostrarDatos() {
+        System.out.println("nombre = " + nombre);
+        System.out.println("apellido = " + apellido);
+        System.out.println("dni = " + dni);
+        System.out.println("irpf = " + irpf);
+        System.out.println("numeroPagas = " + numeroPagas);
+        System.out.println("salario = " + salario);
+        System.out.println("experiencia = " + experiencia);
+    }
 
     public String getNombre() {
         return nombre;

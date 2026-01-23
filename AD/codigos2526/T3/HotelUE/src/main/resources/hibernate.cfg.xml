@@ -9,5 +9,6 @@
         <property name="show_sql">true</property>
         <mapping class="model.Empleado"/>
         <mapping class="model.Habitacion"/>
+        <mapping class="model.Perfil"/>
     </session-factory>
 </hibernate-configuration>

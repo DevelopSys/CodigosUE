@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/bin/Debug/net9.0/Presenciales
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/bin/Debug/net9.0/Presenciales.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/bin/Debug/net9.0/Presenciales.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/bin/Debug/net9.0/Presenciales.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/bin/Debug/net9.0/Presenciales.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/Presenciales.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/Presenciales.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/Presenciales.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/Presenciales.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/Presenciales.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/Presenciales.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/refint/Presenciales.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/Presenciales.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/Presenciales.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/PRESENCIALES/Presenciales/obj/Debug/net9.0/ref/Presenciales.dll
