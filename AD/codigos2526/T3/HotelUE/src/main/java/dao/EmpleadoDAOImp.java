@@ -1,5 +1,6 @@
 package dao;
 
+import model.Cliente;
 import model.Direccion;
 import model.Empleado;
 import org.hibernate.Session;
@@ -20,6 +21,18 @@ public class EmpleadoDAOImp {
         session = new Configuration().configure().buildSessionFactory().openSession();
         transaction = session.beginTransaction();
         session.persist(empleado);
+        transaction.commit();
+        session.close();
+    }
+
+    public void getAllClientes(int id) {
+        // capa logica de la app
+        session = new Configuration().configure().buildSessionFactory().openSession();
+        transaction = session.beginTransaction();
+        Empleado empleado = session.find(Empleado.class, id);
+        for (Cliente cliente : empleado.getClientes()) {
+            cliente.mostrarDatos();
+        }
         transaction.commit();
         session.close();
     }

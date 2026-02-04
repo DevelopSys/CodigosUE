@@ -1,3 +1,4 @@
+import dao.ClienteDAOImpl;
 import dao.EmpleadoDAOImp;
 import dao.HabitacionDAOImpl;
 import dao.PerfilDAOImpl;
@@ -10,7 +11,11 @@ public class MainDAO {
         EmpleadoDAOImp empleadoDAOImp = new EmpleadoDAOImp();
         PerfilDAOImpl perfilDAO = new PerfilDAOImpl();
         HabitacionDAOImpl habitacionDAO= new HabitacionDAOImpl();
-        habitacionDAO.crearHabitacion();
+        ClienteDAOImpl clienteDAO = new ClienteDAOImpl();
+        // clienteDAO.realizarReservar(3,5);
+        clienteDAO.getAllEmpleadosReserva(3);
+        // empleadoDAOImp.getAllClientes(1);
+        // habitacionDAO.crearHabitacion();
         /*empleadoDAOImp.insertarUsuario(new Empleado("Marta", "Martin", "marta@gmail.com", 30000,
                 new Direccion("Barcelona", "Barcelona", "C/Madrid"), "marketing"));*/
         // empleadoDAOImp.borrarUsuario(5);

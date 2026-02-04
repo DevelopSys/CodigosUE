@@ -1,0 +1,39 @@
+<main class="container mt-4">
+  <h1>App Angular</h1>
+  <p>Esta app no servida para poder trabajar con Angular y explicar sus funcionalidades</p>
+  <h2>Binding</h2>
+  <div class="row">
+    <div class="col-2">
+      <img [src]="imagen" style="width: 70%" />
+    </div>
+
+    <div class="col-8">
+      <p>
+        Para poder trar elementos que estan en lo logico y representarlos en la parte grafica se
+        utiliza el one-way binding. Por ejemplo vamos a renederizar una variable: {{ nombre }} y voy
+        a sacar un
+        {{ nota }}
+      </p>
+      <p>
+        El event binding hace lo contrario. Lanza un evento y pasa datos desde lo grafico a lo
+        logico. Para ello en el button, select, input asociamos un evento mediante (click), ademas
+        de definir el metodo en la parte logica
+      </p>
+
+      <input placeholder="Introduce nombre" class="form-control" #inputNombre />
+      <select class="form-select mt-3" #selectNota>
+        <option value="0">1-3</option>
+        <option value="1">4-5</option>
+        <option value="2">6-8</option>
+        <option value="3">9</option>
+        <option value="10">10</option>
+      </select>
+      <button
+        class="btn btn-primary w-100 mt-3"
+        (click)="procesarRespuesta(inputNombre.value, selectNota.value)"
+      >
+        Enviar
+      </button>
+    </div>
+  </div>
+</main>

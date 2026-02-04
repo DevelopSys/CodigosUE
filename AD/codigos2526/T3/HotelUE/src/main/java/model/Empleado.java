@@ -1,13 +1,17 @@
 package model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.Transaction;
 import org.hibernate.annotations.NamedQuery;
+
+import java.util.HashSet;
+import java.util.Set;
 
 // TODO. mucho cuidado con el toString
 @Data
+@ToString(exclude = "clientes")
+@EqualsAndHashCode(exclude = "clientes")
 @AllArgsConstructor
 @NoArgsConstructor
 @NamedQuery(name = "Empleado.findByLocalidad",query = "FROM Empleado e WHERE e.direccion.localidad=:localidadArgs")
@@ -30,11 +34,8 @@ public class Empleado {
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "id_perfil")
     private Perfil perfil;
-
-
-
-
-
+    @ManyToMany(mappedBy = "empleados")
+    private Set<Cliente> clientes = new HashSet<>();
 
     public Empleado(String nombre, String apellido, String mail, int salario, Direccion direccion, String categoria) {
         this.nombre = nombre;
@@ -53,4 +54,6 @@ public class Empleado {
         System.out.println("salario = " + salario);
         System.out.println("direccion = " + direccion.getLocalidad());
     }
+
+
 }
