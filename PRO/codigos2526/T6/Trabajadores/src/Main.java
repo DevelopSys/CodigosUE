@@ -56,8 +56,13 @@ public class Main {
 
         Empresa empresa = new Empresa("Informatica paco","España");
         empresa.contratarDirector(new Director("Paco","Jimenez"));
+        empresa.contratarTrabajador(new Trabajador("Borja","Martin","1234A",10,12,100000));
+        empresa.contratarTrabajador(new Trabajador("Claudia","Martin","1234B",10,12,100000));
+        empresa.contratarTrabajador(new Trabajador("Rebeca","De diego","1234C",10,12,100000));
+        empresa.contratarTrabajador(new Trabajador("Celia","Martin","1234D",10,12,100000));
+        empresa.contratarJefe(new Jefe("Marcos","De la fuente"));
         // empresa.contratarDirector(new Director("Luis","Gomez"));
-        empresa.mostarInformacion();
+        // empresa.mostarInformacion();
         // trabajadores = null
         // si una empresa no tiene jefe es porque jefe es null
         // director = null
