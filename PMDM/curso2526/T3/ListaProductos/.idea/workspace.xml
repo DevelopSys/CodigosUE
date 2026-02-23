@@ -24,20 +24,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="463a01c1-06fb-46b4-accb-6c4c326aba80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../AgendaJSON/app/src/main/java/com/example/agendajson/adapter/UsuarioAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AgendaJSON/app/src/main/java/com/example/agendajson/dialog/DialogAyuda.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AgendaJSON/app/src/main/res/layout/item_recycler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AgendaJSON/app/src/main/res/menu/main_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/bin/Debug/net9.0/AgendaDictionary.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/AgendaDictionary.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/ref/AgendaDictionary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/ref/AgendaDictionary.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/refint/AgendaDictionary.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2526/T2/Diccionarios/AgendaDictionary/obj/Debug/net9.0/refint/AgendaDictionary.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/app/src/main/java/com/example/tienda/ui/dialog/DialogoConfirmacion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/app/src/main/java/com/example/tienda/ui/fragment/DetailFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/app/src/main/java/com/example/tienda/ui/fragment/ListaFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/app/src/main/java/com/example/tienda/ui/fragment/MainFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/app/src/main/res/layout/fragment_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/app/src/main/res/layout/fragment_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tienda/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Debug/net8.0/Juego.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Debug/net8.0/Juego.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Debug/net8.0/Juego.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Debug/net8.0/Juego.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Debug/net8.0/Juego.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Juego.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Juego.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Juego.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/Juego.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../FPRO/curso2425/T3/Juego/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PRO/codigos2526/T6/Trabajadores/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PRO/codigos2526/T6/Trabajadores/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../PRO/codigos2526/T6/Trabajadores/src/controller/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../PRO/codigos2526/T6/Trabajadores/src/controller/Empresa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

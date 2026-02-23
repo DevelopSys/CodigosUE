@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Pgtpst37D8HKoIxyLn9CVoZ98JIbv5sn5QPfsnyG/t4np7oDb+BJgY3EwRPokKCjbF1EHQOQMXuSB6+j1nx9VQ==",
+  "dgSpecHash": "iILFT7u+/9o=",
   "success": true,
-  "projectFilePath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/T3/Juego/Juego.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2425/T3/Juego/Juego.csproj",
+  "expectedPackageFiles": [
+    "/Users/borja/.nuget/packages/microsoft.netcore.app.ref/8.0.14/microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.14/microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.14/microsoft.netcore.app.host.osx-arm64.8.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

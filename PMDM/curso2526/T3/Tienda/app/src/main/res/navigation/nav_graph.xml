@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.tienda.ui.fragment.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main"
+        >
+        <action
+            android:id="@+id/action_mainFragment_to_listaFragment"
+            app:destination="@id/listaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_list"
+        android:id="@+id/listaFragment"
+        android:name="com.example.tienda.ui.fragment.ListaFragment"
+        android:label="ListaFragment" >
+        <action
+            android:id="@+id/action_listaFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_listaFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_listaFragment_to_dialogoConfirmacion"
+            app:destination="@id/dialogoConfirmacion" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_detail"
+        android:id="@+id/detailFragment"
+        android:name="com.example.tienda.ui.fragment.DetailFragment"
+        android:label="DetailFragment" >
+        <action
+            android:id="@+id/action_detailFragment_to_listaFragment"
+            app:destination="@id/listaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_detailFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_detailFragment_to_dialogoConfirmacion"
+            app:destination="@id/dialogoConfirmacion" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogoConfirmacion"
+        android:name="com.example.tienda.ui.dialog.DialogoConfirmacion"
+        android:label="DialogoConfirmacion" >
+        <action
+            android:id="@+id/action_dialogoConfirmacion_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </dialog>
+</navigation>

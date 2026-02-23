@@ -1,0 +1,31 @@
+<input class="form-control mb-3" placeholder="Introduce nombre de tarea" />
+<input class="form-control mb-3" placeholder="Introduce responsable de tarea" />
+<input class="form-control mb-3" placeholder="Introduce definicion de tarea" />
+<input class="form-control mb-3" placeholder="Fecha vencimiento tarea" type="date" />
+<select class="form-select mb-3" [(ngModel)]="dificultad">
+  <option value="-1">Introduce prioridad</option>
+  <option value="0">Baja</option>
+  <option value="1">Media</option>
+  <option value="2">Alta</option>
+</select>
+@switch (dificultad) {
+  @case ('0') {
+    <input placeholder="introduce fecha minima de comienzo" type="date" class="form-select mb-3" />
+  }
+  @case ('1') {
+    <input placeholder="selecciona el item intermedio de la tarea" class="form-select mb-3" />
+  }
+  @case ('2') {
+    <select class="form-select mb-3">
+      <option value="-1">Indica el nivel de prioridad alta</option>
+      <option value="0">normal</option>
+      <option value="1">urgente</option>
+      <option value="2">para ayer</option>
+    </select>
+  }
+  @default {
+    <p class="mt-3">Selecciona la dificultad de la tarea</p>
+  }
+}
+
+<button class="btn btn-primary w-100">Guardar tarea</button>

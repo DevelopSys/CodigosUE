@@ -1,0 +1,12 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@productos.edit.headline">Edit Productos</h1>
+    <div>
+        <a routerLink="/productoss" class="btn btn-secondary" i18n="@@productos.edit.back">Back to list</a>
+    </div>
+</div>
+<form [formGroup]="editForm" (ngSubmit)="handleSubmit()">
+    <app-input-row [group]="editForm" field="id" rowType="number" i18n-label="@@productos.id.label" label="Id" />
+    <app-input-row [group]="editForm" field="nombre" i18n-label="@@productos.nombre.label" label="Nombre" />
+    <app-input-row [group]="editForm" field="precio" rowType="number" i18n-label="@@productos.precio.label" label="Precio" />
+    <input type="submit" i18n-value="@@productos.edit.headline" value="Edit Productos" class="btn btn-primary mt-4" />
+</form>

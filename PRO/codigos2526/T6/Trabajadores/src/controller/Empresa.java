@@ -74,6 +74,7 @@ public class Empresa {
 
     }
 
+    // quiero que hagais un metodo que permita contratar jefes
     public void contratarJefe(Jefe trabajador) {
         // si tengo un trabajador con el mismo DNI, no se agrega
         // recorrer la lista y preguntar uno a uno
@@ -84,7 +85,37 @@ public class Empresa {
 
     }
 
-    // quiero que hagais un metodo que permita contratar jefes
     // quiero que hagais un metodo que permita mostrar toda la info de los trabajadores
+    public void mostrarDatosTrabajadores() {
+        // recorre la lista de los trabajadores
+        // uno a uno le digo que ejecute una funcionalidades suya
+        for (Trabajador trabajador : listaTrabajadores) {
+            trabajador.mostrarDatos();
+        }
+    }
+
+    public void mostrarInformacionJefes() {
+        for (Jefe jefe : listaJefes) {
+            jefe.mostarDatos();
+        }
+    }
+
+    public void asignarResponsabilidad(String nombre, int reponsabilidad) {
+        for (Jefe item : listaJefes) {
+            if (item.getNombre().equals(nombre)) {
+                item.setNivelResponsabilidad(reponsabilidad);
+                break;
+            }
+        }
+    }
+
+    public void asignarTutor(String nombre){
+        // asignar al jefe con nombre que te doy una persona mas a su cargo
+        for (Jefe item: listaJefes) {
+            if (item.getNombre().equals(nombre)){
+                item.setPersonasCargo(item.getPersonasCargo()+1);
+            }
+        }
+    }
     // quiero que hagais un metodo que permita mostrar toda la info de los jefes
 }

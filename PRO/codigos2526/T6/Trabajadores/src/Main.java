@@ -3,6 +3,7 @@ import model.Director;
 import model.Jefe;
 import model.Trabajador;
 
+import java.lang.annotation.Target;
 import java.util.Scanner;
 
 public class Main {
@@ -54,13 +55,35 @@ public class Main {
         director.dirigirMasas("Vamos a programar");
         director1.dirigirMasas("Vamos todos a clase");*/
 
-        Empresa empresa = new Empresa("Informatica paco","España");
-        empresa.contratarDirector(new Director("Paco","Jimenez"));
-        empresa.contratarTrabajador(new Trabajador("Borja","Martin","1234A",10,12,100000));
-        empresa.contratarTrabajador(new Trabajador("Claudia","Martin","1234B",10,12,100000));
-        empresa.contratarTrabajador(new Trabajador("Rebeca","De diego","1234C",10,12,100000));
-        empresa.contratarTrabajador(new Trabajador("Celia","Martin","1234D",10,12,100000));
-        empresa.contratarJefe(new Jefe("Marcos","De la fuente"));
+        Empresa informaticaPaco = new Empresa("Informatica paco","España");
+        informaticaPaco.contratarDirector(new Director("Paco","Jimenez"));
+        informaticaPaco.contratarTrabajador(new Trabajador("Borja","Martin","1234A",10,12,100000));
+        informaticaPaco.contratarTrabajador(new Trabajador("Claudia","Martin","1234B",10,12,100000));
+        informaticaPaco.contratarTrabajador(new Trabajador("Rebeca","De diego","1234C",10,12,100000));
+        informaticaPaco.contratarTrabajador(new Trabajador("Celia","Martin","1234D",10,12,100000));
+        informaticaPaco.contratarJefe(new Jefe("Marcos","De la fuente"));
+        informaticaPaco.contratarJefe(new Jefe("Luis","Gomez"));
+        informaticaPaco.asignarResponsabilidad("Marcos",4);
+        informaticaPaco.asignarTutor("Marcos");
+        informaticaPaco.asignarTutor("Marcos");
+        informaticaPaco.asignarTutor("Marcos");
+        informaticaPaco.asignarTutor("Marcos");
+        informaticaPaco.asignarTutor("Marcos");
+        informaticaPaco.asignarTutor("Marcos");
+        informaticaPaco.asignarResponsabilidad("Luis",2);
+        informaticaPaco.asignarTutor("Luis");
+
+        Empresa vestidosJuan = new Empresa("Vestidos Juan","Andorra");
+        // listaTrabajadores = []
+        // listaJefes = []
+        // Director = null
+        vestidosJuan.contratarTrabajador(new Trabajador("Pepe","Lopez","1234A",15,12,20000));
+        vestidosJuan.contratarTrabajador(new Trabajador("Claudia","Martin","1234B",10,12,100000));
+
+        // informaticaPaco.mostrarInformacionJefes();
+        // empresa.mostrarDatosTrabajadores();
+        // listaTrabajadores = [TBorja, TClaudia, TRebeca, TCelia]
+        // listaJefes = [JMarcos, JLuis]
         // empresa.contratarDirector(new Director("Luis","Gomez"));
         // empresa.mostarInformacion();
         // trabajadores = null
