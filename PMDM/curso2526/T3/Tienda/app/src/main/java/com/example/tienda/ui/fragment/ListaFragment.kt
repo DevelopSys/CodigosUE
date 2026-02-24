@@ -10,13 +10,16 @@ import androidx.navigation.fragment.findNavController
 import com.example.tienda.R
 import com.example.tienda.databinding.FragmentListBinding
 import com.example.tienda.databinding.FragmentMainBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class ListaFragment : Fragment() {
 
     private lateinit var binding: FragmentListBinding
+    private lateinit var auth: FirebaseAuth
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        auth = FirebaseAuth.getInstance()
     }
 
     override fun onCreateView(
@@ -30,6 +33,9 @@ class ListaFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+
+        val uid = auth.currentUser!!.uid
+        binding.textoSaludo.text = "Bienvenido $uid"
         binding.buttonF21.setOnClickListener {
             findNavController().navigate(R.id.action_listaFragment_to_mainFragment)
         }
@@ -38,7 +44,8 @@ class ListaFragment : Fragment() {
         }
 
         binding.buttonF2D.setOnClickListener {
-            findNavController().navigate(R.id.action_listaFragment_to_dialogoConfirmacion)
+            auth.signOut()
+            findNavController().navigate(R.id.action_listaFragment_to_mainFragment)
         }
     }
 }

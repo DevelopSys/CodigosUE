@@ -3,16 +3,50 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light"
     android:gravity="center"
+    android:layout_margin="32dp"
     >
 
-    <TextView
+    <EditText
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce nombre"
+        android:id="@+id/editNombre"
+        android:layout_marginBottom="16dp"
+        />
+    <EditText
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce correo"
+        android:id="@+id/editCorreo"
+        android:layout_marginBottom="16dp"
+        />
+
+    <EditText
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce pass"
+        android:id="@+id/editPass"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:text="Fragment 1"
+        android:text="Registrar"
+        android:id="@+id/buttonRegister"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesion"
+        android:id="@+id/buttonLogin"
         />
 
     <Button
