@@ -1,7 +1,21 @@
-<input class="form-control mb-3" placeholder="Introduce nombre de tarea" [(ngModel)]="nombre" />
-<button class="btn btn-primary" (click)="agregarTarea()">Agregar datos</button>
-<ul class="list-group">
-  @for (item of lista; track $index) {
-    <li class="list-group-item">{{ item }}</li>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  @for (item of tareas; track $index) {
+    <div class="col">
+      <div class="card h-100">
+        <img [src]="item.prioridad | imagenes" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre | uppercase }}</h5>
+          <p class="card-text">
+            {{ item.descripcion }}
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">{{ item.fecha | date }}</small>
+        </div>
+        <div>
+          <button class="btn btn-primary w-100">Ver detalle</button>
+        </div>
+      </div>
+    </div>
   }
-</ul>
+</div>

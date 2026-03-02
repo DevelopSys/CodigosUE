@@ -1,1 +1,29 @@
-<p>search works!</p>
+<input
+  placeholder="introduce el nombre del responsable"
+  class="form-control mb-3"
+  [(ngModel)]="responsable"
+/>
+<button class="btn btn-primary mb-3" (click)="buscar()">Buscar</button>
+
+@if (procesado) {
+  <div class="alert alert-primary">El numero de resultados obtenidos es de {{ tareas.length }}</div>
+}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  @for (item of tareas; track $index) {
+    <div class="col">
+      <div class="card h-100">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.nombre }}</h5>
+          <p class="card-text">
+            {{ item.descripcion }}
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">{{ item.fecha }}</small>
+        </div>
+      </div>
+    </div>
+  }
+</div>

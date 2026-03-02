@@ -1,19 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { tarea } from '../../model/tarea';
+import { Tareas } from '../../services/tareas';
+import { ImagenesPipe } from '../../pipes/imagenes-pipe';
 
 @Component({
   selector: 'app-list',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, ImagenesPipe],
   templateUrl: './list.html',
   styleUrl: './list.css',
 })
 export class List {
-  lista: string[] = [];
-  nombre?: string;
+  tareas: tarea[] = [];
 
-  agregarTarea() {
-    /* comprobacion de que lo que esta en el input no es undefined */
-    this.lista.push(this.nombre!!);
+  constructor(private servicio: Tareas) {
+    this.tareas = this.servicio.getAll();
   }
 }

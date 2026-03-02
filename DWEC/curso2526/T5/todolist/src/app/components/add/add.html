@@ -1,7 +1,20 @@
-<input class="form-control mb-3" placeholder="Introduce nombre de tarea" />
-<input class="form-control mb-3" placeholder="Introduce responsable de tarea" />
-<input class="form-control mb-3" placeholder="Introduce definicion de tarea" />
-<input class="form-control mb-3" placeholder="Fecha vencimiento tarea" type="date" />
+<input class="form-control mb-3" placeholder="Introduce nombre de tarea" [(ngModel)]="nombre" />
+<input
+  class="form-control mb-3"
+  placeholder="Introduce responsable de tarea"
+  [(ngModel)]="responsable"
+/>
+<input
+  class="form-control mb-3"
+  placeholder="Introduce definicion de tarea"
+  [(ngModel)]="definicion"
+/>
+<input
+  class="form-control mb-3"
+  placeholder="Fecha vencimiento tarea"
+  type="date"
+  [(ngModel)]="fecha"
+/>
 <select class="form-select mb-3" [(ngModel)]="dificultad">
   <option value="-1">Introduce prioridad</option>
   <option value="0">Baja</option>
@@ -10,13 +23,22 @@
 </select>
 @switch (dificultad) {
   @case ('0') {
-    <input placeholder="introduce fecha minima de comienzo" type="date" class="form-select mb-3" />
+    <input
+      placeholder="introduce fecha minima de comienzo"
+      type="date"
+      class="form-select mb-3"
+      [(ngModel)]="complemento"
+    />
   }
   @case ('1') {
-    <input placeholder="selecciona el item intermedio de la tarea" class="form-select mb-3" />
+    <input
+      placeholder="selecciona el item intermedio de la tarea"
+      class="form-select mb-3"
+      [(ngModel)]="complemento"
+    />
   }
   @case ('2') {
-    <select class="form-select mb-3">
+    <select class="form-select mb-3" [(ngModel)]="complemento">
       <option value="-1">Indica el nivel de prioridad alta</option>
       <option value="0">normal</option>
       <option value="1">urgente</option>
@@ -28,4 +50,4 @@
   }
 }
 
-<button class="btn btn-primary w-100">Guardar tarea</button>
+<button class="btn btn-primary w-100" (click)="anadirTarea()">Guardar tarea</button>
