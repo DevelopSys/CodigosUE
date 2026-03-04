@@ -1,0 +1,7 @@
+<!ELEMENT alumnos (alumno+,profesor)>
+<!ELEMENT alumno (nombre, apellido, nota_media)>
+
+<!ELEMENT profesor (nombre)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT nota_media (#PCDATA)>

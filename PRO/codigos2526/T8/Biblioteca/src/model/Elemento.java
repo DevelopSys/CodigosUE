@@ -19,11 +19,14 @@ public abstract class Elemento {
         this.autor = autor;
     }
 
+
     public void mostraDatos(){
         System.out.println("isbn = " + isbn);
         System.out.println("autor = " + autor);
         System.out.println("codigo = " + codigo);
     }
+
+    public abstract void vender();
 
     public String getIsbn() {
         return isbn;

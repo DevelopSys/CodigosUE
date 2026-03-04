@@ -22,6 +22,15 @@ public final class Pelicula extends Elemento {
         System.out.println("duracion = " + duracion);
     }
 
+    @Override
+    public void vender() {
+        if (duracion>120){
+            System.out.println("Esta pelicula es muy larga, sacamos buena tajada de esta");
+        } else {
+            System.out.println("Sacaremos algo de dinero");
+        }
+    }
+
     // tengo todos los metodos publicos de elemento
     public void estrenar(){
         System.out.println("Procedemos al estreno de la pelicula con autor "+getAutor());

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- definimos el dtd externo -->
+<!DOCTYPE alumnos SYSTEM "alumno.dtd">
+<!-- puedes escribir que esto no se renderiza -->
+<!-- solo puede tener un nodo root -->
+<alumnos>
+	<!-- contenido del nodo alumnos -->
+	<alumno>
+		<nombre>
+			Borja
+		</nombre>
+		<apellido>
+			Martin
+		</apellido>
+		<nota_media>
+			7.78
+		</nota_media>
+	</alumno>
+	<alumno>
+		<nombre>
+			Maria
+		</nombre>
+		<apellido>
+			Lopez
+		</apellido>
+		<nota_media>
+			10
+		</nota_media>
+	</alumno>
+	<alumno>
+		<nombre>
+			Julia
+		</nombre>
+		<apellido>
+			Garcia
+		</apellido>
+		<nota_media>
+			9
+		</nota_media>
+	</alumno>
+	<profesor>
+		<nombre>
+			Juan
+		</nombre>
+	</profesor>
+</alumnos>

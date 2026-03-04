@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- puedes escribir que esto no se renderiza -->
+<!-- solo puede tener un nodo root -->
+<colegio>
+	<alumnos codigo="001" idioma="es">
+		<!-- contenido del nodo alumnos -->
+		<alumno dni="000001" id="a1" edad="42">
+			<nombre>
+				Borja
+			</nombre>
+			<apellido>
+				Martin
+			</apellido>
+			<nota_media>
+				7.78
+			</nota_media>
+		</alumno>
+		<alumno dni="000002" id="a2" edad="42">
+			<nombre>
+				Maria
+			</nombre>
+			<apellido>
+				Lopez
+			</apellido>
+			<nota_media>
+				10
+			</nota_media>
+		</alumno>
+		<alumno dni="000003" id="a3" edad="23">
+			<nombre>
+				Julia
+			</nombre>
+			<apellido>
+				Garcia
+			</apellido>
+			<nota_media>
+				9
+			</nota_media>
+		</alumno>
+	</alumnos>
+	<profesores>
+		<profesor>
+			<nombre>
+				Juan
+			</nombre>
+			<asignaturas>
+				<asignatura>
+					Programacion
+				</asignatura>
+				<asignatura>
+					Sistemas
+				</asignatura>
+				<asignatura>
+					Base datos
+				</asignatura>
+			</asignaturas>
+		</profesor>
+	</profesores>
+</colegio>

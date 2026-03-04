@@ -1,6 +1,6 @@
 package model;
 
-public class Libro extends Elemento{
+public final class Libro extends Elemento implements Alquilable{
 
     private Soporte soporte;
 
@@ -17,6 +17,7 @@ public class Libro extends Elemento{
         this.soporte = soporte;
     }
 
+
     public void publicarContenido(){
         if (soporte == Soporte.FISICO){
             System.out.println("Disponible en todas las librerias");
@@ -29,6 +30,15 @@ public class Libro extends Elemento{
     public void mostraDatos() {
         super.mostraDatos();
         System.out.println("soporte = " + soporte);
+    }
+
+    @Override
+    public void vender() {
+        if (soporte == Soporte.FISICO){
+            System.out.println("Lo venderemos en bibliotecas a un precio alto");
+        } else {
+            System.out.println("Vendido en plataformas no tan caro");
+        }
     }
 
     public Soporte getSoporte() {
