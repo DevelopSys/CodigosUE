@@ -1,0 +1,62 @@
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.menu a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+}
+
+.menu a:hover {
+  background: #555;
+}
+
+.boton {
+  background: #119fe6;
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+}
+
+.boton:hover {
+  background: #1138e6;
+}
+
+.tarjeta {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #010101;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
