@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "clientes")
+// Json ignore -> para ñas relaciones
 public class Cliente {
 
     // DEFINE EL OBJECTO QUE SE MAPEARA SOBRE LA BASE DE DATOS

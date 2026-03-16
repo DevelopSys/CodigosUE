@@ -1,16 +1,16 @@
-public class JugadorBueno : PersonajeBase
+public class Jugador : PersonajeBase, Curable
 {
     public List<string> habilidades { get; set; }
-    public JugadorBueno()
+    public Jugador()
     {
         habilidades = new List<string>();
     }
-    public JugadorBueno(string nombre)
+    public Jugador(string nombre)
     : base(nombre)
     {
         habilidades = new List<string>();
     }
-    public JugadorBueno(string nombre, int nivelAtaque, int nivelDefensa)
+    public Jugador(string nombre, int nivelAtaque, int nivelDefensa)
     : base(nombre, nivelAtaque, nivelDefensa)
     {
         habilidades = new List<string>();
@@ -39,5 +39,10 @@ public class JugadorBueno : PersonajeBase
             }
         }
 
+    }
+
+    public void Curar(int valor)
+    {
+        throw new NotImplementedException();
     }
 }

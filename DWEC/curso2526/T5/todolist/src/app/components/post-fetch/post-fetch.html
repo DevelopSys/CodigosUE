@@ -1,0 +1,7 @@
+<ul class="list-group">
+  @for (item of posts; track $index) {
+    <li class="list-group-item">
+      {{ item.title }} likes: {{ item.reactions.likes }} dislikes: {{ item.reactions.dislikes }}
+    </li>
+  }
+</ul>

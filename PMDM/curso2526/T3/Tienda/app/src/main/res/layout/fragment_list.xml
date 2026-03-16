@@ -3,7 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light"
     android:gravity="center"
     >
 
@@ -11,9 +10,8 @@
         android:id="@+id/textoSaludo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
         android:textSize="30sp"
-        android:text="Fragment 2"
+        android:text="Fragment Database"
         />
 
     <Button
@@ -36,6 +34,30 @@
         android:layout_height="wrap_content"
         android:text="Navegar al dialogo"
         android:id="@+id/buttonF2_d"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar nodo"
+        android:id="@+id/btnAgregar"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar nodo"
+        android:id="@+id/btnEliminar"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar nodo"
+        android:id="@+id/btnConsultar"
         />
 
 

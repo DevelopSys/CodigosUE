@@ -1,0 +1,19 @@
+<div class="col">
+  <div class="card h-100">
+    <img [src]="item!!.prioridad | imagenes" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{ item!!.nombre | uppercase }}</h5>
+      <p class="card-text">
+        {{ item!!.descripcion }}
+      </p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">{{ item!!.fecha | date }}</small>
+    </div>
+    <div>
+      <button class="btn btn-primary w-100" [routerLink]="['/detail', item?.id]">
+        Ver detalle
+      </button>
+    </div>
+  </div>
+</div>

@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Tareas } from '../../services/tareas';
 import { tarea } from '../../model/tarea';
+import { CardItem } from '../shared/card-item/card-item';
 
 @Component({
   selector: 'app-search',
-  imports: [FormsModule],
+  imports: [FormsModule, CardItem],
   templateUrl: './search.html',
   styleUrl: './search.css',
 })

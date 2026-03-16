@@ -2,8 +2,8 @@ public abstract class PersonajeBase
 {
 
     public string nombre { get; set; }
-    public int nivelAtaque { get; set; }
-    public int nivelDefensa { get; set; }
+    public double nivelAtaque { get; set; }
+    public double nivelDefensa { get; set; }
     public int vida { get; set; }
 
     // constructor vacio ()
@@ -24,6 +24,7 @@ public abstract class PersonajeBase
         this.nivelAtaque = new Random().Next(100);
         this.nivelDefensa = new Random().Next(100); ;
     }
+
 
     // todos los personajes deben poder mostrar sus datos
     public virtual void MostrarDatos()

@@ -1,8 +1,56 @@
-// Que hereda de personajeBAse
-// se le agregan las caracteristicas de:
-    // lista de armas.
+public abstract class Enemigo : PersonajeBase
+{
 
-// sobreescribe el metodo mostrarDatos
-// crear los metodos de incorporar arma y eliminar arma
+    //public abstract void Atacar(PersonajeBase personaje);
+    public List<string> listaArmas { get; set; }
 
-// hacer una logica de atacar diferente para el enemigo y para el jugador
+
+    public Enemigo()
+    {
+        listaArmas = new List<string>();
+    }
+
+    public Enemigo(string nombre) : base(nombre)
+    {
+        listaArmas = new List<string>();
+    }
+
+    public Enemigo(string nombre, int nAtaque, int nDefensa) : base(nombre, nAtaque, nDefensa)
+    {
+        listaArmas = new List<string>();
+    }
+
+    public void AgregarArma(string arma)
+    {
+        this.listaArmas.Add(arma);
+    }
+
+    public void EliminarArma(string arma)
+    {
+        this.listaArmas.Remove(arma);
+    }
+
+    public override void MostrarDatos()
+    {
+        base.MostrarDatos();
+        Console.WriteLine("Procedemos a imprimir la lista de armas");
+        if (listaArmas.Count > 0)
+        {
+            foreach (var item in listaArmas)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        else
+        {
+            Console.WriteLine("Aún no tenemos ningún arma");
+        }
+
+    }
+
+
+
+
+
+
+}

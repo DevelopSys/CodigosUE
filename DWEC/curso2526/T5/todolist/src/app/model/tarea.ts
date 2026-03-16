@@ -23,6 +23,7 @@ export class tareaClase {
 }
 
 export interface tarea {
+  id: number;
   nombre: string;
   responsable: string;
   fecha: string;

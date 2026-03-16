@@ -23,6 +23,7 @@ export class Add {
   anadirTarea() {
     // validar los datos
     this.servicio.addTarea({
+      id: -1,
       nombre: this.nombre!!,
       responsable: this.responsable!!,
       fecha: this.fecha!!,

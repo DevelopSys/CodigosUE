@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { tarea } from '../../model/tarea';
 import { Tareas } from '../../services/tareas';
 import { ImagenesPipe } from '../../pipes/imagenes-pipe';
+import { CardItem } from '../shared/card-item/card-item';
 
 @Component({
   selector: 'app-list',
-  imports: [CommonModule, FormsModule, ImagenesPipe],
+  imports: [CommonModule, FormsModule, CardItem],
   templateUrl: './list.html',
   styleUrl: './list.css',
 })

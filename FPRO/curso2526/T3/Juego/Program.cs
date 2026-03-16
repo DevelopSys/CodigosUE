@@ -43,4 +43,11 @@
 
      }*/
 
+    public static void Main(string[] args)
+    {
+        EnemigoMagico enemigoMagico = new EnemigoMagico("Mago", 100, 100);
+        PersonajeBase enemigoFisico = new EnemigoFisico("Arqueto", 100, 100);
+        PersonajeBase jugador = new Jugador("Jugador");
+
+    }
 }
