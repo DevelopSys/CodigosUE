@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_ayuda_message"
+        android:title="@string/ayuda_setMessage"
+        />
+
+    <item
+        android:id="@+id/item_ayuda_setItem"
+        android:title="@string/ayuda_setItems"
+        />
+
+    <item
+        android:id="@+id/item_ayuda_setSingleChoiceItem"
+        android:title="@string/ayuda_setSigleChoiceItems"
+        />
+    <item
+        android:id="@+id/item_ayuda_setMultiChiceItem"
+        android:title="@string/ayuda_setMultiChoiceItems"
+        />
+
+    <item
+        android:id="@+id/item_cerrar"
+        android:title="@string/cerrar"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_delete"
+        />
+
+</menu>
