@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AgendaJSON</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="ayuda_setSigleChoiceItems">Ayuda - setSigleChoiceItems</string>
+    <string name="ayuda_setItems">Ayuda - setItems</string>
+    <string name="ayuda_setMessage">Ayuda - setMessage</string>
+    <string name="ayuda_setMultiChoiceItems">Ayuda - setMultiChoiceItems</string>
+    <string name="nombre_completo">%1$s %2$s</string>
 </resources>
