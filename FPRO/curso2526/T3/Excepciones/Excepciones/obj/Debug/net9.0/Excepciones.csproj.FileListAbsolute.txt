@@ -1,0 +1,15 @@
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/bin/Debug/net9.0/Excepciones
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/bin/Debug/net9.0/Excepciones.deps.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/bin/Debug/net9.0/Excepciones.runtimeconfig.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/bin/Debug/net9.0/Excepciones.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/bin/Debug/net9.0/Excepciones.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/Excepciones.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/Excepciones.AssemblyInfoInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/Excepciones.AssemblyInfo.cs
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/Excepciones.csproj.CoreCompileInputs.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/Excepciones.sourcelink.json
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/Excepciones.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/refint/Excepciones.dll
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/Excepciones.pdb
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/Excepciones.genruntimeconfig.cache
+/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T3/Excepciones/Excepciones/obj/Debug/net9.0/ref/Excepciones.dll

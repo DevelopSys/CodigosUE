@@ -54,17 +54,25 @@ public class ClienteService {
         return clienteRepository.save(cliente);
     }
 
-    // anadir un producto al cliente -> comprar
-    public void anadirProducto(long idCliente, long idProducto){
-        // busco el cliente
-        Optional<Cliente> cliente = getById(idCliente);
-        // busco el producto
-        Optional<Producto> producto = productoRepository.findById(idProducto);
-        if (cliente.isPresent() && producto.isPresent()) {
 
+    public Cliente updateCliente(Long id, String nombre, int telefono){
+
+        Optional<Cliente> clienteOptional = clienteRepository.findById(id);
+        if (clienteOptional.isPresent()){
+            Cliente cliente = clienteOptional.get();
+            cliente.setNombre(nombre);
+            cliente.setTelefono(telefono);
+            return clienteRepository.save(cliente);
         } else {
-
+            return null;
         }
-        // anado en la lista de productos del cliente el producto encontrado
+    }
+
+    // anadir un producto al cliente -> comprar
+    public Cliente anadirProducto(long idCliente, long idProducto){
+        Cliente cliente = clienteRepository.findById(idCliente).get();
+        Producto producto = productoRepository.findById(idCliente).get();
+        cliente.addProduto(producto);
+        return clienteRepository.save(cliente);
     }
 }

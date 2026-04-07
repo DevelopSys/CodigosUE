@@ -1,9 +1,12 @@
 package com.example.tienda_ue.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Set;
 
 // TODO cuidado con el toString y el hash
 @Data
@@ -29,9 +32,22 @@ public class Cliente {
     @Column
     private int telefono;
 
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JsonBackReference("cliente-producto")
+    @JoinTable(name = "carrito",
+            joinColumns = {@JoinColumn(name = "id_cliente")},
+            inverseJoinColumns = {@JoinColumn(name = "id_producto")})
+    private Set<Producto> productos;
+
+
     public Cliente(String correo, String nombre, int telefono) {
         this.correo = correo;
         this.nombre = nombre;
         this.telefono = telefono;
+    }
+
+    public void addProduto(Producto producto){
+        productos.add(producto);
+        producto.getClientes().add(this);
     }
 }

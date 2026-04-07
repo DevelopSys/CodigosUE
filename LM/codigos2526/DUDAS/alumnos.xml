@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universidad centro="ue">
+	<alumno dni="1234A" id="1">
+		<nombre>
+			Borja
+		</nombre>
+		<apellido>
+			Martin
+		</apellido>
+	</alumno>
+	<alumno dni="2345A" id="2">
+		<nombre>
+			Daniel
+		</nombre>
+		<apellido>
+			Redondo
+		</apellido>
+	</alumno>
+</universidad>

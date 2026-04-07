@@ -58,4 +58,9 @@ public final class Revista extends Elemento implements Alquilable{
     public void setTirada(Tirada tirada) {
         this.tirada = tirada;
     }
+
+    @Override
+    public void alquilar() {
+        System.out.println("Esta revista con autor "+getAutor()+" se alquilara por 5 dias");
+    }
 }

@@ -48,4 +48,14 @@ public final class Libro extends Elemento implements Alquilable{
     public void setSoporte(Soporte soporte) {
         this.soporte = soporte;
     }
+
+    @Override
+    public void alquilar() {
+        if(soporte == Soporte.FISICO){
+
+        System.out.println("El libro se alquila por 5 dias ya que tiene un n isbn de "+getIsbn());
+        } else {
+            System.out.println("Solo estará habilitado el acceso durante 3 dias");
+        }
+    }
 }

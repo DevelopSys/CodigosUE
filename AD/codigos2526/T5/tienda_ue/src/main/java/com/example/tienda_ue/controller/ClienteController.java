@@ -3,6 +3,7 @@ package com.example.tienda_ue.controller;
 import com.example.tienda_ue.model.Cliente;
 import com.example.tienda_ue.service.ClienteService;
 import com.example.tienda_ue.service.ProductoService;
+import org.apache.tomcat.Jar;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
@@ -92,12 +93,28 @@ public class ClienteController {
     }
 
     @PutMapping("update/{id}")
-    public ResponseEntity<?> updateCliente(@PathVariable int id, @RequestParam String nombre, @RequestParam int telefono) {
+    public ResponseEntity<?> updateCliente(@PathVariable Long id, @RequestParam String nombre, @RequestParam int telefono) {
         // obtener el usuario con id -> mirar si existe
             // cambio caracteristicas -> set
             // voy al servicio y lo guardo
         // TODO nos quedamos aqui
-        return null;
+        Cliente cliente = clienteService.updateCliente(id,nombre,telefono);
+        Map<String, Object> response = new HashMap<>();
+        response.put("code", 1);
+        response.put("message", "Usuarios actualizado con exito");
+        response.put("data", cliente);
+        return ResponseEntity.status(200).body(response);
+    }
+
+    @PutMapping("comprar/{id}")
+    public ResponseEntity<?> comprarProducto(@PathVariable Long id, @RequestParam Long idProducto){
+        Cliente cliente = clienteService.anadirProducto(id,idProducto);
+        Map<String , Object> response = new HashMap<>();
+        response.put("code", "1");
+        response.put("message", "producto añadido correctamente");
+        response.put("data",cliente);
+        response.put("products",cliente.getProductos());
+        return ResponseEntity.status(200).body(response);
     }
 
 

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- pon aqui tu css externo style.css -->
+    <title>Pagina con bootstrap</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeria</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <h1 class="text-center">Pagina maquetada con bootstrap</h1>
+      <div class="row g-3">
+        <!-- la suma de todas las columnas tiene que ser 12 -->
+        <div class="col bg-primary-subtle text-primary-emphasis p-4">
+          <h2 class="text-center">Formulario de introduccion de datos</h2>
+          <input
+            type="text"
+            placeholder="Introduce tu nombre"
+            class="form-control mb-3 mt-4"
+          />
+
+          <input
+            type="text"
+            placeholder="Introduce tu apellido"
+            class="form-control mb-3"
+          />
+
+          <input
+            type="number"
+            placeholder="Introduce tu edad"
+            class="form-control mb-3"
+          />
+
+          <select class="form-select mb-3">
+            <option>Administrador</option>
+            <option>Inivitado</option>
+            <option>Usuario</option>
+          </select>
+
+          <button type="button" class="btn btn-danger w-100">
+            Enviar datos
+          </button>
+
+          <!-- formulario de introduccion de datos -->
+        </div>
+        <div class="col bg-success text-white p-4">
+          <h2 class="text-center">Mostrar datos resultantes</h2>
+          <ul class="list-group mt-4">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      // escribir la logica de la aplicacion
+    </script>
+    <script src="./fichero.js"></script>
+  </body>
+</html>

@@ -7,9 +7,14 @@ public class Main {
     public static void main(String[] args) {
         // Elemento elemento = new Elemento("123-123","Borja MArtin",1);
         Pelicula pelicula = new Pelicula("123-123", "Director", 1, 130);
+
         // pelicula.mostraDatos();
         Libro libro = new Libro("123123", "Escritor", 1, Soporte.DIGITAL);
+
         Revista revista = new Revista("234234", "CuartoMilenio", 2, Tapa.Blanda, Tirada.Internacional);
+        Libro libro2 = new Libro("345345", "Dan Brown", 3, Soporte.FISICO);
+
+
         // revista.mostraDatos();
         // libro.publicarContenido();
         // libro.mostraDatos();
@@ -17,8 +22,21 @@ public class Main {
         listaElementos.add(pelicula);
         listaElementos.add(libro);
         listaElementos.add(revista);
+        listaElementos.add(libro2);
 
-        listaElementos.forEach(Elemento::vender);
+        for (Elemento elemento : listaElementos) {
+            // elemento.vender();
+            elemento.mostraDatos();
+            if (elemento instanceof Libro) {
+                ((Libro) elemento).publicarContenido();
+            }
+            // quiero que se pueda ejecutar el metodo alquilar -> alquilable
+            if (elemento instanceof Alquilable) {
+                ((Alquilable) elemento).alquilar();
+            }
+        }
+
+        // listaElementos.forEach(Elemento::vender);
 
         // listaElementos.forEach(Elemento::mostraDatos);
 
