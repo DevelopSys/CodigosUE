@@ -1,0 +1,39 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@usuario.list.headline">Usuarios</h1>
+    <div>
+        <a routerLink="/usuarios/add" class="btn btn-primary ms-2" i18n="@@usuario.list.createNew">Create new Usuario</a>
+    </div>
+</div>
+@if (!usuarios || usuarios.length === 0) {
+<div i18n="@@usuario.list.empty">No Usuarios could be found.</div>
+} @else {
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th scope="col" i18n="@@usuario.id.label">Id</th>
+                <th scope="col" i18n="@@usuario.nombre.label">Nombre</th>
+                <th scope="col" i18n="@@usuario.correo.label">Correo</th>
+                <th scope="col" i18n="@@usuario.idCursoFK.label">Id Curso FK</th>
+                <th><!-- --></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (usuario of usuarios; track usuario.id) {
+            <tr>
+                <td>{{ usuario.id }}</td>
+                <td>{{ usuario.nombre }}</td>
+                <td>{{ usuario.correo }}</td>
+                <td>{{ usuario.idCursoFK }}</td>
+                <td>
+                    <div class="float-end text-nowrap">
+                        <a [routerLink]="['/usuarios/edit', usuario.id]" class="btn btn-sm btn-secondary" i18n="@@usuario.list.edit">Edit</a>
+                        <button type="button" (click)="confirmDelete(usuario.id!)" class="btn btn-sm btn-secondary" i18n="@@usuario.list.delete">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+}

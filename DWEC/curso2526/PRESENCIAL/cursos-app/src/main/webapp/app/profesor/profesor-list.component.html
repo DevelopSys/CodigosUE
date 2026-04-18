@@ -1,0 +1,39 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@profesor.list.headline">Profesors</h1>
+    <div>
+        <a routerLink="/profesors/add" class="btn btn-primary ms-2" i18n="@@profesor.list.createNew">Create new Profesor</a>
+    </div>
+</div>
+@if (!profesors || profesors.length === 0) {
+<div i18n="@@profesor.list.empty">No Profesors could be found.</div>
+} @else {
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th scope="col" i18n="@@profesor.id.label">Id</th>
+                <th scope="col" i18n="@@profesor.nombre.label">Nombre</th>
+                <th scope="col" i18n="@@profesor.correo.label">Correo</th>
+                <th scope="col" i18n="@@profesor.idCursoFK.label">Id Curso FK</th>
+                <th><!-- --></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (profesor of profesors; track profesor.id) {
+            <tr>
+                <td>{{ profesor.id }}</td>
+                <td>{{ profesor.nombre }}</td>
+                <td>{{ profesor.correo }}</td>
+                <td>{{ profesor.idCursoFK }}</td>
+                <td>
+                    <div class="float-end text-nowrap">
+                        <a [routerLink]="['/profesors/edit', profesor.id]" class="btn btn-sm btn-secondary" i18n="@@profesor.list.edit">Edit</a>
+                        <button type="button" (click)="confirmDelete(profesor.id!)" class="btn btn-sm btn-secondary" i18n="@@profesor.list.delete">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+}

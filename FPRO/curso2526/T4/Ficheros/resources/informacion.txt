@@ -1,0 +1,1 @@
+Este es un ejemplo para poder obtener informacion sobre el fichero en C#

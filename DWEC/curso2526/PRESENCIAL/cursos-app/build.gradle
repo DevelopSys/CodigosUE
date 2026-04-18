@@ -1,0 +1,64 @@
+plugins {
+    id 'org.springframework.boot' version '4.0.5'
+    id 'io.spring.dependency-management' version '1.1.7'
+    id 'java'
+    id 'com.github.node-gradle.node' version '7.1.0'
+}
+
+group = 'io.bootify'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+bootRun {
+    environment SPRING_PROFILES_ACTIVE: environment.SPRING_PROFILES_ACTIVE ?: 'local'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-validation')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    runtimeOnly('com.mysql:mysql-connector-j')
+    implementation('io.github.wimdeblauwe:error-handling-spring-boot-starter:5.1.0')
+    implementation('org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.2')
+    compileOnly('org.projectlombok:lombok')
+    annotationProcessor('org.projectlombok:lombok')
+    testCompileOnly('org.projectlombok:lombok')
+    testAnnotationProcessor('org.projectlombok:lombok')
+    developmentOnly('org.springframework.boot:spring-boot-docker-compose')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
+
+node {
+    download.set(true)
+    version.set('24.14.0')
+}
+
+tasks.register('npmRunBuild', NpmTask) {
+    args = ['run', 'build']
+    dependsOn npmInstall
+
+    inputs.files(fileTree('node_modules'))
+    inputs.files(fileTree('src/main/webapp'))
+    inputs.file('angular.json')
+    inputs.file('package.json')
+    inputs.file('tsconfig.json')
+    inputs.file('tsconfig.app.json')
+    outputs.dir(layout.buildDirectory.dir('resources/main/static'))
+}
+
+processResources {
+    dependsOn npmRunBuild
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}

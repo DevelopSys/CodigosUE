@@ -1,0 +1,10 @@
+lectura de los datos del fichero
+segunda linea del fichero a leer
+esta es la tercera linea
+
+
+
+
+
+
+esto es la ultima linea

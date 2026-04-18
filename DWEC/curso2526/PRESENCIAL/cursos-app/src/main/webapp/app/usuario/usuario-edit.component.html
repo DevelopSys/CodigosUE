@@ -1,0 +1,13 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@usuario.edit.headline">Edit Usuario</h1>
+    <div>
+        <a routerLink="/usuarios" class="btn btn-secondary" i18n="@@usuario.edit.back">Back to list</a>
+    </div>
+</div>
+<form [formGroup]="editForm" (ngSubmit)="handleSubmit()">
+    <app-input-row [group]="editForm" field="id" rowType="number" i18n-label="@@usuario.id.label" label="Id" />
+    <app-input-row [group]="editForm" field="nombre" i18n-label="@@usuario.nombre.label" label="Nombre" />
+    <app-input-row [group]="editForm" field="correo" i18n-label="@@usuario.correo.label" label="Correo" />
+    <app-input-row [group]="editForm" field="idCursoFK" rowType="select" [options]="idCursoFKValues" i18n-label="@@usuario.idCursoFK.label" label="Id Curso FK" />
+    <input type="submit" i18n-value="@@usuario.edit.headline" value="Edit Usuario" class="btn btn-primary mt-4" />
+</form>
