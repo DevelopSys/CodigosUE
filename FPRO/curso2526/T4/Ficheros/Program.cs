@@ -5,6 +5,9 @@
         // 
         FicherosController controller = new FicherosController();
         // controller.InformacionFichero("/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T4/Ficheros/resources/pruebas.txt");
-        controller.EscrituraFichero("/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T4/Ficheros/resources/escritura.txt");
+        // controller.EscrituraFichero("/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T4/Ficheros/resources/escritura.txt");
+        // Alumno alumno = new Alumno("Borja", "Martin", 8);
+        // Console.WriteLine(alumno.FormatCSV());
+        controller.ImportarUsuarios("/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T4/Ficheros/resources/usuarios.csv");
     }
 }
