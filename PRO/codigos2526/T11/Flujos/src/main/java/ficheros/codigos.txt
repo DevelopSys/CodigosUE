@@ -1,0 +1,8 @@
+- por favor introduce el mensaje que quieres cifrar:
+este mesnaje es supersecreto no quiero que nadie se entere
+- por favor introduce la fase de cifrado;
+5
+
+
+- por favor indica por que numero divido: 7
+115 101 116 101 32 101 115 32 117 110 32 101 106 101 109 112 108 111 32 100 101 32 116 101 120 116 111 32 101 110 32 65 83 67 73 73

@@ -1,0 +1,14 @@
+Este es un ejemplo de lectura de fichero
+Este sera el segundo contenido del fichero
+
+
+
+
+
+
+
+
+
+
+
+esta si es la ultima linea con contenido

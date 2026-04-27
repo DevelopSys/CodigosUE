@@ -6,6 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
         GestorFicheros gestorFicheros = new GestorFicheros();
+        // gestorFicheros.lecturaFicheroLinea("src/main/java/ficheros/lectura.txt");
+        //gestorFicheros.escribirLineas("src/main/java/ficheros/escritura.txt");
+        // gestorFicheros.descifrar("src/main/java/ficheros/codigos.txt");
+        gestorFicheros.lecturaObjeto("src/main/java/ficheros/objeto.obj");
+        /*
         boolean fallo = false;
         String ruta = "src/main/java/fichero/ejemplo.txt";
         Scanner scanner = new Scanner(System.in);
@@ -18,6 +23,6 @@ public class Main {
                 ruta = scanner.next();
                 fallo = true;
             }
-        } while (fallo);
+        } while (fallo);*/
     }
 }
