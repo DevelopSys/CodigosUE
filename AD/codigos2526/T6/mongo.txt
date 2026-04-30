@@ -1,0 +1,27 @@
+use colegio -> cambia a la base de datos indicada
+db.createCollection("nombre") -> crear una coleccion
+
+CRUD
+
+INSERT -> insertOne ({}) / insertMany ([{}])
+db.alumnos.insertOne({}) -> inserta un solo documento
+db.alumnos.insertMany([]) -> inserta muchos documenbtos
+
+SELECT -> find({filtro},{mostrado}).sort({condicion}), findOne({},{})
+db.alumnos.find({nombre:"Marcos"}) -> obteno el documento que cumple con la propiedad indicada
+comparadores -> $gt $ge $lt $le $eq $neq
+db.alumnos.find({edad:{$gt:25}}).sort({edad:-1}) -> obtener todos los elementos que cumplen condicion de busqueda y ademas estan ordenados
+db.alumnos.find({edad:{$gt:25}},{nombre:1, edad:1, _id:0}).sort({edad:1}) -> indicamos cuales son los elementos de la salida, donde 1 es mostrar 0 ocultar
+
+UPDATE -> updateOne / updateMany
+
+db.alumnos.updateOne({nombre:"Borja"},{$set:{edad:31}}) -> actualiza el documento con filtro de buscada, actualizando (insertando) la propiedad indicada
+db.alumnos.updateOne({nombre:"Borja"},{$set:{ffe:true}}) -> si la propiedad no existe en el documento, la añade
+db.alumnos.updateMany({},{$set:{activo:true}}) -> actualiza todos los documentos (filtro de update {})
+
+DELETE -> deleteOne / deleteMany
+
+db.alumnos.deleteOne({edad:{$gte:20,$lte:30}}) -> borrar la primera concurrencua que tienen una edad de entre 20 y 30
+db.alumnos.deleteMany({edad:{$gte:20,$lte:30}}) -> borrar todos aquellos que tienen una edad de entre 20 y 30
+db.alumnos.find({$or:[{edad:30},{edad:39}]}) -> obten los elementos que tengan edad 30 o 39
+db.alumnos.find({$and:[$or:[{edad:30},{edad:39}],$or:[{edad:30},{edad:39}]]})
