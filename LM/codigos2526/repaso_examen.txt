@@ -1,0 +1,54 @@
+Domingo
+	13:03
+		13:20 Test ok 1-15
+		13:21 16 
+		14:10 ->  subo el zip (con las dos preguntas)
+		14:15 -> le doy al boton entregar
+		14:20 -> paro de hacer todo y subo el zip
+		14:30 la tarea se cierra
+
+
+
+IMPORTANTE SABER CREARLOS, SABER LOS ELEMENTOS DEL XML
+1. XML -> estructuracion de la info
+	<elemento_principal atributos="">
+		<elemento_secundario atributo="">
+			Valor
+		</elemento_secundario>
+		<elemento_secundario atributo="">
+			Valor
+		</elemento_secundario>
+		<elemento_secundario atributo="">
+			Valor
+		</elemento_secundario>
+		<elemento_secundario atributo="">
+			Valor
+		</elemento_secundario>
+	</elemento_principal>
+
+2. RSS Sindicacion de contenidos
+
+IMPORTANTE SABER CREAR UNA PAGINA CON HTML y CSS PROPIO
+3. HTML Y CSS
+	un XML especial para la renderizacion de nodos pero con etiquetas definidas
+	saber los tipos de etiquetas -> div p input h ul li button a 
+	aplicar estilos mediante .clases{} #id{} etiquetas{}
+
+IMPORTANTE SABER APLICAR BOOTSTRAP a UN HTML -> containainer, button button-primary row col form-control form-select card -> EN EL EXAMEN PODEIS ENTRAR EN LA PAGINA DE BOOTSTRAP
+
+	BOOTSTRAP -> FW CSS Y JS para poder crear paginas con estilos ya creados
+
+IMPORTANTE CREAR UNA WEB CON HTML CSS Y JS para EL ACCESO A LOS ELEMENTOS DE LA PAGINA -> FORMULARIO
+4. JS -> el lenguaje que permite el dinamismo dentro de los nodos de la pagina
+	<sript>
+		acceso a los elementos del DOM (HTML) de la pagina
+		asociar eventos a los botones o select de la pagina
+		saber crear / borrar elementos (nodos) dentro del DOM de la pagina
+
+5 JSON -> saber que es un fichero de intercambio de datos estructurado
+6. XPATH XQUERY -> consultas sobre un fichero XML y transformarlo
+7. SGE -> "los programas maestros" de las copañias que gestionan toda la informacion -> Odoo, DollyBar, SAP, Saleforce
+	ERP -> el programa maestro que tiene toda la informacion. dentro de este podemos tener modulos
+	CRM -> el subprograma que permite gestionar la informacion de los clientes
+
+
