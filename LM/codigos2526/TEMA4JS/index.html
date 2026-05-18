@@ -14,6 +14,10 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -23,33 +27,50 @@
       <input
         class="form-control"
         placeholder="Introduce tu nombre"
-        id="input-nombre"
+        id="input-nombre-saludo"
       />
       <button class="btn btn-primary" id="boton-saludar">Saludar</button>
       <button class="btn btn-primary" id="boton-despedir">Despedir</button>
       <p id="parrafo-nombre"></p>
 
       <div>
-        <input placeholder="Introduce nombre" class="form-control mb-3" />
-        <input placeholder="Introduce apellido" class="form-control mb-3" />
         <input
+          placeholder="Introduce nombre"
+          class="form-control mb-3"
+          id="input-nombre"
+        />
+        <input
+          placeholder="Introduce apellido"
+          class="form-control mb-3"
+          id="input-apellido"
+        />
+        <input
+          id="input-edad"
           placeholder="Introduce edad"
           type="number"
           class="form-control mb-3"
         />
         <input
+          id="input-fecha"
           placeholder="Introduce fecha nacimiento"
           type="date"
           class="form-control mb-3"
         />
-        <select class="form-select mb-3">
+        <select class="form-select mb-3" id="select-curso">
           <option>DAM</option>
           <option>DAW</option>
           <option>ASIR</option>
         </select>
-        <button class="btn btn-primary w-100">Enviar datos</button>
+        <button class="btn btn-primary w-100" id="btn-envio">
+          Enviar datos
+        </button>
+        <button class="btn btn-danger w-100" id="btn-vaciar">
+          Vaciar lista
+        </button>
         <!-- Sacar por consola cuando se pulsa el boton enviar los datos del nombre, apellido, edad, curso, fecha de nacimiento -->
       </div>
+
+      <ul class="list-group mt-4" id="lista-usuarios"></ul>
     </main>
 
     <script src="./index.js"></script>

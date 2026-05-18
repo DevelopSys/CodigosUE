@@ -1,0 +1,25 @@
+cliente --------------- base de datos (MySQL)
+
+accion					sql
+
+Create 		->			INSERT
+Delete		->			DELETE
+Read		->			SELECT
+Update		->			UPDATE
+
+java.sql
+
+Connection: el puente entre mi cliente y la base de datos
+			necesito algo que entienda el lenguaje de la base de datos
+			jdbc:mysql://127.0.0.1:3306/productos_ue
+
+Driver: 	libreria que permite la "traduccion" entre java y la base de datos
+
+Statement: 	Permite ejecutar querys sobre una connection. Lo malo que tiene es que la query es "plana". Ademas permite un ataque de SQL Injection
+PrepareStatement:	Permite ejecutar querys sobre una connection parametrizadas. Evita SQL Injection
+
+		execute() -> bool
+		executeUpdate() ->int
+
+ResultSet: 	La tupla de datos de la query de seleccion
+		execugeQuery() -> ResultSet -> recorrer y obtener datos

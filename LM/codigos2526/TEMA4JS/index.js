@@ -11,6 +11,45 @@ let parrafo = document.querySelector("#parrafo-nombre");
 let botonSaludar = document.querySelector("#boton-saludar");
 let botonDespedir = document.querySelector("#boton-despedir");
 let inputNombre = document.querySelector("#input-nombre");
+let inputApellido = document.querySelector("#input-apellido");
+let inputEdad = document.querySelector("#input-edad");
+let inputCurso = document.querySelector("#select-curso");
+let inputFecha = document.querySelector("#input-fecha");
+let btnEnvio = document.querySelector("#btn-envio");
+let btnBorrar = document.querySelector("#btn-vaciar");
+let listaUsuarios = document.querySelector("#lista-usuarios");
+
+btnEnvio.addEventListener("click", () => {
+  const nombre = inputNombre.value;
+  const apellido = inputApellido.value;
+  const edad = inputEdad.value;
+  const curso = inputCurso.value;
+  const fecha = inputFecha.value;
+
+  if (nombre == "" || apellido == "" || edad < 18 || fecha == "") {
+    alert("No se puede registrar el usuario");
+  } else {
+    const nodoLI = document.createElement("li");
+    nodoLI.textContent = `${nombre} ${apellido} ${curso}`;
+    // nodoLI.className = "list-group-item asd asd asd asd"
+    nodoLI.classList.add(
+      "list-group-item",
+      "mt-2",
+      "animate__animated",
+      "animate__fadeInRight",
+    );
+    listaUsuarios.append(nodoLI);
+  }
+
+  /*   const li = `<li class='list-group-item animate__animated animate__fadeInRight'>${nombre} ${apellido} ${curso}</li>`;
+  listaUsuarios.innerHTML += li; */
+
+  // listaUsuarios.innerHTML = listaUsuarios.innerHTML+ li;
+});
+
+btnBorrar.addEventListener("click", () => {
+  listaUsuarios.innerHTML = "";
+});
 
 botonSaludar.addEventListener("click", () => {
   let nombre = inputNombre.value;

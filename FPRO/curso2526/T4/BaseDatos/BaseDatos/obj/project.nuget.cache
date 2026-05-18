@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "BLTA6cvNV28=",
+  "success": true,
+  "projectFilePath": "/Users/borja/Documents/GitHub/CodigosUE/FPRO/curso2526/T4/BaseDatos/BaseDatos/BaseDatos.csproj",
+  "expectedPackageFiles": [
+    "/Users/borja/.nuget/packages/microsoft.bcl.cryptography/9.0.13/microsoft.bcl.cryptography.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.data.sqlclient/7.0.1/microsoft.data.sqlclient.7.0.1.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.data.sqlclient.extensions.abstractions/1.0.0/microsoft.data.sqlclient.extensions.abstractions.1.0.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.data.sqlclient.internal.logging/1.0.0/microsoft.data.sqlclient.internal.logging.1.0.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.data.sqlclient.sni.runtime/6.0.2/microsoft.data.sqlclient.sni.runtime.6.0.2.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.13/microsoft.extensions.caching.abstractions.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.extensions.caching.memory/9.0.13/microsoft.extensions.caching.memory.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.13/microsoft.extensions.dependencyinjection.abstractions.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.13/microsoft.extensions.logging.abstractions.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.extensions.options/9.0.13/microsoft.extensions.options.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.extensions.primitives/9.0.13/microsoft.extensions.primitives.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.identitymodel.abstractions/8.16.0/microsoft.identitymodel.abstractions.8.16.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.16.0/microsoft.identitymodel.jsonwebtokens.8.16.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.identitymodel.logging/8.16.0/microsoft.identitymodel.logging.8.16.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.identitymodel.protocols/8.16.0/microsoft.identitymodel.protocols.8.16.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/8.16.0/microsoft.identitymodel.protocols.openidconnect.8.16.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.identitymodel.tokens/8.16.0/microsoft.identitymodel.tokens.8.16.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/system.configuration.configurationmanager/9.0.13/system.configuration.configurationmanager.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/system.diagnostics.eventlog/9.0.13/system.diagnostics.eventlog.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/system.identitymodel.tokens.jwt/8.16.0/system.identitymodel.tokens.jwt.8.16.0.nupkg.sha512",
+    "/Users/borja/.nuget/packages/system.security.cryptography.pkcs/9.0.13/system.security.cryptography.pkcs.9.0.13.nupkg.sha512",
+    "/Users/borja/.nuget/packages/system.security.cryptography.protecteddata/9.0.13/system.security.cryptography.protecteddata.9.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

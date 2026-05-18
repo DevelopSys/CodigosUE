@@ -1,0 +1,18 @@
+{
+  "nombre": "UE",
+  "alumnos": [
+    {
+      "nombre": "Borja",
+      "edad": 41,
+      "curso": "ASIR"
+    },
+    {
+      "nombre": "Marta",
+      "edad": 25,
+      "curso": "DAM"
+    }
+  ]
+}
+
+
+/* json.alumnos[0].curso */

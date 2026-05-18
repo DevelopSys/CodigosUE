@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carterlera>
+	<pelicula genero="ficcion">
+		<titulo>
+			Pelicula 1
+		</titulo>
+		<actores>
+			<actor>
+				Nombre 1
+			</actor>
+			<actor>
+				Nombre 2
+			</actor>
+			<actor>
+				Nombre 3
+			</actor>
+		</actores>
+	</pelicula>
+	<pelicula genero="accion">
+		<titulo>
+			Pelicula 2
+		</titulo>
+		<actores>
+			<actor>
+				Nombre 1
+			</actor>
+			<actor>
+				Nombre 2
+			</actor>
+			<actor>
+				Nombre 3
+			</actor>
+		</actores>
+	</pelicula>
+	<pelicula genero="drama">
+		<titulo>
+			Pelicula 3
+		</titulo>
+		<actores>
+			<actor>
+				Nombre 1
+			</actor>
+			<actor>
+				Nombre 2
+			</actor>
+			<actor>
+				Nombre 3
+			</actor>
+		</actores>
+	</pelicula>
+	<pelicula genero="drama">
+		<titulo>
+			Pelicula 4
+		</titulo>
+		<actores>
+			<actor>
+				Nombre 1
+			</actor>
+			<actor>
+				Nombre 2
+			</actor>
+			<actor>
+				Nombre 3
+			</actor>
+		</actores>
+	</pelicula>
+</carterlera>
+<!-- /cartelera/pelicula[genero=drama]/titulo -->

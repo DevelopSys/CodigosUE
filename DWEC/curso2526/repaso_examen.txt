@@ -1,0 +1,65 @@
+ENTREGA
+	.zip con todos los ejercicios
+	cuando queden 10 minutos ??? cada uno lo que quiera
+		paro de programar
+		en el ejercicio de fw -> elimino la caperta node_modules -> IMPORTANTISIMO
+		hacer el zip de la carpeta que he dejado hoy 18/5 en el escritorio
+
+
+Test - 3 puntos -> 2 
+Ejercicios - 7 puntos -> 4 
+
+1 -> Ejercicio de JS: gestionar datos de un formulario 3.5 puntos -> 3 puntos
+
+OPCION 1
+2 -> Ejercicio de angular: gestionar datos de un formulario con componentes / fetch 3.5 puntos  -> 1.5
+3 -> Ejercicio de react o vue: gestionar datos de un formulario con componentes / fetch 3.5 puntos
+
+
+OPCION 2
+2 -> Ejercicio de react: gestionar datos de un formulario con componentes / fetch
+3 -> Ejercicio de angular o vue: gestionar datos de un formulario con componentes / fetch
+
+
+JS - Angular
+JS - React
+Angular - React
+React - Vue
+
+crea una aplicacion que permita crear una lista de la compra medainte formulario
+
+1. 
+DOM ->
+
+formulario de introduccion de producto, precio, cantidad y stock
+lista de los productos introducidos
+
+JS -> 	sacar cada uno de los nodos queryselector("#")
+		asociasr eventos. addEventListener
+			crear nodos. >
+							lista.innerHTML += "<li>Datos de los inputs sacados</li>"
+
+
+FRAMEWORK -> 	componente formulario
+					useState
+					ngModel
+					v-Model
+					gestiona pulsacion @click (click)
+						gestiono los datos del componente logico y agrego a un servicio
+
+				componente lista
+					map
+					@for
+					v-for
+							-> llamas al componente producto
+
+				componente producto -> <li><li>
+
+2. Muestra los datos del API XXXXXXX en la aplicacion
+
+JS / FRAMEWORK -> 	DOM -> ul li // div(row) div(col) div (card)
+					fetch().then((res)=>res.json()).then(res=>el json) -> await / async
+					HttpClientModule -> observer -> subscribe -> 
+
+
+
