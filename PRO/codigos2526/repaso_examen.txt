@@ -1,0 +1,95 @@
+15 preguntas -> 3 puntos -> 2 puntos -> 15 minutos
+
+	a la hora de trabajar con colecciones de datos, un arraylist se diferencia de un array en
+		a) su tamaño es fijo
+		b) no se puede reasignar el valor
+		c) para saber el numero de elementos se ejecutar el atributo size -> lista.size() -> array.length
+		* d) su tamaño es variable, por lo que puede cambiar en numero de elementos
+	
+	a la hora de incializar una array cual de las siguientes no es la correcta
+		a) int[] numeros = new int[8] - [0,0,0,0,0,0,0,0] 
+		b) int[] numeros = new int[]{1,2,3,4,5} -> [1,2,3,4,5]
+		c) int[] numeros = {1,2,3,4,5} -> [1,2,3,4,5]
+		* d) int[] numeros = new int[5]{1,2,3,4,5}
+
+	a la hora de realizar una conexion jdbc en java, la url de conexion correcta es: 
+
+		a) jdbc://localhost:3306/base_datos
+		* b) jdbc:mysql://localhost/base_datos
+		b) mysql://localhost:3306/base_datos
+		b) mysql:jdbc://localhost:3306/base_datos
+
+	cuando hacemos una herencia, la palabra reservada @Override hace referencia a
+		a) dos metodos pueden tener el mismo nombre pero diferente firma
+		b) el metodo será escrito de forma diferente
+		*c) el metodo que se llama el de la clase padre
+		d) el metodo no puede ser cambiado en el hijo, por lo que queda bloqueado
+
+	cual de las siguientes firmas de clase es correcta, donde C es una clase e I una interfaz
+
+		a) class Clase extends I
+		b) class Clase implements I exteds C1, C2
+		* c) class Clase implements I1, I2, I3 exteds C2
+		d) class Clase implements I1, I2 exteds C2, C3
+
+	que valor obtendriamos en una division de rango int con los siguientes valores: 10/3
+
+		a) 3.33
+		b) 3
+		c) 3.5
+		d) 4
+
+16 -> 2 preguntas a seleccionar entre 3 -> 7 -> 3 puntos
+	ejercicio1 -> 1.5
+	ejercicio2 -> 1.5
+
+
+
+	11:00 - 11:05 empiezo
+	11:05 - 11:15 test -> 10 preguntas
+	11:15 - 12:15 ejercicios 
+	12:15 - 12:20 test -> 13 -> PARO DE PROGRAMAR Y HACER COSAS
+	12:20 - empezar a comprimir -> zip/rar/7zip -> subirlo a la pregunta de ejercicios
+	12:22 - 12:29 - > vuelta al test -> 14 preguntas
+
+	7 MODULOS
+
+	ORDINARIA 22/23/24 MAYO IPE -> 7
+	EXTRAORDINARIA 12/13/14 JUNIO
+
+	CURSO 26/27 -> 2º
+
+	DWEC 		-> JS / ANGULAR / REACT / VUE
+	DWES 		-> PHP
+	DAE 		-> Servidores y configuracion de servicios
+	DI 			-> CSS. Bootstrap. Taildwind. Sass. Vanilla
+	Python 		-> 
+	IPE II 		-> 
+	DASP		->
+	SOS 		->
+	ING			->
+	FFE 		-> 500 horas
+	Proyecto	-> no es una clase. grupos 3 y proponeis temas + tutor -> 21 mayo se presenta delante de un tribunal
+
+
+
+	2 examen ordinaria -> 2 evaluacion ordinaria
+	10 1º evaluable -> 0.5
+	10 2º evaluable -> 0.5
+	10 3º evaluable -> 1
+
+	6 examen extraordinaria -> 8 evaluacion extraordinaria
+
+
+
+File
+
+txt
+	lecturas 	-	File f = new File("")	-	FileReader fr = new FileReader(f)	- BufferedReader br = new BufferedReader(fr)
+	escrituras	-	File f = new File("") 	-	FileWriter fw = new FileWriter(f)	- BufferedWriter bw = new BufferedWriter(fw)
+																					  PrintWriter pw = new PrintWriter(fw)
+obj
+	lecturas	- 	File f = new File("") 	-	FileInputStream fis = new FIS(f)	- ObjectInputStream ois = OIS (fis)
+	escrituras	-	File f = new File("")	-	FileOutputStream fos = new FOS(f)	- ObjectOutputStream oos = OOS (fos)
+
+
