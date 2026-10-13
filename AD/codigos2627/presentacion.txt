@@ -1,0 +1,73 @@
+Acceso Datos
+
+1. Ficheros -> Streams
+	TXT / OBJ - io / nio -> File
+							FileWriter/ FileReader
+							BufferedReader/ BufferWriter - PrintWriter
+							.TXT -> 0-255 123 ASCII -> d
+							Cifrador / Descifrador
+							File
+							ObjetInputStream -> FileIntputStream
+							Integer, Double, User
+								Elementos serializables
+								User(name,id, mail) ------>name,id, mail----->User
+								private static Long serialVersionUID
+							.obj -> bin -> objeto
+							JSON -> { clave:valor } https://dummyjson.com/products
+
+2. JDBC ->  BD (SQL -> MariaDB MySQL) + SGBD (XAMPP - DBeaver)
+
+	java+driver ------jdbc:mysql------- sql
+		CRUD + DAO
+		model
+			Client
+		dao
+			ClientDAO
+		controller -> no puedo meter las partes de SQL
+			HotelController
+		view
+
+3. ORM -> Hibernate + Room
+
+	java+driver+orm ------------- sql
+
+	objetos					  tablas (columnas, pk, etc...)
+
+	INSERT INTO cliente (c,c,c,c,c) VALUES ('a','c','v',123)
+	session.save(new Cliente(a,c,v,123)) -> INSERT INTO cliente (c,c,c,c,c) VALUES ('a','c','v',123)
+	session.find(1,Client.class)
+	@One2One @Many2One @Many2Many
+	HQL -> NativeQuery (SQL)
+
+4. BDOO -> JPA Postgresql
+
+5. Spring -> TOMCAT
+
+	cliente ---------- TOMCAT -------- sql
+					  orm+driver 
+					  endpoint - GET POST PUT DELETE
+
+	https://www.miapi.com/api/v3/products/1
+	protocolo://srv/ruta/enpoint -> args
+
+6. 	Mongo DB -> MongoAtlas
+	XML -> XPATH - XQUERY -> transformaciones
+	NSQL -> Firebase -> no hay pk
+		Tablas/Columnas/Datos
+		Colecciones/Documentos(JSON)
+	Mongo + JAVA
+
+
+	public class User
+	{
+		private static final float serialVersionUID = 123L
+	 	private Long id
+		 private String name, surname, mail
+	}
+
+	User.serialVersionUID
+	User user = new User()
+	user.getName()
+
+	User -> fichero.obj (User1-123L, User2-123L, User3-123L)
+	User <- fichero.obj (User1-123L, User2-123L, User3-123L)

@@ -1,0 +1,43 @@
+Paginas web
+	XML+HTML+CSS+JS+JSON+SGE(CRM)
+
+XML + HTML
+
+Tema 1 - Que es XML, Como escribir un buen XML, cada una de las partes, validar un XML
+
+Tema 2 - Que se utiliza de XML en la web - HTML + CSS
+
+Tema 3 - RSS que es
+
+JS + HTML
+
+Tema 4 - JS hacer una web dinamica + DOM -> librerias
+
+Tema 5 - Valida elementos
+
+Tema 6 - Intercambio de informacion
+
+Tema 7 - Almacenamiento (Base de datos)
+
+
+CRM
+
+Tema 8 - CRM / ERP
+
+
+
+Examen
+	3 puntos Test (15 preguntas) + 7 puntos 3 ejercios (a seleccionar 2)
+
+Evaluables
+	T1 T2 T3
+
+	7 + 2 = 9
+
+Ejercicios
+
+Notion -> link
+
+GitHub
+
+Contenido del campus
