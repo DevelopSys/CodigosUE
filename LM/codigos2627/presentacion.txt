@@ -24,7 +24,8 @@ CRM
 
 Tema 8 - CRM / ERP
 
-
+IDE
+	Visual Studio Code
 
 Examen
 	3 puntos Test (15 preguntas) + 7 puntos 3 ejercios (a seleccionar 2)
@@ -38,6 +39,15 @@ Ejercicios
 
 Notion -> link
 
-GitHub
+GitHub (VCS) -> git 
+
+Local							Github.com
+
+Repositorio						Repositorio
+	main							main
+		Readme.md_						Readme.md_
+
+
+
 
 Contenido del campus
