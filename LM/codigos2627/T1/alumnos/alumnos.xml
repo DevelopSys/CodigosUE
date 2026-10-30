@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- puntero al dtd -->
+<colegio>
+	<alumnos>
+		<alumno dni="123A" modalidad="online">
+			<nombre>
+				Borja
+			</nombre>
+			<curso>
+				1º ASIR
+			</curso>
+			<correo>
+				borja@gmail.com
+			</correo>
+		</alumno>
+		<alumno dni="123B" modalidad="presencial">
+			<nombre>
+				Luis
+			</nombre>
+			<correo>
+				luis@gmail.com
+			</correo>
+		</alumno>
+		<alumno dni="123C" modalidad="online">
+			<nombre>
+				Marta
+			</nombre>
+			<curso>
+				1ºDAM
+			</curso>
+			<correo>
+				marta@gmail.com
+			</correo>
+		</alumno>
+	</alumnos>
+	<profesores>
+		<profesor>
+			<nombre>
+				Juan
+			</nombre>
+			<asignatura>
+				Programacion
+			</asignatura>
+		</profesor>
+		<profesor>
+			<nombre>
+				Lucia
+			</nombre>
+			<asignatura>
+				Sistemas
+			</asignatura>
+		</profesor>
+	</profesores>
+</colegio>
+<!-- Los atributo sirven para poder realizar filtrado de informacion -->
+<!-- /colegio/alumnos/alumno[@modalidad="online"]/correo -->
+<!-- /colegio/profesores/profesor[@sueldo gt 1000]/nombre -->

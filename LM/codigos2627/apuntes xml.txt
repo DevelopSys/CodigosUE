@@ -1,0 +1,39 @@
+Ficheros
+
+XML		-> estructura informacion. Etiquetas sin formato concreto, sin atributos marcados. Validador -> DTD Para guardar y transmitir informacion
+
+HTML 	-> estructura de una pagina. Etiquetas con un formato concreto, con atributos marcados -> DOM -> .html
+<html></html>
+<div></div>
+<h1></h1>
+<table></table>
+<style></style>
+
+CSS 	-> estructura de estilos. clases, tipos, id .css
+h1{
+	estilo
+}
+body{
+	estila
+}
+.id{
+	estilo
+}
+.uno,dos,tres,cuatro{
+	estilo
+}
+
+JSON (JavaScriptOptionNotation)	-> fichero que tienen informacion estructurada, intercambiar info entre sistemas .json
+[{
+	nombre:"Borja",
+	apellido:"Martin",
+	edad:42
+},
+{
+	nombre:"Borja1",
+	apellido:"Martin1",
+	edad:45
+}]
+
+JS  	-> crear paginas web (html) con logica en el cliente -> .js
+PHP		-> crear paginas web (html) con logica en el servidor -> .php
