@@ -18,7 +18,10 @@ public class Main {
         // System.out.println("Indica el mensaje a escribir");
         // String mensaje = scanner.nextLine();
         // controller.writeFileTXT("example_write_line.txt", mensaje);
-        controller.readFileTXT("example_write_line.txt");
+        // controller.readFileTXT("example_write_line.txt");
+        // controller.importCSV("user.csv");
+        // controller.writeObject("list_user.obj");
+        controller.readObject("list_user.obj");
     }
 
 
