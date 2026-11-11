@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+.menu {
+  background-color: #003666;
+  color: white;
+  justify-content: center;
+  padding: 20px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  color: white;
+  gap: 50px;
+  justify-content: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: red;
+  transition: color 0.3s ease;
+}
+
+.container {
+  margin: 20px;
+}
+
+#boton-principal {
+  background-color: blueviolet;
+  font-size: 20px;
+}
+
+.informacion {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.informacion img {
+  max-width: 50%;
+}
+
+.producto {
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #0b0b0b;
+  flex: 1 1 150px;
+  border-radius: 10px;
+}
+
+#producto-oferta {
+  background-color: aqua;
+}
+
+button:hover {
+  background-color: aqua;
+  transition: background-color 0.5s ease;
+}
