@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         // lo logico + grafico esta junto
         // gestiona la logica que tu quieras
         binding.btnSaludar.setOnClickListener {
+
             if (binding.editNombre.text.toString().isEmpty()) {
                 binding.textSaludo.text = "No hay nombre en el edit"
             } else {

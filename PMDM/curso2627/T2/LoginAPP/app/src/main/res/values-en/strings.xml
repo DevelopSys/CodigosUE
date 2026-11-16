@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_mail_hint">Enter your mail</string>
+    <string name="edit_pass_hint">Enter yout pass</string>
+    <string name="btn_login">Log in </string>
+    <string name="btn_create">Creat account</string>
+    <string name="btn_pass">Forget pass</string>
+    <string name="snack_empty_data">Empty data</string>
+    <string name="snack_login">Login error</string>
+</resources>
