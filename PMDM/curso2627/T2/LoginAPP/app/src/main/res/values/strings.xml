@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">LoginAPP</string>
+    <string name="edit_mail_hint">Introduce tu mail</string>
+    <string name="edit_pass_hint">Introduce tu pass</string>
+    <string name="btn_login">Iniciar</string>
+    <string name="btn_create">Registrar</string>
+    <string name="btn_pass">Olvide el pass</string>
+    <string name="text_app" translatable="false">SIGN IN</string>
+    <string name="snack_empty_data">No hay datos en alguno de los campos</string>
+    <string name="snack_login">Error en login</string>
+</resources>
